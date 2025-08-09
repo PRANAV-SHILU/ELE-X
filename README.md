@@ -69,7 +69,6 @@ It combines a visually striking gold-and-black theme with interactive features a
 ---
 
 ## 📂 Project Structure
-## 📂 Project Structure
 ```plaintext
 README.md
 /HTML
@@ -106,7 +105,7 @@ README.md
 
 /IMAGES
    [all product and banner images...]
-
+```
 ---
 
 ## 📦 Assets Folder
