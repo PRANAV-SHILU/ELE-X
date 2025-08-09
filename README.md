@@ -69,6 +69,8 @@ It combines a visually striking gold-and-black theme with interactive features a
 ---
 
 ## 📂 Project Structure
+## 📂 Project Structure
+```plaintext
 README.md
 /HTML
    home.html
@@ -81,6 +83,7 @@ README.md
    contact.html
    login.html
    register.html
+
 /CSS
    home.css
    shopnow.css
@@ -92,12 +95,15 @@ README.md
    contact.css
    login.css
    register.css
+
 /JS
    cart.js
    shopnow.js
    vouchers.js
+
 /DETAILS
    [product-detail pages...]
+
 /IMAGES
    [all product and banner images...]
 
