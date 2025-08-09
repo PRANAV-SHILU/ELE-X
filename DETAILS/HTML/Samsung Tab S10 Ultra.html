@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Samsung Tab S10 Ultra</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/tab s10 ultra.jpg" alt="Samsung Tab S10 Ultra" />
+            <div class="thumbs">
+                <img src="../../images/tab s10 ultra 1.jpg" alt="Samsung Tab S10 Ultra" onclick="switchImage(this)" />
+                <img src="../../images/tab s10 ultra 2.jpg" alt="Samsung Tab S10 Ultra" onclick="switchImage(this)" />
+                <img src="../../images/tab s10 ultra 3.jpg" alt="Samsung Tab S10 Ultra" onclick="switchImage(this)" />
+                <img src="../../images/tab s10 ultra 4.jpg" alt="Samsung Tab S10 Ultra" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Samsung Tab S10 Ultra</div>
+            <div class="rating">★ 4.6 | 1,250 Ratings & 320 Reviews</div>
+            <div class="price">₹12,999</div>
+            <div class="original-price">₹16,990</div>
+            <div class="discount">Save ₹3,991 (23%)</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Gadgets</strong></div>
+            <div class="social-proof">🔥 35 people viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>10.5-inch AMOLED display with vibrant colors</li>
+                    <li>Long-lasting battery supporting up to 14 hours of usage</li>
+                    <li>Multi-tasking with split-screen and app continuity</li>
+                    <li>Powerful Octa-core processor for smooth performance</li>
+                    <li>Expandable storage up to 1TB via microSD</li>
+                    <li>Stylus support for enhanced productivity</li>
+                </ul>
+
+                <!-- <button>
+                    Buy Now
+                </button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Sleek and lightweight design optimized for portability</li>
+                <li>120Hz refresh rate for smooth scrolling and gaming</li>
+                <li>Dual cameras for high-quality photos and video calls</li>
+                <li>Fast charging support with included charger</li>
+                <li>Pre-installed with Android 13 and Samsung One UI</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Display: 10.5-inch AMOLED, 2560 x 1600 pixels resolution</li>
+                <li>Processor: Octa-core (2.8 GHz + 2.4 GHz + 1.9 GHz)</li>
+                <li>RAM: 8GB</li>
+                <li>Storage: 128GB internal, expandable via microSD up to 1TB</li>
+                <li>Battery: 8,000 mAh, fast charging supported</li>
+                <li>Operating System: Android 13 with Samsung One UI</li>
+                <li>Cameras: Rear 13MP + 5MP, Front 8MP</li>
+                <li>Connectivity: Wi-Fi, Bluetooth 5.2, USB Type-C</li>
+                <li>Dimensions: 250 x 165 x 5.7 mm</li>
+                <li>Weight: 480 grams</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does the Samsung Tab S10 Ultra support stylus input?</summary>
+                <p>Yes, it supports the Samsung S Pen for drawing and note-taking.</p>
+            </details>
+            <details>
+                <summary>Can I expand the storage on this tablet?</summary>
+                <p>Yes, the tablet supports microSD cards up to 1TB.</p>
+            </details>
+            <details>
+                <summary>What is the warranty period?</summary>
+                <p>It comes with a standard 1-year manufacturer warranty.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Rohit S.</h4>
+            <p>Excellent display and battery life. Perfect for work and entertainment.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Neha P.</h4>
+            <p>Very smooth multitasking and great build quality.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Amit K.</h4>
+            <p>Good value for money with solid performance.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Priya M.</h4>
+            <p>Battery lasts long but camera could be better.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Sneha R.</h4>
+            <p>Best tablet in this price range. Highly recommended.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Karan J.</h4>
+            <p>Lightweight and great for productivity tasks.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★☆☆☆</span> Deepak L.</h4>
+            <p>Had some connectivity issues initially but support resolved it quickly.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Gaming Console Xtreme</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <!-- Gallery & Details -->
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Gaming Console Xtreme.webp" alt="Gaming Console Xtreme Main Image" />
+            <div class="thumbs">
+                <img src="../../images/Gaming Console Xtreme 1.webp" alt="Gaming Console Xtreme" onclick="switchImage(this)" />
+                <img src="../../images/Gaming Console Xtreme 2.webp" alt="Gaming Console Xtreme" onclick="switchImage(this)" />
+                <img src="../../images/Gaming Console Xtreme 3.webp" alt="Gaming Console Xtreme" onclick="switchImage(this)" />
+                <img src="../../images/Gaming Console Xtreme 4.webp" alt="Gaming Console Xtreme" onclick="switchImage(this)" />
+                <img src="../../images/Gaming Console Xtreme 5.webp" alt="Gaming Console Xtreme" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Gaming Console Xtreme</div>
+            <div class="rating">★ 4.6 | 1,850 Ratings & 320 Reviews</div>
+            <div class="price">₹27,499</div>
+            <div class="original-price">₹35,000</div>
+            <div class="discount">You save ₹7,501 (21%)</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Verified Seller</strong></div>
+            <div class="social-proof">👀 54 people viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Advanced GPU for Ultra HD Graphics</li>
+                    <li>1TB SSD for Lightning Fast Load Times</li>
+                    <li>Wireless Controller with Ergonomic Design</li>
+                    <li>Supports 4K Gaming at 60 FPS</li>
+                    <li>Built-in Streaming and Multiplayer Support</li>
+                </ul>
+
+                <!-- <button>
+                    Buy Now
+                </button> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Next-generation processor optimized for gaming performance</li>
+                <li>Customizable settings for graphics and gameplay</li>
+                <li>Compact design with advanced cooling system</li>
+                <li>Compatible with popular gaming platforms and accessories</li>
+            </ul>
+        </div>
+
+        <!-- Specs -->
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Processor: Custom Octa-Core CPU</li>
+                <li>Graphics: Advanced GPU supporting 4K UHD</li>
+                <li>Storage: 1TB NVMe SSD</li>
+                <li>RAM: 16GB GDDR6</li>
+                <li>Connectivity: WiFi 6, Bluetooth 5.1, Ethernet Port</li>
+                <li>Ports: HDMI 2.1, USB 3.2, Audio Jack</li>
+                <li>Dimensions: 15 x 10 x 3 inches</li>
+                <li>Weight: 5.5 lbs</li>
+            </ul>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does this console support VR gaming?</summary>
+                <p>Yes, Gaming Console Xtreme is compatible with major VR headsets via USB and HDMI.</p>
+            </details>
+            <details>
+                <summary>Can I connect external storage?</summary>
+                <p>Yes, it supports external USB drives for additional game storage.</p>
+            </details>
+            <details>
+                <summary>Is there parental control available?</summary>
+                <p>Yes, built-in parental controls allow monitoring and restrictions.</p>
+            </details>
+        </div>
+    </div>
+
+    <!-- Sample Reviews -->
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Arjun K.</h4>
+            <p>Incredible graphics and seamless gameplay. Worth every rupee spent!</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Meena P.</h4>
+            <p>Fast loading times and easy setup. Controller is very comfortable.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Sameer V.</h4>
+            <p>Great console but wish the fan was a bit quieter.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Priya S.</h4>
+            <p>Highly recommend for serious gamers. Performance is top-notch.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Rahul D.</h4>
+            <p>Good console but limited game library currently.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Anjali M.</h4>
+            <p>Exceeded my expectations with smooth gameplay and graphics.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Vikram L.</h4>
+            <p>Good value for money, excellent build quality.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★☆☆☆</span> Nita R.</h4>
+            <p>Had some connectivity issues initially but customer support helped quickly.</p>
+        </div>
+
+        <!-- Additional reviews omitted for brevity -->
+    </div>
+
+    <!-- Review Submission Form -->
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

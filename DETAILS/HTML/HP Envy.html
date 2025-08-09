@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | HP Envy</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/hp-envy.jpg" alt="HP Envy" />
+            <div class="thumbs">
+                <img src="../../images/hp-envy-1.jpg" alt="HP Envy Side View" onclick="switchImage(this)" />
+                <img src="../../images/hp-envy-2.jpg" alt="HP Envy Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/hp-envy-3.jpg" alt="HP Envy Screen" onclick="switchImage(this)" />
+                <img src="../../images/hp-envy-4.jpg" alt="HP Envy Ports" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">HP Envy</div>
+            <div class="rating">★ 4.6 | 712 Ratings & 198 Reviews</div>
+            <div class="price">₹89,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–6 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 35 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i5-1135G7 Processor</li>
+                    <li>8GB DDR4 RAM | 256GB SSD</li>
+                    <li>15.6" Full HD IPS Display</li>
+                    <li>Windows 11 Home | Fingerprint Reader</li>
+                    <li>Bang & Olufsen Audio</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: Intel Core i5-1135G7</li>
+                <li>Graphics: Intel Iris Xe Graphics</li>
+                <li>Display: 15.6 inch Full HD (1920 x 1080)</li>
+                <li>Operating System: Windows 11 Home</li>
+                <li>Battery Life: Up to 8 hours</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>RAM: 8GB DDR4 2666MHz</li>
+                <li>Storage: 256GB PCIe NVMe SSD</li>
+                <li>Weight: 1.9 kg</li>
+                <li>Dimensions: 14.09" x 9.27" x 0.71"</li>
+                <li>Ports: USB-C, USB-A, headphone jack</li>
+                <li>Warranty: 1 year onsite service</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Can I upgrade the storage?</summary>
+                <p>Yes, the SSD can be upgraded, but requires professional installation.</p>
+            </details>
+            <details>
+                <summary>Does it support touchscreen?</summary>
+                <p>No, this model does not have a touchscreen display.</p>
+            </details>
+            <details>
+                <summary>Is there a dedicated GPU?</summary>
+                <p>No, it uses integrated Intel Iris Xe graphics.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★☆</span> Anjali K.</h4>
+            <p>Great laptop for everyday use and light gaming.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Rohit S.</h4>
+            <p>Good build quality and display, but battery could be better.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Meera D.</h4>
+            <p>Perfect for work and streaming. Audio quality is superb.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Suresh P.</h4>
+            <p>Average performance, expected more for the price.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Kavita M.</h4>
+            <p>Lightweight and portable, ideal for students.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Aditya R.</h4>
+            <p>Value for money and decent specs for the price.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Nisha L.</h4>
+            <p>Highly recommend for productivity and casual gaming.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

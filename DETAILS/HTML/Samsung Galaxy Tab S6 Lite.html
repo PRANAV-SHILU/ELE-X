@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Samsung Galaxy Tab S6 Lite</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Samsung Galaxy Tab S6 Lite.jpg" alt="Samsung Galaxy Tab S6 Lite" />
+            <div class="thumbs">
+                <img src="../../images/Samsung Galaxy Tab S6 Lite side.jpg" alt="Side View"
+                    onclick="switchImage(this)" />
+                <img src="../../images/Samsung Galaxy Tab S6 Lite back.jpg" alt="Back View"
+                    onclick="switchImage(this)" />
+                <img src="../../images/Samsung Galaxy Tab S6 Lite box.jpg" alt="Packaging"
+                    onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Samsung Galaxy Tab S6 Lite</div>
+            <div class="rating">★ 4.4 | 850 Ratings & 180 Reviews</div>
+            <div class="price">₹23,999</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–7 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 30 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>10.4-inch display with 2000 x 1200 resolution</li>
+                    <li>Exynos 9611 Octa-core processor</li>
+                    <li>4GB RAM with 64GB storage (expandable via microSD)</li>
+                    <li>S-Pen included for drawing and notes</li>
+                    <li>Long battery life with 7040mAh capacity</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Operating System: Android 11</li>
+                <li>Storage Options: 64GB / 128GB</li>
+                <li>Processor: Samsung Exynos 9611</li>
+                <li>Connectivity: Wi-Fi, LTE, Bluetooth 5.0</li>
+                <li>Battery: 7040 mAh</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Display: 10.4 inches, 2000 x 1200 pixels</li>
+                <li>Camera: 8 MP rear, 5 MP front</li>
+                <li>Weight: 467 grams</li>
+                <li>Dimensions: 244.5 x 154.3 x 7 mm</li>
+                <li>Charging: USB-C fast charging supported</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does the tablet support microSD cards?</summary>
+                <p>Yes, expandable storage via microSD up to 1TB is supported.</p>
+            </details>
+            <details>
+                <summary>Is the S-Pen included?</summary>
+                <p>Yes, the S-Pen comes included in the box.</p>
+            </details>
+            <details>
+                <summary>Does it support LTE?</summary>
+                <p>Yes, LTE models are available along with Wi-Fi only variants.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★☆</span> Anil K.</h4>
+            <p>Great tablet for the price. S-Pen is very responsive.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Sunita M.</h4>
+            <p>Battery lasts all day and display is crisp.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Rahul S.</h4>
+            <p>Good performance but storage fills up quickly.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Neha T.</h4>
+            <p>Works well but could have better camera quality.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Pooja L.</h4>
+            <p>Excellent build and S-Pen is a huge plus.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Manish J.</h4>
+            <p>Occasional lag but overall decent tablet.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Kavita R.</h4>
+            <p>Perfect for study and entertainment.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+  }
+
+  /*fixed*/
+  nav {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      padding-left: 30px;
+      border-bottom: 1px solid #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+
+  nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  nav .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+  }
+
+  nav a:hover {
+      color: #ff6600;
+  }
+
+  .menu {
+      margin-right: 68px;
+  }
+
+  /*end*/
+
+
+  .coupon-container {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.3);
+      margin-top: 100px;
+  }
+
+  h2 {
+      color: #ff9800;
+  }
+
+  .input-container {
+      display: flex;
+      justify-content: space-between;
+      background: #333;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      padding: 5px;
+  }
+
+  .apply-btn {
+      background: #ff9800;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+  }
+
+  .apply-btn:hover {
+      background: #ffa726;
+  }
+
+  .coupon-list {
+      margin-top: 15px;
+      text-align: left;
+  }
+
+  .coupon-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px 0;
+  }
+
+  .coupon-code {
+      font-weight: bold;
+      color: #ffcc00;
+  }
+
+  .copy-btn {
+      background: black;
+      border: 1px solid #ffd700;
+      padding: 5px 10px;
+      color: goldenrod;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+  .copy-btn:hover {
+      background: #5f5f5f;
+  }
+
+  .message {
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  /* ---------- Responsive Design ---------- *//* Responsive Design for Tablet */
+@media (max-width: 1024px) {
+    .menu {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav .logo {
+        font-size: 22px;
+    }
+
+    .coupon-container {
+        margin-top: 120px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .coupon-item span {
+        font-size: 14px;
+    }
+}
+
+/* Responsive Design for Mobile */@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start; 
+        width: 100%;
+        gap: 8px;
+        margin: 0;
+    }
+
+    .menu a {
+        font-size: 14px;
+        margin: 4px 0;
+        padding: 5px 10px;
+    }
+
+    .coupon-container {
+        padding: 15px;
+        margin-top: 420px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .apply-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .coupon-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .coupon-item span {
+        font-size: 14px;
+    }
+
+    .copy-btn {
+        align-self: flex-end;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+ .animated-line {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .animated-line::before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(to left, gold 50%, transparent 0%);
+     background-size: 200% 100%;
+     animation: moveLine 20s linear infinite;
+ }
+ 
+@keyframes moveLine {
+  0% {
+    background-position: -100% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}

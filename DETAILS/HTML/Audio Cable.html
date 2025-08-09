@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | HDMI/VGA/Audio Cable</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/hdmi-vga-audio-cable-combo.jpg" alt="HDMI/VGA/Audio Cable" />
+            <div class="thumbs">
+                <img src="../../images/hdmi_cable_1.jpg" alt="HDMI Cable View" onclick="switchImage(this)" />
+                <img src="../../images/vga_cable_1.jpg" alt="VGA Cable View" onclick="switchImage(this)" />
+                <img src="../../images/audio_cable_1.jpg" alt="Audio Cable View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">HDMI/VGA/Audio Cable</div>
+            <div class="rating">★ 4.3 | 1,280 Ratings & 460 Reviews</div>
+            <div class="price">₹299</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">⚡ 92 customers purchased this in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Combo pack: HDMI, VGA, and 3.5mm audio cable</li>
+                    <li>Universal compatibility with TVs, monitors, projectors</li>
+                    <li>High-speed data and audio transmission</li>
+                    <li>Corrosion-resistant gold-plated connectors</li>
+                    <li>Flexible and durable PVC outer layer</li>
+                </ul>
+                <!--<button onclick="addToCart('HDMI/VGA/Audio Cable', 299)">Add to Cart</button>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Supports full HD 1080p output</li>
+                <li>1.5 meter standard length cables</li>
+                <li>Multi-device support for seamless connectivity</li>
+                <li>Shielded to minimize signal interference</li>
+                <li>Plug-and-play ready, no drivers required</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>HDMI Version: 1.4</li>
+                <li>VGA Support: Up to 1920x1080 resolution</li>
+                <li>Audio Jack: 3.5mm stereo</li>
+                <li>Cable Length: 1.5 meters</li>
+                <li>Material: PVC jacket, copper wire</li>
+                <li>Warranty: 6 Months</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Are all three cables included?</summary>
+                <p>Yes, the combo includes HDMI, VGA, and 3.5mm audio cables.</p>
+            </details>
+            <details>
+                <summary>Is this compatible with a PS4/TV/laptop?</summary>
+                <p>Yes, it supports all standard HDMI/VGA/audio ports.</p>
+            </details>
+            <details>
+                <summary>Does it support 4K?</summary>
+                <p>No, this cable supports up to Full HD 1080p resolution.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Ritesh D.</h4><p>Perfect combo for my home office setup. Great quality and value.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Tanya R.</h4><p>The HDMI and audio cables work flawlessly. VGA feels slightly loose.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sahil M.</h4><p>Using it for months with no signal loss. Highly recommend.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Meera P.</h4><p>Basic quality, good for light use. Not for heavy-duty connections.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Vikas G.</h4><p>Decent durability. Does the job well for the price.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Renu K.</h4><p>Audio cable was shorter than expected but works fine.</p></div>
+        <div class="review"><h4><span>★★☆☆☆</span> Alok V.</h4><p>One connector stopped working after a month. Received a replacement.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Lenovo Thinkpad</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/lenovo-thinkpad-x1.jpg" alt="Lenovo Thinkpad" />
+            <div class="thumbs">
+                <img src="../../images/lenovo-thinkpad-1.jpg" alt="Top View" onclick="switchImage(this)" />
+                <img src="../../images/lenovo-thinkpad-2.jpg" alt="Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/lenovo-thinkpad-3.jpg" alt="Side Ports" onclick="switchImage(this)" />
+                <img src="../../images/lenovo-thinkpad-4.jpg" alt="Back View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Lenovo Thinkpad</div>
+            <div class="rating">★ 4.4 | 860 Ratings & 215 Reviews</div>
+            <div class="price">₹54,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>4–6 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 42 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i5 11th Gen Processor</li>
+                    <li>8GB DDR4 RAM, 256GB SSD Storage</li>
+                    <li>14" Full HD Anti-Glare Display</li>
+                    <li>Integrated Intel Iris Xe Graphics</li>
+                    <li>Robust Build with Spill-Resistant Keyboard</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: Intel Core i5-1135G7 (4 cores)</li>
+                <li>RAM: 8GB DDR4 (3200MHz)</li>
+                <li>Storage: 256GB NVMe SSD</li>
+                <li>Display: 14-inch Full HD (1920x1080), Anti-glare</li>
+                <li>Battery Life: Up to 8 hours</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Operating System: Windows 10 Pro</li>
+                <li>Ports: USB-C, USB 3.2, HDMI, Audio Jack</li>
+                <li>Weight: 1.6 kg</li>
+                <li>Wireless: Wi-Fi 6, Bluetooth 5.1</li>
+                <li>Security: Fingerprint Reader</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is the RAM upgradeable?</summary>
+                <p>Yes, RAM can be upgraded up to 16GB.</p>
+            </details>
+            <details>
+                <summary>Does it support fast charging?</summary>
+                <p>Yes, it supports fast charging via USB-C.</p>
+            </details>
+            <details>
+                <summary>Is this suitable for business use?</summary>
+                <p>Yes, designed for productivity with robust security features.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★☆</span> Ravi P.</h4>
+            <p>Reliable performance for work. Keyboard is comfortable.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Anjali S.</h4>
+            <p>Great laptop for my daily office tasks. Battery lasts long.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Karan D.</h4>
+            <p>Build quality is impressive, suitable for travel.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Sneha M.</h4>
+            <p>Performance is good but could use more storage.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Meena R.</h4>
+            <p>Lightweight and easy to carry around.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Ajay K.</h4>
+            <p>Good for business and casual use.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Priya L.</h4>
+            <p>Excellent support and overall value for money.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

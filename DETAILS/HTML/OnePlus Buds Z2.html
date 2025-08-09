@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | OnePlus Buds Z2</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/OnePlus Buds Z2.png" alt="OnePlus Buds Z2" />
+            <div class="thumbs">
+                <img src="../../images/OnePlus Buds Z2 side.png" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/OnePlus Buds Z2 charging case.png" alt="Charging Case" onclick="switchImage(this)" />
+                <img src="../../images/OnePlus Buds Z2 box.png" alt="Packaging" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">OnePlus Buds Z2</div>
+            <div class="rating">★ 4.3 | 780 Ratings & 200 Reviews</div>
+            <div class="price">₹4,999</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>1–3 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 40 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Active Noise Cancellation (ANC) technology</li>
+                    <li>30 hours total playback with charging case</li>
+                    <li>Bluetooth 5.2 with low latency</li>
+                    <li>IP55 dust and water resistance</li>
+                    <li>Fast charging: 10 min charge for 5 hours playback</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Drivers: 11mm dynamic drivers</li>
+                <li>Bluetooth Version: 5.2</li>
+                <li>Battery Life: Up to 7 hours per charge</li>
+                <li>Charging Case Battery: 520mAh</li>
+                <li>Compatibility: Android and iOS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Weight: 4.35 grams per earbud</li>
+                <li>Dimensions: Earbud - 26.4 x 20.8 x 24.4 mm</li>
+                <li>Charging: USB-C fast charging</li>
+                <li>Connectivity: Bluetooth 5.2</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Are OnePlus Buds Z2 compatible with all smartphones?</summary>
+                <p>Yes, they support any device with Bluetooth capability.</p>
+            </details>
+            <details>
+                <summary>How effective is the noise cancellation?</summary>
+                <p>The ANC works well for everyday environments, reducing background noise efficiently.</p>
+            </details>
+            <details>
+                <summary>How long does the battery last on a full charge?</summary>
+                <p>Up to 7 hours playback per charge, 30 hours with charging case.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Karan S.</h4><p>Excellent sound quality and ANC.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Divya P.</h4><p>Comfortable fit and quick pairing.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Manish R.</h4><p>Battery life is decent and fast charging is a plus.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Sanya G.</h4><p>Could improve on bass quality.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha D.</h4><p>Good value for money earbuds.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Rohit K.</h4><p>Occasional connectivity drops.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Priya M.</h4><p>Great ANC and comfortable design.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

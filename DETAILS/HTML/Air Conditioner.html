@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Air Conditioner</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Air Conditioner.avif" alt="Air Conditioner" />
+            <div class="thumbs">
+                <img src="../../images/aircon1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/aircon2.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/aircon3.jpg" alt="Installation" onclick="switchImage(this)" />
+                <img src="../../images/aircon4.jpg" alt="Remote Control" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Air Conditioner</div>
+            <div class="rating">★ 4.5 | 1,320 Ratings & 289 Reviews</div>
+            <div class="price">₹29,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–6 days</strong> | Free Installation</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">❄️ 58 units sold in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>1.5 Ton Split AC with Inverter Compressor</li>
+                    <li>Energy Rating: 5 Star, highly energy-efficient</li>
+                    <li>Dust and PM2.5 filter for cleaner air</li>
+                    <li>Stabilizer Free Operation</li>
+                    <li>Eco Mode and Turbo Cooling</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Capacity: 1.5 Ton suitable for medium rooms (111 to 150 sq.ft)</li>
+                <li>Cooling Power: 5100 Watts</li>
+                <li>Condenser Coil: Copper – better cooling & low maintenance</li>
+                <li>Noise Level: 42 dB indoor unit</li>
+                <li>Auto Restart and Sleep Mode</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Power Supply: AC 230V, 50Hz</li>
+                <li>Refrigerant: R32 Eco-friendly</li>
+                <li>Remote Control with LCD display</li>
+                <li>Dimensions (Indoor): 90 x 29 x 22 cm</li>
+                <li>Warranty: 1 year on product, 10 years on compressor</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it include installation service?</summary>
+                <p>Yes, free standard installation is included with the delivery.</p>
+            </details>
+            <details>
+                <summary>What is the warranty coverage?</summary>
+                <p>1 year on product and 10 years on the compressor.</p>
+            </details>
+            <details>
+                <summary>Is it suitable for coastal areas?</summary>
+                <p>Yes, the anti-corrosive coating makes it ideal for humid and coastal conditions.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Akshay M.</h4><p>Super cooling performance. Installation was smooth and timely.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Nidhi S.</h4><p>Energy efficient and quiet. Great for bedrooms.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Varun K.</h4><p>Stylish and effective. Worth every rupee.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rashi G.</h4><p>Excellent AC. Slight delay in delivery but product is superb.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Tanay B.</h4><p>Cools my 140 sq ft room in under 5 minutes. Highly recommended.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Jayesh D.</h4><p>Performance is great, remote is a bit basic though.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Kirti P.</h4><p>Good buy. Economical and works well in Delhi summers.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

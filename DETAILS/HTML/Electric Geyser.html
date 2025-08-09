@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Electric Geyser</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/electric-geyser.jpg" alt="Electric Geyser" />
+            <div class="thumbs">
+                <img src="../../images/electric-geyser-1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/electric-geyser-2.jpg" alt="Control Panel" onclick="switchImage(this)" />
+                <img src="../../images/electric-geyser-3.jpg" alt="Installation View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Electric Geyser</div>
+            <div class="rating">★ 4.4 | 520 Ratings & 135 Reviews</div>
+            <div class="price">₹7,499</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">🔥 48 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Fast heating technology</li>
+                    <li>Energy-efficient with thermostat control</li>
+                    <li>Rust-proof outer body</li>
+                    <li>Automatic safety valve</li>
+                    <li>Capacity: 15 Liters</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Voltage: 220V</li>
+                <li>Power Consumption: 2000W</li>
+                <li>Pressure Resistant Body</li>
+                <li>Temperature Range: 25°C to 75°C</li>
+                <li>5-year warranty on tank</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Heating Element: Copper</li>
+                <li>Tank Material: Stainless Steel</li>
+                <li>Safety Features: Thermal Cutoff, Pressure Release Valve</li>
+                <li>Dimensions: 50 x 25 x 25 cm</li>
+                <li>Weight: 8 kg</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What is the warranty period?</summary>
+                <p>The geyser comes with a 5-year warranty on the tank and 2 years on other parts.</p>
+            </details>
+            <details>
+                <summary>Is installation included?</summary>
+                <p>Yes, free installation is offered with purchase.</p>
+            </details>
+            <details>
+                <summary>Does it have a safety valve?</summary>
+                <p>Yes, it includes an automatic safety valve for pressure regulation.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Anil K.</h4><p>Heats water quickly and saves electricity.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sunita R.</h4><p>Easy installation and works perfectly.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Raj P.</h4><p>Good product but a bit noisy.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meena S.</h4><p>Compact design, fits well in my bathroom.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Varun D.</h4><p>Good value for money but water temperature fluctuates.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Kavita M.</h4><p>Excellent safety features and build quality.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rohit T.</h4><p>Reliable product, no issues so far.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Acer Aspire 3</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/acer-aspire-3.jpg" alt="Acer Aspire 3" />
+            <div class="thumbs">
+                <img src="../../images/acer-aspire-3.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/acer-aspire-3.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/acer-aspire-3.jpg" alt="Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/acer-aspire-3.jpg" alt="Screen Close-up" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Budget Laptop - Acer Aspire 3</div>
+            <div class="rating">★ 4.2 | 1,183 Ratings & 238 Reviews</div>
+            <div class="price">₹34,990</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Retail</strong></div>
+            <div class="social-proof">📦 62 units sold in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>AMD Ryzen 3 7320U processor</li>
+                    <li>15.6" Full HD display with narrow bezels</li>
+                    <li>8 GB LPDDR5 RAM, 512 GB SSD storage</li>
+                    <li>Windows 11 Home pre-installed</li>
+                    <li>Battery life up to 7 hours</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Display Size: 15.6 inches</li>
+                <li>Processor: AMD Ryzen 3 7320U</li>
+                <li>RAM: 8 GB LPDDR5</li>
+                <li>Storage: 512 GB SSD</li>
+                <li>Graphics: Integrated AMD Radeon 610M</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Operating System: Windows 11 Home</li>
+                <li>Battery Life: Up to 7 hours</li>
+                <li>Ports: USB-C, USB-A, HDMI, Audio Jack</li>
+                <li>Weight: 1.78 kg</li>
+                <li>Warranty: 1 Year Domestic Warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is this good for online classes or work from home?</summary>
+                <p>Yes, it's well-suited for productivity, browsing, and video conferencing.</p>
+            </details>
+            <details>
+                <summary>Does it have MS Office pre-installed?</summary>
+                <p>It comes with a trial version. Full version requires a separate license.</p>
+            </details>
+            <details>
+                <summary>Can I upgrade the RAM?</summary>
+                <p>No, RAM is soldered and not upgradeable.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Ravi M.</h4><p>Perfect for students and budget buyers. Display is crisp.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Sonia D.</h4><p>Good value for money, but audio could be louder.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Ankur P.</h4><p>SSD makes it really fast. Boots in seconds!</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha T.</h4><p>Lightweight and durable. Battery backup is decent too.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Saurabh G.</h4><p>Great for day-to-day work. Display is pleasant on the eyes.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Divya R.</h4><p>Performance is good, but build feels basic.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Karan L.</h4><p>Highly recommend it for budget-conscious users!</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

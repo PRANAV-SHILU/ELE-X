@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ele-x | Voucher </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/VOUCHER.CSS">
+    <script src="../JS/VOUCHER.JS"></script>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">Ele-x</div>
+        <div class="menu">
+            <a href="HOME.HTML">Home</a>
+            <a href="SHOPNOW.HTML">Shop Now</a>
+            <a href="MEGADEALS.HTML">Mega Deals</a>
+            <a href="VOUCHER.HTML">Vouchers</a>
+            <a href="CART.HTML">Cart</a>
+            <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
+            <a href="ABOUTUS.HTML">About Us</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="LOGIN.HTML">Login</a>
+        </div>
+          <div class="animated-line"></div>
+    </nav>
+
+    <div class="coupon-container">
+        <h2>🔥 Apply a Coupon & Save More!</h2>
+        <div class="input-container">
+            <input type="text" id="couponInput" placeholder="Enter your coupon code">
+            <button class="apply-btn" onclick="applyCoupon()">Apply Coupon</button>
+        </div>
+        <div class="message" id="message"></div>
+
+        <div class="coupon-list">
+            <h3>Available Coupons:</h3>
+            <div class="coupon-item">
+                <span class="coupon-code">SPECIAL70</span>
+                <span>Get 70% off above ₹2,00,000 (Expires in 1 days)</span>
+                <button class="copy-btn" onclick="copyCoupon('SPECIAL70')">Copy</button>
+            </div>
+            <div class="coupon-item">
+                <span class="coupon-code">ELE-X50</span>
+                <span>Get 50% Off (Expires in 3 days)</span>
+                <button class="copy-btn" onclick="copyCoupon('ELE-X50')">Copy</button>
+            </div>
+            <div class="coupon-item">
+                <span class="coupon-code">MEGADEAL20</span>
+                <span>20% Off on orders above ₹20,000</span>
+                <button class="copy-btn" onclick="copyCoupon('MEGADEAL20')">Copy</button>
+            </div>
+            <div class="coupon-item">
+                <span class="coupon-code">SUPER10</span>
+                <span>10% Off on orders above ₹10,000</span>
+                <button class="copy-btn" onclick="copyCoupon('SUPER10')">Copy</button>
+            </div>
+            <div class="coupon-item">
+                <span class="coupon-code">MINI5</span>
+                <span>5% Off above ₹2,000</span>
+                <button class="copy-btn" onclick="copyCoupon('MINI5')">Copy</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

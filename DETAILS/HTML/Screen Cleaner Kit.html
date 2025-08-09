@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Screen Cleaner Kit</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/screen-cleaner-kit.jpg" alt="Screen Cleaner Kit" />
+            <div class="thumbs">
+                <img src="../../images/screen-cleaner-kit-1.jpg" alt="Spray Bottle" onclick="switchImage(this)" />
+                <img src="../../images/screen-cleaner-kit-2.jpg" alt="Microfiber Cloth" onclick="switchImage(this)" />
+                <img src="../../images/screen-cleaner-kit-3.jpg" alt="Cleaning Brushes" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Screen Cleaner Kit</div>
+            <div class="rating">★ 4.4 | 920 Ratings & 240 Reviews</div>
+            <div class="price">₹149</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele‑X Accessories</strong></div>
+            <div class="social-proof">🧼 120 kits sold today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Safe cleaning spray for glass and plastic screens</li>
+                    <li>Ultra-soft lint-free microfiber cloth</li>
+                    <li>Small soft brushes for ports and corners</li>
+                    <li>Streak-free, anti-static solution</li>
+                    <li>Leak-proof 50 ml spray bottle</li>
+                </ul>
+               <!-- <button onclick="addToCart('Screen Cleaner Kit', 149)">Add to Cart</button>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Alcohol-free, non-toxic cleaning solution</li>
+                <li>Safe for phones, tablets, laptops, TVs, camera lenses</li>
+                <li>Double-stitched microfiber cloth included</li>
+                <li>Includes brush for dust removal</li>
+                <li>Compact kit fits into laptop bag or desk drawer</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Liquid Volume: 50 ml</li>
+                <li>Cloth Dimensions: 18 × 18 cm</li>
+                <li>Brush Size: 10 cm</li>
+                <li>Non-Abrasive Formula</li>
+                <li>Weight: 75 g</li>
+                <li>Warranty: 3 months satisfaction guarantee</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is it safe for OLED screens?</summary>
+                <p>Yes, the solution is streak-free and safe for OLED, LED, and LCD screens.</p>
+            </details>
+            <details>
+                <summary>Can I use the cloth dryer?</summary>
+                <p>No, microfiber cloths should be air-dried to preserve texture.</p>
+            </details>
+            <details>
+                <summary>Does it clean camera lenses?</summary>
+                <p>Yes, included brush and spray are safe for lenses and eyeglasses.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Anjali P.</h4><p>Fantastic kit—my screens look brand new after each clean.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rohan K.</h4><p>Compact and effective. Cloth left one tiny streak though.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meera S.</h4><p>Brush is great for cleaning camera ports. Useful little kit.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Vivek D.</h4><p>Solution smells strong initially but fades quickly.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sneha L.</h4><p>Best cleaner I’ve used—no streaks, no residue.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Priya J.</h4><p>Cloth got a bit frayed after many washes, but spray is great.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Kunal M.</h4><p>Good value for money. Comes in handy daily.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you!</div>
+        </form>
+    </div>
+</body>
+
+</html>

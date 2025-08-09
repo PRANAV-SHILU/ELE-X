@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Smartwatch Pro Series 8</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/DETAILS.CSS">
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <!-- Gallery & Details -->
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Smartwatch Pro Series 8.webp" alt="Smartwatch Pro Series 8 Main Image" />
+            <div class="thumbs">
+                <img src="../../images/Smartwatch Pro Series 8 - 1.jpg" alt="Smartwatch Pro Series 8" onclick="switchImage(this)" />
+                <img src="../../images/Smartwatch Pro Series 8 - 2.jpg" alt="Smartwatch Pro Series 8" onclick="switchImage(this)" />
+                <img src="../../images/Smartwatch Pro Series 8 - 3.jpg" alt="Smartwatch Pro Series 8" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Smartwatch Pro Series 8 (Midnight Black, 1.9" Display)</div>
+            <div class="rating">★ 4.1 | 1,250 Ratings & 310 Reviews</div>
+            <div class="price">₹3,499</div>
+            <div class="original-price">₹5,999</div>
+            <div class="discount">You save ₹2,500 (41%)</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Certified Vendor</strong></div>
+            <div class="social-proof">👀 62 people viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>1.9" Full Touch HD Display</li>
+                    <li>Bluetooth Calling & Music Control</li>
+                    <li>SpO2, Heart Rate & Sleep Monitoring</li>
+                    <li>Multiple Sports Modes</li>
+                    <li>IP67 Water Resistant</li>
+                </ul>
+<!-- 
+                <button>
+                    Buy Now
+                </button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Additional Details -->
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Stylish aluminum alloy frame with soft silicone strap</li>
+                <li>Voice assistant support & smart notifications</li>
+                <li>Compatible with Android & iOS devices</li>
+                <li>Battery backup: Up to 7 days on typical usage</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Display: 1.9" HD IPS Touch Screen</li>
+                <li>Battery: 280 mAh, 7 Days Backup</li>
+                <li>Bluetooth Version: 5.1</li>
+                <li>Health Sensors: SpO2, Heart Rate, Sleep Tracker</li>
+                <li>Build: Alloy Frame, IP67 Water Resistant</li>
+                <li>Connectivity: Bluetooth Calling, App Sync</li>
+                <li>Compatible OS: Android 5.0+ / iOS 9.0+</li>
+                <li>Weight: 45g</li>
+            </ul>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it support Bluetooth calling?</summary>
+                <p>Yes, it allows Bluetooth calling directly from your wrist.</p>
+            </details>
+            <details>
+                <summary>Can I use it with an iPhone?</summary>
+                <p>Yes, it is fully compatible with both Android and iOS devices.</p>
+            </details>
+            <details>
+                <summary>Is it water resistant?</summary>
+                <p>Yes, the watch is IP67 rated for water and dust resistance.</p>
+            </details>
+        </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Rahul M.</h4>
+            <p>Excellent product! Great features and amazing battery life. Calling works smoothly too!</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Sneha T.</h4>
+            <p>Very good watch. Accurate sensors and stylish look. Strap quality could be better though.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Akash V.</h4>
+            <p>Average experience. Display is sharp, but app connectivity drops sometimes.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★☆☆☆</span> Preeti S.</h4>
+            <p>Disappointed with the charging time. Also, the mic isn’t clear during calls.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★☆☆☆☆</span> Kunal D.</h4>
+            <p>Worst product. Stopped working after 3 days. No proper support from seller.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Ananya P.</h4>
+            <p>Loved the design and features. Especially useful for fitness tracking. Highly recommend it!</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Bhavesh R.</h4>
+            <p>Impressive for the price. Most features of premium smartwatches at a budget.</p>
+        </div>
+    </div>
+
+    <!-- Review Submission Form -->
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

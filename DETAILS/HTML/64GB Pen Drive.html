@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ele-x | 64GB Pen Drive</title>
+  <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+  <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+
+  <button onclick="goBack()" class="goback">← Back</button>
+
+  <div class="gallery-section">
+    <div class="main-img">
+      <img id="mainImage" src="../../images/64gb-pen-drive.jpg" alt="64GB Pen Drive" />
+    </div>
+
+    <div class="details-section">
+      <div class="product-title">64GB Pen Drive</div>
+      <div class="rating">★ 4.6 | 2,700 Ratings & 430 Reviews</div>
+      <div class="price">₹599</div>
+      <div class="original-price">₹899</div>
+      <div class="discount">Save ₹300 (33%)</div>
+      <div class="availability" style="color: green;">In Stock</div>
+      <div class="delivery">Delivery in <strong>2–4 days</strong></div>
+      <div class="seller">Sold by: <strong>Ele-X Store</strong></div>
+      <div class="social-proof">👀 58 people viewed this today</div>
+
+      <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+          <li>High-speed USB 3.0 performance</li>
+          <li>Compact, sleek, and durable design</li>
+          <li>Plug-and-play functionality</li>
+          <li>Backwards compatible with USB 2.0</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="add">
+    <div class="section">
+      <h2>Product Details</h2>
+      <ul>
+        <li>Ideal for students and professionals</li>
+        <li>Metal casing for enhanced durability</li>
+        <li>Secure file storage & fast transfer</li>
+        <li>Comes with 5-year warranty</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Technical Specifications</h2>
+      <ul class="specs-list">
+        <li>Capacity: 64GB</li>
+        <li>Interface: USB 3.0</li>
+        <li>Read Speed: Up to 130MB/s</li>
+        <li>Weight: 12g</li>
+        <li>Material: Metal</li>
+        <li>Color: Silver</li>
+      </ul>
+    </div>
+
+    <div class="section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>Is it waterproof?</summary><p>No, avoid exposing it to water.</p></details>
+      <details><summary>Can I use it on a smart TV?</summary><p>Yes, it works with smart TVs via USB.</p></details>
+      <details><summary>Will it work on Mac?</summary><p>Yes, it's compatible with macOS.</p></details>
+    </div>
+  </div>
+
+  <div class="section reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review"><h4><span>★★★★★</span> Aditi B.</h4><p>Transfer speed is superb. Totally worth it.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Nishant J.</h4><p>Compact and solid. Works great with my car audio.</p></div>
+    <div class="review"><h4><span>★★★☆☆</span> Pooja R.</h4><p>Sometimes heats up, but works fine.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Manoj K.</h4><p>Metal body looks premium. Happy with purchase.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Neha S.</h4><p>Good performance. Got it at discount.</p></div>
+    <div class="review"><h4><span>★★★☆☆</span> Vinay L.</h4><p>Could have better cap or cover.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Zoya T.</h4><p>Excellent quality and fast delivery.</p></div>
+  </div>
+
+  <div class="section">
+    <h2>Submit Your Review</h2>
+    <form class="review-form" id="reviewForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select rating</option>
+        <option value="1">★ 1 Star</option>
+        <option value="2">★★ 2 Stars</option>
+        <option value="3">★★★ 3 Stars</option>
+        <option value="4">★★★★ 4 Stars</option>
+        <option value="5">★★★★★ 5 Stars</option>
+      </select>
+
+      <label for="comment">Review</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+      <button type="submit">Submit Review</button>
+      <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+    </form>
+  </div>
+
+</body>
+</html>

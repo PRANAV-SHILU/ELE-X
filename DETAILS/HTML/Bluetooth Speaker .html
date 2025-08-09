@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Bluetooth Speaker</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Bluetooth Speaker.jpg" alt="Bluetooth Speaker" />
+            <div class="thumbs">
+                <img src="../../images/bluetooth_speaker_1.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/bluetooth_speaker_2.jpg" alt="Controls View" onclick="switchImage(this)" />
+                <img src="../../images/bluetooth_speaker_3.jpg" alt="Back View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Bluetooth Speaker</div>
+            <div class="rating">★ 4.6 | 870 Ratings & 210 Reviews</div>
+            <div class="price">₹2,499</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Gadgets</strong></div>
+            <div class="social-proof">🔥 63 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Compact and lightweight design</li>
+                    <li>Deep bass with 360-degree sound</li>
+                    <li>12-hour battery life on a single charge</li>
+                    <li>Bluetooth 5.0 for seamless connectivity</li>
+                    <li>Built-in mic for hands-free calling</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Wireless range up to 10 meters</li>
+                <li>Rechargeable Li-ion battery</li>
+                <li>USB-C charging port</li>
+                <li>Supports AUX, USB, and microSD card</li>
+                <li>Water-resistant (IPX5)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Output Power: 10W</li>
+                <li>Battery Capacity: 2200mAh</li>
+                <li>Charging Time: 2.5 hours</li>
+                <li>Bluetooth Version: 5.0</li>
+                <li>Dimensions: 180 x 70 x 70 mm</li>
+                <li>Weight: 550g</li>
+                <li>Warranty: 1 Year</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is it waterproof?</summary>
+                <p>It's water-resistant with IPX5 rating but not fully waterproof.</p>
+            </details>
+            <details>
+                <summary>Can I use it while charging?</summary>
+                <p>Yes, the speaker can be used while it's charging.</p>
+            </details>
+            <details>
+                <summary>What devices are compatible?</summary>
+                <p>Compatible with all Bluetooth-enabled smartphones, tablets, and laptops.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Priya S.</h4><p>Excellent sound clarity and bass. Battery lasts the whole day.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rohan M.</h4><p>Compact design. Good value for the price.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Alok J.</h4><p>Very loud for its size. Love the portability.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Neha T.</h4><p>Decent quality, but charging port is a bit fragile.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Jay K.</h4><p>Clear vocals and decent bass. Works well indoors and outdoors.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Tara G.</h4><p>Pairing is smooth. Great for small gatherings.</p></div>
+        <div class="review"><h4><span>★★☆☆☆</span> Vishal P.</h4><p>Sound is fine but battery drains quicker than expected.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

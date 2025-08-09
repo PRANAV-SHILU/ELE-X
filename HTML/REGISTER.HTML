@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ele-x | Register</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/REGISTER.CSS">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="LOGIN.HTML" method="POST" onsubmit="alert('Registered successfully !')">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="LOGIN.HTML">Login here</a></p>
+    </div>
+</body>
+
+</html>

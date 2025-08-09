@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Electric Kettle</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/electric-kettle.jpg" alt="Electric Kettle" />
+            <div class="thumbs">
+                <img src="../../images/electric-kettle_1.jpg" alt="Electric Kettle Side View" onclick="switchImage(this)" />
+                <img src="../../images/electric-kettle_2.jpg" alt="Electric Kettle Handle" onclick="switchImage(this)" />
+                <img src="../../images/electric-kettle_3.jpg" alt="Electric Kettle Lid" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Electric Kettle</div>
+            <div class="rating">★ 4.3 | 540 Ratings & 150 Reviews</div>
+            <div class="price">₹1,299</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Home</strong></div>
+            <div class="social-proof">🔥 45 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>1.5-liter capacity with automatic shut-off</li>
+                    <li>Stainless steel body with sleek design</li>
+                    <li>360-degree cordless base for easy handling</li>
+                    <li>Boils water quickly and efficiently</li>
+                    <li>Heat-resistant handle for safe use</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Power: 1500W</li>
+                <li>Voltage: 220V - 240V</li>
+                <li>Material: Stainless Steel and BPA-free plastic</li>
+                <li>Auto shut-off and boil-dry protection</li>
+                <li>Cord length: 1 meter</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Capacity: 1.5 liters</li>
+                <li>Weight: 900g</li>
+                <li>Dimensions: 22 x 15 x 20 cm</li>
+                <li>Warranty: 1 Year</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it have an automatic shut-off feature?</summary>
+                <p>Yes, it automatically switches off once the water boils.</p>
+            </details>
+            <details>
+                <summary>Is the kettle cordless?</summary>
+                <p>Yes, it has a 360-degree cordless base for convenience.</p>
+            </details>
+            <details>
+                <summary>What material is the kettle made of?</summary>
+                <p>It is made of stainless steel with BPA-free plastic components.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Asha P.</h4><p>Boils water quickly and easy to use. Highly recommended.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rakesh M.</h4><p>Good value for money. Stylish design.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neeta K.</h4><p>Safe and convenient with automatic shutoff.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Sanjay T.</h4><p>Works well, but the handle could be better insulated.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meena S.</h4><p>Perfect for daily use. Easy to clean.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Rohit G.</h4><p>Good product but cord length is short.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Priya L.</h4><p>Highly efficient and safe kettle.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Refrigerator</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Refrigerator.jpg" alt="Refrigerator" />
+            <div class="thumbs">
+                <img src="../../images/refrigerator1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/refrigerator2.jpg" alt="Open View" onclick="switchImage(this)" />
+                <img src="../../images/refrigerator3.jpg" alt="Interior Compartments" onclick="switchImage(this)" />
+                <img src="../../images/refrigerator4.jpg" alt="Side Profile" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Refrigerator</div>
+            <div class="rating">★ 4.5 | 652 Ratings & 143 Reviews</div>
+            <div class="price">₹22,499</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">📦 28 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Energy-efficient inverter compressor</li>
+                    <li>Spacious 260L capacity with frost-free technology</li>
+                    <li>Multi-airflow system for uniform cooling</li>
+                    <li>Vegetable crisper with moisture control</li>
+                    <li>Stabilizer-free operation</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Capacity: 260 Litres</li>
+                <li>Compressor Type: Inverter</li>
+                <li>Number of Shelves: 3 (Toughened Glass)</li>
+                <li>Special Features: Moisture control, fast ice-making</li>
+                <li>Cooling Technology: Multi Air Flow</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Power Supply: 230V / 50Hz</li>
+                <li>Annual Energy Consumption: 190 kWh</li>
+                <li>Noise Level: ≤ 42 dB</li>
+                <li>Refrigerant: R600a (Eco-Friendly)</li>
+                <li>Weight: 48 kg</li>
+                <li>Warranty: 1 year on product, 10 years on compressor</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is this refrigerator suitable for a family of 4?</summary>
+                <p>Yes, the 260L capacity is ideal for a medium-sized family.</p>
+            </details>
+            <details>
+                <summary>Does it work without a stabilizer?</summary>
+                <p>Yes, it has a built-in stabilizer for voltage fluctuation protection.</p>
+            </details>
+            <details>
+                <summary>Is the freezer section frost-free?</summary>
+                <p>Yes, it features frost-free technology for hassle-free maintenance.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Varun K.</h4><p>Spacious and quiet. Keeps everything fresh. Worth the price.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sneha B.</h4><p>Good design and efficient cooling. Veggie box is very handy.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Anand D.</h4><p>Working fine, but delivery was delayed by a day.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Kavita M.</h4><p>Excellent for our family. The interior layout is thoughtful.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Nikhil T.</h4><p>Energy usage is minimal and very stable operation.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Priya G.</h4><p>Silent and efficient. Looks premium too.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Deepak L.</h4><p>Could have better lighting inside, but does the job well.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

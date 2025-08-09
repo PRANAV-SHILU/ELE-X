@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ele-x | Workstation PC Setup</title>
+  <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+  <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+
+  <button onclick="goBack()" class="goback">← Back</button>
+
+  <div class="gallery-section">
+    <div class="main-img">
+      <img id="mainImage" src="../../images/workstation-pc-setup.jpg" alt="Workstation PC Setup" />
+    </div>
+
+    <div class="details-section">
+      <div class="product-title">Workstation PC Setup</div>
+      <div class="rating">★ 4.9 | 2,130 Ratings & 490 Reviews</div>
+      <div class="price">₹1,09,999</div>
+      <div class="original-price">₹1,39,999</div>
+      <div class="discount">Save ₹30,000 (21%)</div>
+      <div class="availability" style="color: green;">In Stock</div>
+      <div class="delivery">Delivery in <strong>7–10 days</strong></div>
+      <div class="seller">Sold by: <strong>Ele-X Workstations</strong></div>
+      <div class="social-proof">👀 87 people viewed this today</div>
+
+      <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Intel Core i9, 32GB RAM, 1TB SSD + 2TB HDD</li>
+          <li>NVIDIA RTX 4070 GPU</li>
+          <li>Pre-installed Windows 11 Pro</li>
+          <li>Includes 4K Monitor, Keyboard & Mouse</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="add">
+    <div class="section">
+      <h2>Product Details</h2>
+      <ul>
+        <li>Ideal for video editing, 3D modeling, and programming</li>
+        <li>Quiet cooling system and RGB cabinet</li>
+        <li>Support for multiple monitors</li>
+        <li>Expandable up to 128GB RAM</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Technical Specifications</h2>
+      <ul class="specs-list">
+        <li>Processor: Intel Core i9 13th Gen</li>
+        <li>RAM: 32GB DDR5</li>
+        <li>Storage: 1TB NVMe SSD + 2TB HDD</li>
+        <li>Graphics: NVIDIA RTX 4070 12GB</li>
+        <li>OS: Windows 11 Pro</li>
+        <li>Accessories: 4K Monitor, RGB Keyboard & Mouse</li>
+      </ul>
+    </div>
+
+    <div class="section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>Can I upgrade GPU later?</summary><p>Yes, GPU is upgradable.</p></details>
+      <details><summary>Is it good for AutoCAD or Blender?</summary><p>Yes, it is optimized for such workloads.</p></details>
+      <details><summary>Does it come with Wi-Fi & Bluetooth?</summary><p>Yes, both Wi-Fi and Bluetooth are included.</p></details>
+    </div>
+  </div>
+
+  <div class="section reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review"><h4><span>★★★★★</span> Raghav D.</h4><p>Beast setup. Handles everything I throw at it.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Sneha R.</h4><p>Great performance, bit pricey though.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Karan J.</h4><p>Perfect for my video editing work.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Aman V.</h4><p>Monitor quality is amazing. Setup was easy.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Tushar S.</h4><p>One of the best workstation builds.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Iqra F.</h4><p>Design and airflow are superb.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Harshit G.</h4><p>Runs Blender and Premiere Pro smoothly.</p></div>
+  </div>
+
+  <div class="section">
+    <h2>Submit Your Review</h2>
+    <form class="review-form" id="reviewForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select rating</option>
+        <option value="1">★ 1 Star</option>
+        <option value="2">★★ 2 Stars</option>
+        <option value="3">★★★ 3 Stars</option>
+        <option value="4">★★★★ 4 Stars</option>
+        <option value="5">★★★★★ 5 Stars</option>
+      </select>
+
+      <label for="comment">Review</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+      <button type="submit">Submit Review</button>
+      <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+    </form>
+  </div>
+
+</body>
+</html>

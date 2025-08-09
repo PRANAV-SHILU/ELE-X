@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | USB Charging Cable</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/usb-charging-cable.jpg" alt="USB Charging Cable" />
+            <div class="thumbs">
+                <img src="../../images/usb_charging_cable_1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/usb_charging_cable_2.jpg" alt="Connector View" onclick="switchImage(this)" />
+                <img src="../../images/usb_charging_cable_3.jpg" alt="Side View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">USB Charging Cable</div>
+            <div class="rating">★ 4.3 | 430 Ratings & 125 Reviews</div>
+            <div class="price">₹199</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Accessories</strong></div>
+            <div class="social-proof">🔌 120 customers bought this today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>High-speed data transfer and charging</li>
+                    <li>Reinforced braided nylon exterior</li>
+                    <li>1-meter length for convenience</li>
+                    <li>Universal USB-A to Type-C</li>
+                    <li>Supports fast charging protocols</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Connector Type: USB-A to USB-C</li>
+                <li>Compatible with Android and USB-C devices</li>
+                <li>Anti-fray and tangle-free</li>
+                <li>Tested for 10,000+ bends</li>
+                <li>Heat-resistant connectors</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Length: 1 meter</li>
+                <li>Material: Braided Nylon</li>
+                <li>Max Current: 3A</li>
+                <li>Data Transfer Rate: Up to 480 Mbps</li>
+                <li>Warranty: 6 Months</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is it compatible with fast charging?</summary>
+                <p>Yes, supports fast charging up to 3A with compatible devices.</p>
+            </details>
+            <details>
+                <summary>Is it tangle-free?</summary>
+                <p>Yes, the braided nylon makes it resistant to tangling and breaking.</p>
+            </details>
+            <details>
+                <summary>Can I use this for data transfer?</summary>
+                <p>Yes, it supports up to 480 Mbps data transfer.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Sneha P.</h4><p>Strong and durable cable. Fast charging works great!</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Raj K.</h4><p>Good value. Using it daily with my phone.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Tarun M.</h4><p>Way better quality than local cables.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Neha S.</h4><p>Works fine, but could be slightly longer.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Dinesh G.</h4><p>Very satisfied. No heating issue.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Alka B.</h4><p>Charges fast and feels premium.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Yusuf P.</h4><p>Not bad. Gets the job done for the price.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

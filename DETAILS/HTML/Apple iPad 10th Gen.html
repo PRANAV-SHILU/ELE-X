@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Apple iPad 10th Gen</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Apple iPad 10th Gen.avif" alt="Apple iPad 10th Gen" />
+            <div class="thumbs">
+                <img src="../../images/iPad side.avif" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/iPad back.avif" alt="Back View" onclick="switchImage(this)" />
+                <img src="../../images/iPad box.avif" alt="Packaging" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Apple iPad 10th Gen</div>
+            <div class="rating">★ 4.5 | 980 Ratings & 230 Reviews</div>
+            <div class="price">₹39,900</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–6 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 28 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>10.9-inch Liquid Retina display with True Tone</li>
+                    <li>A14 Bionic chip with Neural Engine</li>
+                    <li>12MP Wide camera and 12MP Ultra Wide front camera</li>
+                    <li>Supports Apple Pencil (1st generation)</li>
+                    <li>All-day battery life with fast charging support</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Operating System: iPadOS 16</li>
+                <li>Storage Options: 64GB, 256GB</li>
+                <li>Processor: Apple A14 Bionic</li>
+                <li>Connectivity: Wi-Fi 6, optional 5G</li>
+                <li>Battery: Built-in rechargeable lithium-ion</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Display: 10.9 inches, 2360 x 1640 pixels</li>
+                <li>Camera: 12 MP rear, 12 MP front</li>
+                <li>Weight: 477 grams</li>
+                <li>Dimensions: 248.6 x 179.5 x 7 mm</li>
+                <li>Charging: USB-C fast charging supported</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does the iPad support Apple Pencil?</summary>
+                <p>Yes, it supports the 1st generation Apple Pencil.</p>
+            </details>
+            <details>
+                <summary>Is cellular connectivity available?</summary>
+                <p>Yes, models with 5G cellular connectivity are available.</p>
+            </details>
+            <details>
+                <summary>What colors are available?</summary>
+                <p>Available in Blue, Pink, Yellow, and Silver.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Neha S.</h4><p>Great performance and display. Perfect for my daily use.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Rajat P.</h4><p>Battery lasts all day and the speed is excellent.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Simran K.</h4><p>Good value for money with solid features.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Karan M.</h4><p>Wish it had more storage options.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Anika D.</h4><p>Beautiful design and very responsive.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rahul T.</h4><p>Perfect for work and entertainment.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Priya G.</h4><p>Highly recommend this iPad for students.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

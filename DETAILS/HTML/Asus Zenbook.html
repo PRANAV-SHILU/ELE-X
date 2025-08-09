@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Asus Zenbook</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Asus Zenbook.jpg" alt="Asus Zenbook" />
+            <div class="thumbs">
+                <img src="../../images/Asus Zenbook-1.jpg" alt="Asus Zenbook Side View" onclick="switchImage(this)" />
+                <img src="../../images/Asus Zenbook-2.jpg" alt="Asus Zenbook Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/Asus Zenbook-3.jpg" alt="Asus Zenbook Screen" onclick="switchImage(this)" />
+                <img src="../../images/Asus Zenbook-4.jpg" alt="Asus Zenbook Ports" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Asus Zenbook</div>
+            <div class="rating">★ 4.5 | 580 Ratings & 132 Reviews</div>
+            <div class="price">₹69,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 28 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>AMD Ryzen 5 5500U Processor</li>
+                    <li>8GB DDR4 RAM | 512GB SSD</li>
+                    <li>14" Full HD NanoEdge Display</li>
+                    <li>Windows 11 Home | Fingerprint Sensor</li>
+                    <li>Lightweight, Sleek Design</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: AMD Ryzen 5 5500U Hexa-core</li>
+                <li>Graphics: Integrated AMD Radeon Graphics</li>
+                <li>Display: 14 inch Full HD (1920 x 1080)</li>
+                <li>Operating System: Windows 11 Home</li>
+                <li>Battery Life: Up to 12 hours</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>RAM: 8GB DDR4 3200MHz</li>
+                <li>Storage: 512GB PCIe NVMe SSD</li>
+                <li>Weight: 1.19 kg</li>
+                <li>Dimensions: 12.5" x 8.1" x 0.6"</li>
+                <li>Ports: USB-C, USB-A, HDMI, headphone jack</li>
+                <li>Warranty: 1 year onsite service</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is the RAM upgradeable?</summary>
+                <p>No, the RAM is soldered onto the motherboard and is not upgradeable.</p>
+            </details>
+            <details>
+                <summary>Does it support fast charging?</summary>
+                <p>Yes, it supports fast charging with the supplied charger.</p>
+            </details>
+            <details>
+                <summary>Does it come with pre-installed software?</summary>
+                <p>Yes, Windows 11 Home and essential utilities are pre-installed.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★☆</span> Ananya K.</h4>
+            <p>Lightweight and powerful for my daily work and entertainment.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Rohit P.</h4>
+            <p>Excellent battery life and solid performance. Highly recommend.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Meera J.</h4>
+            <p>Design is sleek and build quality is top-notch.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Sunil M.</h4>
+            <p>Good laptop but speakers could be louder.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Kavita S.</h4>
+            <p>Great value for money, perfect for students and professionals.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Pranav D.</h4>
+            <p>Highly efficient machine with seamless multitasking.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Deepa L.</h4>
+            <p>Screen quality is excellent, overall happy with the purchase.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

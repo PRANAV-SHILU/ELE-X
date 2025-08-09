@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ele-x | Shop Now</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/SHOPNOW.CSS">
+    <script src="../JS/SHOPNOW.JS"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Ele-x</div>
+        <div class="menu">
+            <a href="HOME.HTML">Home</a>
+            <a href="SHOPNOW.HTML">Shop Now</a>
+            <a href="MEGADEALS.HTML">Mega Deals</a>
+            <a href="VOUCHER.HTML">Vouchers</a>  
+            <a href="CART.HTML">Cart</a>
+            <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
+            <a href="ABOUTUS.HTML">About Us</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="LOGIN.HTML">Login</a>
+        </div>
+          <div class="animated-line"></div>
+    </nav>
+
+    <div class="content">
+        <h1>Shop Now</h1>
+        <div class="filters">
+            <button onclick="showAll()">All</button>
+            <button onclick="filterCategory('electronics')">Electronics</button>
+            <button onclick="filterCategory('smartphone')">Smartphone</button>
+            <button onclick="filterCategory('laptops')">Laptops</button>
+            <button onclick="filterCategory('home-appliances')">Home Appliances</button>
+            <button onclick="filterCategory('other')">Other</button>
+        </div>
+
+        <div class="products" id="all-products">
+            <!-- Electronics -->
+            <div class="product electronics">
+                <img src="../images/Smart LED TV.jpg" alt="Smart LED TV">
+                <h3>Smart LED TV</h3>
+                <p>₹ 34,999</p>
+                <button onclick="addToCart('Smart LED TV', 34999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Smart LED TV.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product electronics">
+                <img src="../images/Bluetooth Speaker.jpg" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p>₹ 2,499</p>
+                <button onclick="addToCart('Bluetooth Speaker', 2499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Bluetooth Speaker .html">
+                    <button>View Details</button>
+                </a>
+            </div>
+            <div class="product electronics">
+                <img src="../images/Wireless Bluetooth Device.jpg" alt="Wireless Bluetooth Device">
+                <h3>Wireless Bluetooth Device</h3>
+                <p>₹ 1,199</p>
+                <button onclick="addToCart('Wireless Bluetooth Device', 1199)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Wireless Bluetooth Device.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product electronics">
+                <img src="../images/Air Conditioner.avif" alt="Air Conditioner">
+                <h3>Air Conditioner</h3>
+                <p>₹ 29,999</p>
+                <button onclick="addToCart('Air Conditioner', 29999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Air Conditioner.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product electronics">
+                <img src="../images/Washing Machine.jpg" alt="Washing Machine">
+                <h3>Washing Machine</h3>
+                <p>₹ 18,999</p>
+                <button onclick="addToCart('Washing Machine', 18999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Washing Machine.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product electronics">
+                <img src="../images/Refrigerator.jpg" alt="Refrigerator">
+                <h3>Refrigerator</h3>
+                <p>₹ 22,499</p>
+                <button onclick="addToCart('Refrigerator', 22499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Refrigerator.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product electronics">
+                <img src="../images/Projector.png" alt="Projector">
+                <h3>Projector</h3>
+                <p>₹ 15,999</p>
+                <button onclick="addToCart('Projector', 15999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Projector.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product electronics">
+                <img src="../images/Digital Camera.jpeg" alt="Digital Camera">
+                <h3>Digital Camera</h3>
+                <p>₹ 27,499</p>
+                <button onclick="addToCart('Digital Camera', 27499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Digital Camera.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+
+            <!-- Smartphone -->
+            <div class="product smartphone">
+                <img src="../images/Samsung Galaxy S20.jpg" alt="Samsung Galaxy S20">
+                <h3>Samsung Galaxy S20</h3>
+                <p>₹ 29,999</p>
+                <button onclick="addToCart('Samsung Galaxy S20', 29999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Samsung S20.HTML">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/iPhone 13.webp" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p>₹ 58,999</p>
+                <button onclick="addToCart('iPhone 13', 58999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/iPhone 13.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/Apple iPad 10th Gen.avif" alt="Apple iPad 10th Gen">
+                <h3>Apple iPad 10th Gen</h3>
+                <p>₹ 39,900</p>
+                <button onclick="addToCart('Apple iPad 10th Gen', 39900)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Apple iPad 10th Gen.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/Samsung Galaxy Tab S6 Lite.jpg" alt="Samsung Galaxy Tab S6 Lite">
+                <h3>Samsung Galaxy Tab S6 Lite</h3>
+                <p>₹ 23,999</p>
+                <button onclick="addToCart('Samsung Galaxy Tab S6 Lite', 23999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Samsung Galaxy Tab S6 Lite.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/Smartwatch Pro 8.jpg" alt="Smartwatch Pro 8">
+                <h3>Smartwatch Pro 8</h3>
+                <p>₹ 3,499</p>
+                <button onclick="addToCart('Smartwatch Pro 8', 3499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Smartwatch Pro 8.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+
+            <div class="product smartphone">
+                <img src="../images/Amazfit Bip 3.jpg" alt="Amazfit Bip 3">
+                <h3>Amazfit Bip 3</h3>
+                <p>₹ 2,799</p>
+                <button onclick="addToCart('Amazfit Bip 3', 2799)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Amazfit Bip 3.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/OnePlus Buds Z2.png" alt="OnePlus Buds Z2">
+                <h3>OnePlus Buds Z2</h3>
+                <p>₹ 4,999</p>
+                <button onclick="addToCart('OnePlus Buds Z2', 4999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/OnePlus Buds Z2.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/Realme Buds Air 5.webp" alt="Realme Buds Air 5">
+                <h3>Realme Buds Air 5</h3>
+                <p>₹ 3,699</p>
+                <button onclick="addToCart('Realme Buds Air 5', 3699)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Realme Buds Air 5.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/boAt Bassheads 100.webp" alt="boAt Bassheads 100">
+                <h3>boAt Bassheads 100</h3>
+                <p>₹ 399</p>
+                <button onclick="addToCart('boAt Bassheads 100', 399)">Add to Cart</button>
+                <a href="../DETAILS/HTML/boAt Bassheads 100.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product smartphone">
+                <img src="../images/JBL C100SI.jpg" alt="JBL C100SI">
+                <h3>JBL C100SI</h3>
+                <p>₹ 749</p>
+                <button onclick="addToCart('JBL C100SI', 749)">Add to Cart</button>
+                <a href="../DETAILS/HTML/JBL C100SI.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+
+            <!-- Laptops -->
+            <div class="product laptops">
+                <img src="../images/gaming-laptop.jpg" alt="Gaming Laptop">
+                <h3>Gaming Laptop</h3>
+                <p>₹ 75,999</p>
+                <button onclick="addToCart('Gaming Laptop', 75999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Gaming Laptop.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/lenovo-thinkpad-x1.jpg" alt="Lenovo Thinkpad">
+                <h3>Lenovo Thinkpad</h3>
+                <p>₹ 54,999</p>
+                <button onclick="addToCart('Lenovo Thinkpad', 54999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Lenovo Thinkpad.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/macbook-pro.jpg" alt="Macbook Pro">
+                <h3>Macbook Pro</h3>
+                <p>₹ 1,29,999</p>
+                <button onclick="addToCart('Macbook Pro', 129999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Macbook Pro.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/dell-xps.jpg" alt="Dell XPS">
+                <h3>Dell XPS</h3>
+                <p>₹ 1,04,999</p>
+                <button onclick="addToCart('Dell XPS', 104999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Dell XPS.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/hp-envy.jpg" alt="HP Envy">
+                <h3>HP Envy</h3>
+                <p>₹ 89,999</p>
+                <button onclick="addToCart('HP Envy', 89999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/HP Envy.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+            <div class="product laptops">
+                <img src="../images/Asus Zenbook.jpg" alt="Asus Zenbook">
+                <h3>Asus Zenbook</h3>
+                <p>₹ 69,999</p>
+                <button onclick="addToCart('Asus Zenbook', 69999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Asus Zenbook.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/asus-rog-strix-g15.jpg" alt="ASUS ROG Strix G15">
+                <h3>ASUS ROG Strix G15</h3>
+                <p>₹ 92,999</p>
+                <button onclick="addToCart('ASUS ROG Strix G15', 92999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/ASUS ROG Strix G15.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/hp-pavilion-14.jpg" alt="HP Pavilion 14">
+                <h3>HP Pavilion 14 - Coding Edition</h3>
+                <p>₹ 58,499</p>
+                <button onclick="addToCart('HP Pavilion 14 - Coding Edition', 58499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/HP Pavilion 14 - Coding Edition.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/acer-aspire-3.jpg" alt="Acer Aspire 3">
+                <h3>Budget Laptop - Acer Aspire 3</h3>
+                <p>₹ 34,990</p>
+                <button onclick="addToCart('Budget Laptop - Acer Aspire 3', 34990)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Budget Laptop - Acer Aspire 3.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/dell-inspiron-15.jpg" alt="Dell Inspiron 15">
+                <h3>Laptop Computer - Dell Inspiron 15</h3>
+                <p>₹ 47,499</p>
+                <button onclick="addToCart('Laptop Computer - Dell Inspiron 15', 47499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Laptop Computer - Dell Inspiron 15.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/hp-aio-desktop.jpg" alt="HP All-in-One Desktop">
+                <h3>Desktop Computer - HP AIO</h3>
+                <p>₹ 52,000</p>
+                <button onclick="addToCart('Desktop Computer - HP AIO', 52000)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Desktop Computer - HP AIO.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/samsung-24-inch-monitor.jpg" alt="Samsung 24-inch Monitor">
+                <h3>Computer Monitor - Samsung 24"</h3>
+                <p>₹ 9,499</p>
+                <button onclick="addToCart('Computer Monitor - Samsung 24', 9499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Computer Monitor - Samsung 24.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product laptops">
+                <img src="../images/lenovo-ideacentre-aio.jpg" alt="Lenovo IdeaCentre AIO">
+                <h3>Computer - Lenovo IdeaCentre AIO</h3>
+                <p>₹ 61,000</p>
+                <button onclick="addToCart('Computer - Lenovo IdeaCentre AIO', 61000)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Computer - Lenovo IdeaCentre AIO.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Home Appliances -->
+            <div class="product home-appliances">
+                <img src="../images/electric-geyser.jpg" alt="Electric Geyser">
+                <h3>Electric Geyser</h3>
+                <p>₹ 7,499</p>
+                <button onclick="addToCart('Electric Geyser', 7499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Electric Geyser.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/mixer-grinder.jpg" alt="Mixer Grinder">
+                <h3>Mixer Grinder</h3>
+                <p>₹ 2,799</p>
+                <button onclick="addToCart('Mixer Grinder', 2799)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Mixer Grinder.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/electric-grinder.jpg" alt="Electric Grinder">
+                <h3>Electric Grinder</h3>
+                <p>₹ 3,199</p>
+                <button onclick="addToCart('Electric Grinder', 3199)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Electric Grinder.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/food-processor.jpg" alt="Food Processor">
+                <h3>Food Processor</h3>
+                <p>₹ 5,499</p>
+                <button onclick="addToCart('Food Processor', 5499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Food Processor.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/gas-electric-stove-combo.jpg" alt="Gas & Electric Stove Combo">
+                <h3>Gas & Electric Stove Combo</h3>
+                <p>₹ 6,999</p>
+                <button onclick="addToCart('Gas & Electric Stove Combo', 6999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Gas & Electric Stove Combo.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/electric-kettle.jpg" alt="Electric Kettle">
+                <h3>Electric Kettle</h3>
+                <p>₹ 1,299</p>
+                <button onclick="addToCart('Electric Kettle', 1299)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Electric Kettle.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+            <div class="product home-appliances">
+                <img src="../images/pop-up-toaster.jpg" alt="Pop-up Toaster">
+                <h3>Pop-up Toaster</h3>
+                <p>₹ 999</p>
+                <button onclick="addToCart('Pop-up Toaster', 999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Pop-up Toaster.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/vacuum-cleaner.jpg" alt="Vacuum Cleaner">
+                <h3>Vacuum Cleaner</h3>
+                <p>₹ 4,899</p>
+                <button onclick="addToCart('Vacuum Cleaner', 4899)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Vacuum Cleaner.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/coffee-maker.jpg" alt="Coffee Maker">
+                <h3>Coffee Maker</h3>
+                <p>₹ 3,499</p>
+                <button onclick="addToCart('Coffee Maker', 3499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Coffee Maker.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/microwave-oven.jpg" alt="Microwave Oven">
+                <h3>Microwave Oven</h3>
+                <p>₹ 6,999</p>
+                <button onclick="addToCart('Microwave Oven', 6999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Microwave Oven.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product home-appliances">
+                <img src="../images/convection-oven.jpg" alt="Convection Oven">
+                <h3>Convection Oven</h3>
+                <p>₹ 8,299</p>
+                <button onclick="addToCart('Convection Oven', 8299)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Convection Oven.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Other -->
+            <div class="product other">
+                <img src="../images/usb-charging-cable.jpg" alt="USB Charging Cable">
+                <h3>USB Charging Cable</h3>
+                <p>₹ 199</p>
+                <button onclick="addToCart('USB Charging Cable', 199)">Add to Cart</button>
+                <a href="../DETAILS/HTML/USB Charging Cable.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/fast-charger.jpg" alt="Fast Charger">
+                <h3>Fast Charger</h3>
+                <p>₹ 499</p>
+                <button onclick="addToCart('Fast Charger', 499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Fast Charger.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/wall-charger.jpg" alt="Wall Charger">
+                <h3>Wall Charger</h3>
+                <p>₹ 549</p>
+                <button onclick="addToCart('Wall Charger', 549)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Wall Charger.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/power-bank-10000mah.jpg" alt="Power Bank 10000mAh">
+                <h3>Power Bank 10000mAh</h3>
+                <p>₹ 1,199</p>
+                <button onclick="addToCart('Power Bank 10000mAh', 1199)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Power Bank 10000mAh.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+
+
+            <div class="product other">
+                <img src="../images/hdmi-vga-audio-cable-combo.jpg" alt="HDMI/VGA/Audio Cable">
+                <h3>HDMI/VGA/Audio Cable</h3>
+                <p>₹ 299</p>
+                <button onclick="addToCart('HDMI/VGA/Audio Cable', 299)">Add to Cart</button>
+                <a href="../DETAILS/HTML/HDMI/VGA/Audio Cable.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/usb-hub-4-port.jpg" alt="USB Hub 4-Port">
+                <h3>USB Hub 4-Port</h3>
+                <p>₹ 399</p>
+                <button onclick="addToCart('USB Hub 4-Port', 399)">Add to Cart</button>
+                <a href="../DETAILS/HTML/USB Hub 4-Port.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/screen-cleaner-kit.jpg" alt="Screen Cleaner Kit">
+                <h3>Screen Cleaner Kit</h3>
+                <p>₹ 149</p>
+                <button onclick="addToCart('Screen Cleaner Kit', 149)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Screen Cleaner Kit.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/bluetooth-tracker.jpg" alt="Bluetooth Tracker">
+                <h3>Bluetooth Tracker</h3>
+                <p>₹ 899</p>
+                <button onclick="addToCart('Bluetooth Tracker', 899)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Bluetooth Tracker.html"><button>View Details</button></a>
+            </div>
+            
+            <div class="product other">
+                <img src="../images/mini-portable-speaker.jpg" alt="Mini Portable Speaker">
+                <h3>Mini Portable Speaker</h3>
+                <p>₹ 699</p>
+                <button onclick="addToCart('Mini Portable Speaker', 699)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Mini Portable Speaker.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/silicone-phone-case.jpg" alt="Silicone Phone Case">
+                <h3>Silicone Phone Case</h3>
+                <p>₹ 299</p>
+                <button onclick="addToCart('Silicone Phone Case', 299)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Silicone Phone Case.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/tempered-glass-screen-protector.jpg" alt="Screen Protector">
+                <h3>Screen Protector</h3>
+                <p>₹ 199</p>
+                <button onclick="addToCart('Screen Protector', 199)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Screen Protector.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/laptop-bag.jpg" alt="Laptop Bag">
+                <h3>Laptop Bag</h3>
+                <p>₹ 899</p>
+                <button onclick="addToCart('Laptop Bag', 899)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Laptop Bag.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/wireless-keyboard.jpg" alt="Wireless Keyboard">
+                <h3>Wireless Keyboard</h3>
+                <p>₹ 1,299</p>
+                <button onclick="addToCart('Wireless Keyboard', 1299)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Wireless Keyboard.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/wireless-mouse.jpg" alt="Wireless Mouse">
+                <h3>Wireless Mouse</h3>
+                <p>₹ 699</p>
+                <button onclick="addToCart('Wireless Mouse', 699)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Wireless Mouse.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/external-hard-drive-1tb.jpg" alt="External Hard Drive 1TB">
+                <h3>External Hard Drive 1TB</h3>
+                <p>₹ 4,499</p>
+                <button onclick="addToCart('External Hard Drive 1TB', 4499)">Add to Cart</button>
+                <a href="../DETAILS/HTML/External Hard Drive 1TB.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/64gb-pen-drive.jpg" alt="64GB Pen Drive">
+                <h3>64GB Pen Drive</h3>
+                <p>₹ 599</p>
+                <button onclick="addToCart('64GB Pen Drive', 599)">Add to Cart</button>
+                <a href="../DETAILS/HTML/64GB Pen Drive.html"><button>View Details</button></a>
+            </div>
+
+            <div class="product other">
+                <img src="../images/workstation-pc-setup.jpg" alt="Workstation PC Setup">
+                <h3>Workstation PC Setup</h3>
+                <p>₹ 1,09,999</p>
+                <button onclick="addToCart('Workstation PC Setup', 109999)">Add to Cart</button>
+                <a href="../DETAILS/HTML/Workstation PC Setup.html"><button>View Details</button></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function addToCart(name, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart!');
+        }
+    </script>
+
+</body>
+
+</html>

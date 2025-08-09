@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ele-x | Silicone Phone Case</title>
+  <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+  <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+
+  <button onclick="goBack()" class="goback">← Back</button>
+
+  <div class="gallery-section">
+    <div class="main-img">
+      <img id="mainImage" src="../../images/silicone-phone-case.jpg" alt="Silicone Phone Case" />
+    </div>
+
+    <div class="details-section">
+      <div class="product-title">Silicone Phone Case</div>
+      <div class="rating">★ 4.5 | 1,150 Ratings & 210 Reviews</div>
+      <div class="price">₹249</div>
+      <div class="original-price">₹599</div>
+      <div class="discount">Save ₹350 (58%)</div>
+      <div class="availability" style="color: green;">In Stock</div>
+      <div class="delivery">Delivery in <strong>3–5 days</strong></div>
+      <div class="seller">Sold by: <strong>Ele-X Store</strong></div>
+      <div class="social-proof">👀 32 people viewed this today</div>
+
+      <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Shockproof and anti-drop protection</li>
+          <li>Soft matte finish with perfect grip</li>
+          <li>Precise cut-outs for ports and camera</li>
+          <li>Fingerprint & smudge-resistant</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="add">
+    <div class="section">
+      <h2>Product Details</h2>
+      <ul>
+        <li>Made from high-quality liquid silicone</li>
+        <li>Compatible with most popular phone models</li>
+        <li>Lightweight yet durable</li>
+        <li>Available in multiple colors</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Technical Specifications</h2>
+      <ul class="specs-list">
+        <li>Material: Liquid Silicone</li>
+        <li>Weight: 60g</li>
+        <li>Finish: Matte</li>
+        <li>Compatibility: Universal</li>
+        <li>Color Options: Black, Blue, Red</li>
+      </ul>
+    </div>
+
+    <div class="section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>Does it support wireless charging?</summary><p>Yes, it is wireless charging compatible.</p></details>
+      <details><summary>Can I clean it with water?</summary><p>Yes, it is washable and reusable.</p></details>
+      <details><summary>Does it turn yellow over time?</summary><p>No, it's anti-yellowing and fade-resistant.</p></details>
+    </div>
+  </div>
+
+  <div class="section reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review"><h4><span>★★★★★</span> Reema T.</h4><p>Perfect fit, soft and sleek.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Jay S.</h4><p>Good grip and color.</p></div>
+    <div class="review"><h4><span>★★★☆☆</span> Harshita K.</h4><p>Attracts dust but protects well.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Kabir M.</h4><p>Looks premium and stylish.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Isha P.</h4><p>Delivered early, quality is good.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Mohit R.</h4><p>Best case in this price range.</p></div>
+    <div class="review"><h4><span>★★☆☆☆</span> Alok V.</h4><p>Not as snug as expected, but okay for basic use.</p></div>
+  </div>
+
+  <div class="section">
+    <h2>Submit Your Review</h2>
+    <form class="review-form" id="reviewForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select rating</option>
+        <option value="1">★ 1 Star</option>
+        <option value="2">★★ 2 Stars</option>
+        <option value="3">★★★ 3 Stars</option>
+        <option value="4">★★★★ 4 Stars</option>
+        <option value="5">★★★★★ 5 Stars</option>
+      </select>
+      
+      <label for="comment">Review</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+      
+      <button type="submit">Submit Review</button>
+      <div id="successMessage" class="success-message" style="display:none;">
+        Thank you for your review!
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | 4K Smart TV</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/4K_Smart_TV.jpg" alt="4K Smart TV Main Image" />
+            <div class="thumbs">
+                <img src="../../../images/4K_Smart_TV 1.jpg" alt="4K Smart TV" onclick="switchImage(this)" />
+                <img src="../../images/4K_Smart_TV 2.jpg" alt="4K Smart TV" onclick="switchImage(this)" />
+                <img src="../../images/4K_Smart_TV 3.jpg" alt="4K Smart TV" onclick="switchImage(this)" />
+                <img src="../../images/4K_Smart_TV 4.jpg" alt="4K Smart TV" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">4K Smart TV</div>
+            <div class="rating">★ 4.6 | 1,200 Ratings & 250 Reviews</div>
+            <div class="price">₹34,999</div>
+            <div class="original-price">₹45,000</div>
+            <div class="discount">Save ₹10,001 (22%)</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>5–7 days</strong> | Free Installation</div>
+            <div class="seller">Sold by: <strong>Ele-X Official Partner</strong></div>
+            <div class="social-proof">👀 30 people viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Ultra HD 4K Resolution Display</li>
+                    <li>Built-in Voice Control & AI Assistant</li>
+                    <li>Preloaded Streaming Apps: Netflix, Prime Video, YouTube</li>
+                    <li>Smart Connectivity: Wi-Fi, HDMI, USB</li>
+                    <li>Energy Efficient with Sleek Design</li>
+                </ul>
+
+                <!-- <button>
+                    Buy Now
+                </button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>55-inch LED panel with HDR support</li>
+                <li>Voice commands compatible with Google Assistant & Alexa</li>
+                <li>Multiple HDMI and USB ports for external devices</li>
+                <li>Remote control with shortcut buttons for streaming apps</li>
+                <li>Energy Star certified for reduced power consumption</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Screen Size: 55 inches</li>
+                <li>Resolution: 3840 x 2160 (4K UHD)</li>
+                <li>Refresh Rate: 60 Hz</li>
+                <li>Operating System: Custom Smart OS</li>
+                <li>Connectivity: Wi-Fi, Bluetooth 5.0, HDMI x3, USB x2</li>
+                <li>Power Consumption: 110W</li>
+                <li>Weight: 14.5 kg</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does this TV support Netflix and Prime Video apps?</summary>
+                <p>Yes, both apps come pre-installed and ready to use.</p>
+            </details>
+            <details>
+                <summary>Is the TV compatible with voice assistants?</summary>
+                <p>Yes, it supports Google Assistant and Alexa voice commands.</p>
+            </details>
+            <details>
+                <summary>What warranty does this product come with?</summary>
+                <p>It includes a 1-year manufacturer warranty with an option to extend.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Ankit R.</h4>
+            <p>Excellent picture quality and very responsive smart features.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Priya S.</h4>
+            <p>Good value for money. Installation was quick and professional.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Rohit K.</h4>
+            <p>Loved the voice control feature — very convenient.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Neha M.</h4>
+            <p>Overall good but the remote could be more intuitive.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Sunil P.</h4>
+            <p>Sharp colors and easy connectivity.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Kavita J.</h4>
+            <p>Perfect TV for binge-watching my favorite shows.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★☆☆☆</span> Deepak N.</h4>
+            <p>Had some minor software glitches initially, but support was helpful.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

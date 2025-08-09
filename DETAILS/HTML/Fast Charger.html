@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Fast Charger</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/fast-charger.jpg" alt="Fast Charger" />
+            <div class="thumbs">
+                <img src="../../images/fast_charger_1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/fast_charger_2.jpg" alt="Plug View" onclick="switchImage(this)" />
+                <img src="../../images/fast_charger_3.jpg" alt="Boxed View" onclick="switchImage(this)" />
+            </div>
+        </div>
+        <div class="details-section">
+            <div class="product-title">Fast Charger</div>
+            <div class="rating">★ 4.3 | 740 Ratings & 180 Reviews</div>
+            <div class="price">₹499</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Essentials</strong></div>
+            <div class="social-proof">⚡ 97 customers purchased in the last 24 hours</div>
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>18W fast charging support</li>
+                    <li>Compatible with QC 3.0 and USB-PD</li>
+                    <li>Smart IC protection</li>
+                    <li>Durable and compact design</li>
+                    <li>Universal USB-A output</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Charger type: Wall</li>
+                <li>Output: 5V/3A, 9V/2A, 12V/1.5A</li>
+                <li>Fast charging supported</li>
+                <li>Over-voltage and short-circuit protection</li>
+                <li>Includes LED charging indicator</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Power Output: 18W</li>
+                <li>Input Voltage: 100-240V AC</li>
+                <li>Port: USB-A</li>
+                <li>Weight: 70g</li>
+                <li>Warranty: 6 Months</li>
+            </ul>
+        </div>
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details><summary>Is it compatible with iPhones?</summary><p>Yes, when used with a USB-A to Lightning cable.</p></details>
+            <details><summary>Does it support fast charging for Android?</summary><p>Yes, with QC 3.0 and USB PD devices.</p></details>
+            <details><summary>Can I use it for power banks?</summary><p>Yes, compatible with most modern power banks.</p></details>
+        </div>
+    </div>
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Anita R.</h4><p>Charges super quick. Build quality is solid too.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Suresh V.</h4><p>Works great with my OnePlus and Redmi phones.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Vikram S.</h4><p>Gets slightly warm but charges fast.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Deepa M.</h4><p>Best charger I’ve used in this price range.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Imran K.</h4><p>Works as promised. Looks nice too.</p></div>
+        <div class="review"><h4><span>★★☆☆☆</span> Neeraj L.</h4><p>Stopped working after a few months.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ritu J.</h4><p>Charges my power bank in half the time.</p></div>
+    </div>
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

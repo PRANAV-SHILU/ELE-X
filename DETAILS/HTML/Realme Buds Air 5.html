@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Realme Buds Air 5</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Realme Buds Air 5.webp" alt="Realme Buds Air 5" />
+            <div class="thumbs">
+                <img src="../../images/Realme Buds Air 5.webp" alt="Realme Buds Air 5" onclick="switchImage(this)" />
+                <img src="../../images/Realme Buds Air 5-side.webp" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/Realme Buds Air 5-case.webp" alt="Charging Case" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Realme Buds Air 5</div>
+            <div class="rating">★ 4.3 | 520 Ratings & 90 Reviews</div>
+            <div class="price">₹3,699</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Accessories</strong></div>
+            <div class="social-proof">📦 15 units sold in last 24 hrs</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Bluetooth 5.2 connectivity</li>
+                    <li>26 hours total playback with case</li>
+                    <li>Low latency mode for gaming</li>
+                    <li>IPX4 water resistance</li>
+                    <li>Dual mic noise cancellation</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2>Product Details</h2>
+        <ul>
+            <li>Driver Size: 10mm</li>
+            <li>Charging Time: 1.5 hours</li>
+            <li>Bluetooth Range: 10 meters</li>
+            <li>Battery: 40mAh (earbud), 480mAh (case)</li>
+            <li>Weight: 4.1g per earbud</li>
+        </ul>
+    </div>
+
+    <div class="section faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>Does it support fast charging?</summary>
+            <p>Yes, 10 minutes of charge gives up to 3 hours playback.</p>
+        </details>
+        <details>
+            <summary>Can it connect to two devices simultaneously?</summary>
+            <p>No, it supports connection to one device at a time.</p>
+        </details>
+        <details>
+            <summary>Is the charging case wireless?</summary>
+            <p>No, it charges via USB-C cable only.</p>
+        </details>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Priya S.</h4><p>Exceptional sound and battery life!</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rahul M.</h4><p>Great connectivity, comfortable fit.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ananya K.</h4><p>Good value for premium earbuds.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Deepak S.</h4><p>Decent noise cancellation but average mic quality.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Kavita L.</h4><p>Perfect for workouts and calls.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Suresh P.</h4><p>Battery lasts longer than expected.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Meera D.</h4><p>Occasional connectivity drops but manageable.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

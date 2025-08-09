@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Gaming Laptop</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/gaming-laptop.jpg" alt="Gaming Laptop" />
+            <div class="thumbs">
+                <img src="../../images/gaming-laptop-1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/gaming-laptop-2.jpg" alt="Keyboard View" onclick="switchImage(this)" />
+                <img src="../../images/gaming-laptop-3.jpg" alt="Side Ports" onclick="switchImage(this)" />
+                <img src="../../images/gaming-laptop-4.jpg" alt="Back View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Gaming Laptop</div>
+            <div class="rating">★ 4.7 | 1200 Ratings & 310 Reviews</div>
+            <div class="price">₹75,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>5–7 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 85 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i7 12th Gen Processor</li>
+                    <li>NVIDIA GeForce RTX 3060 6GB Graphics</li>
+                    <li>16GB DDR4 RAM, 512GB SSD Storage</li>
+                    <li>15.6" Full HD IPS Display with 144Hz Refresh Rate</li>
+                    <li>RGB Backlit Keyboard and Advanced Cooling System</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: Intel Core i7-12700H (12 cores)</li>
+                <li>Graphics: NVIDIA GeForce RTX 3060 6GB GDDR6</li>
+                <li>RAM: 16GB DDR4 (expandable to 32GB)</li>
+                <li>Storage: 512GB NVMe SSD</li>
+                <li>Display: 15.6-inch Full HD (1920x1080), 144Hz</li>
+                <li>Battery Life: Up to 6 hours under normal usage</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Operating System: Windows 11 Home</li>
+                <li>Ports: USB 3.2, USB-C, HDMI, Ethernet, Audio Jack</li>
+                <li>Weight: 2.3 kg</li>
+                <li>Wireless: Wi-Fi 6, Bluetooth 5.2</li>
+                <li>Cooling System: Dual-fan with heat pipes</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is this laptop suitable for AAA gaming titles?</summary>
+                <p>Yes, the RTX 3060 GPU and i7 processor handle AAA games at high settings smoothly.</p>
+            </details>
+            <details>
+                <summary>Can I upgrade the RAM and storage later?</summary>
+                <p>Yes, the laptop supports RAM expansion up to 32GB and additional storage via an extra SSD slot.</p>
+            </details>
+            <details>
+                <summary>Does it come with pre-installed software?</summary>
+                <p>Windows 11 Home is pre-installed, along with basic drivers. No bloatware included.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★★</span> Arjun K.</h4>
+            <p>Fantastic performance and smooth gameplay. The cooling system keeps temps low.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Sneha M.</h4>
+            <p>Great value for the specs. Battery life could be better though.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Rohit S.</h4>
+            <p>Love the RGB keyboard and the display refresh rate is awesome for gaming.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Priya J.</h4>
+            <p>Good overall laptop, runs all games smoothly. Lightweight and portable.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Manish T.</h4>
+            <p>Fast SSD and ample RAM. Would recommend for gamers on a budget.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Kavita R.</h4>
+            <p>Performance is good but noisy fans during heavy load.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Deepak L.</h4>
+            <p>Excellent build quality and very responsive system.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

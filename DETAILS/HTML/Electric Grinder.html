@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Electric Grinder</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/electric-grinder.jpg" alt="Electric Grinder" />
+            <div class="thumbs">
+                <img src="../../images/electric-grinder-1.jpg" alt="Grinder Blades" onclick="switchImage(this)" />
+                <img src="../../images/electric-grinder-2.jpg" alt="Motor" onclick="switchImage(this)" />
+                <img src="../../images/electric-grinder-3.jpg" alt="Jar Lid" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Electric Grinder</div>
+            <div class="rating">★ 4.0 | 350 Ratings & 90 Reviews</div>
+            <div class="price">₹3,199</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">🔥 37 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Sharp stainless steel blades</li>
+                    <li>Compact and lightweight design</li>
+                    <li>Easy to operate with one-touch control</li>
+                    <li>Durable motor with overload protection</li>
+                    <li>Capacity: 1.5 Liters</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Voltage: 220V</li>
+                <li>Power Consumption: 600W</li>
+                <li>Blade Material: Stainless Steel</li>
+                <li>Noise Level: Medium</li>
+                <li>Weight: 3.2 kg</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Motor RPM: 18000</li>
+                <li>Capacity: 1.5 Liters</li>
+                <li>Safety Features: Overload Protection, Auto Shutoff</li>
+                <li>Dimensions: 25 x 20 x 20 cm</li>
+                <li>Weight: 3.2 kg</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is the grinder suitable for dry and wet grinding?</summary>
+                <p>Yes, it is designed for both dry and wet grinding.</p>
+            </details>
+            <details>
+                <summary>What is the warranty period?</summary>
+                <p>It comes with a 2-year warranty on motor and parts.</p>
+            </details>
+            <details>
+                <summary>Can the blades be replaced?</summary>
+                <p>Yes, blades are replaceable and available as spare parts.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Suresh M.</h4><p>Works well and has strong blades.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Priya L.</h4><p>Compact design and easy to clean.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Amit K.</h4><p>Good product but motor is a bit noisy.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ananya R.</h4><p>Very efficient for daily grinding.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Naveen S.</h4><p>Decent product but could be more powerful.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Kavita P.</h4><p>Great value for money.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rohit B.</h4><p>Reliable and durable.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

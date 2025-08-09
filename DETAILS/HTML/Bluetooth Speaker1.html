@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Bluetooth Speaker</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Bluetooth_Speaker.jpg" alt="Bluetooth Speaker Main Image" />
+            <div class="thumbs">
+                <img src="../../images/Bluetooth_Speaker 1.jpg" alt="Bluetooth Speaker" onclick="switchImage(this)" />
+                <img src="../../images/Bluetooth_Speaker 2.jpg" alt="Bluetooth Speaker" onclick="switchImage(this)" />
+                <img src="../../images/Bluetooth_Speaker 3.jpg" alt="Bluetooth Speaker" onclick="switchImage(this)" />
+                <img src="../../images/Bluetooth_Speaker 4.jpg" alt="Bluetooth Speaker" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Bluetooth Speaker</div>
+            <div class="rating">★ 4.3 | 890 Ratings & 150 Reviews</div>
+            <div class="price">₹1,499</div>
+            <div class="original-price">₹2,299</div>
+            <div class="discount">Save ₹800 (35%)</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Verified Seller</strong></div>
+            <div class="social-proof">👀 22 people viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Compact, Portable Wireless Speaker</li>
+                    <li>Deep Bass with Clear Sound</li>
+                    <li>12-Hour Battery Life on Single Charge</li>
+                    <li>Bluetooth 5.0 for Seamless Connectivity</li>
+                    <li>Water-resistant Design (IPX4)</li>
+                </ul>
+
+                <!-- <button>
+                    Buy Now
+                </button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Supports hands-free calling with built-in microphone</li>
+                <li>Robust build for outdoor use</li>
+                <li>Compact size for easy portability</li>
+                <li>Compatible with all Bluetooth-enabled devices</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Speaker Output: 10W RMS</li>
+                <li>Battery Capacity: 2000mAh</li>
+                <li>Charging Time: 3 hours</li>
+                <li>Bluetooth Range: Up to 10 meters</li>
+                <li>Weight: 350 grams</li>
+                <li>Water Resistance: IPX4</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is this speaker compatible with smartphones?</summary>
+                <p>Yes, it supports all Bluetooth-enabled smartphones and tablets.</p>
+            </details>
+            <details>
+                <summary>Can I connect multiple speakers together?</summary>
+                <p>No, this model does not support multi-speaker pairing.</p>
+            </details>
+            <details>
+                <summary>Does it support hands-free calls?</summary>
+                <p>Yes, it has a built-in microphone for hands-free calling.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Rahul S.</h4>
+            <p>Clear sound and great bass for the price.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Sneha M.</h4>
+            <p>Battery lasts long and easy to carry around.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Arjun K.</h4>
+            <p>Perfect for outdoor use, water resistance is a plus.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Meera P.</h4>
+            <p>Good sound but could improve on Bluetooth stability.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Deepak R.</h4>
+            <p>Exceeded my expectations, highly recommended.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Anjali T.</h4>
+            <p>Compact design and solid performance.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★☆☆☆</span> Nitin V.</h4>
+            <p>Sometimes disconnects when far from the phone.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

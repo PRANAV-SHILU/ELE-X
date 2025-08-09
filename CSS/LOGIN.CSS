@@ -1,0 +1,254 @@
+  body {
+      background-color: orange;
+      font-family: arial, sans-serif;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      height: 100vh;
+  }
+
+
+  /*fixed*/
+  nav {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      padding-left: 30px;
+      border-bottom: 1px solid #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+
+  nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  nav .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+  }
+
+  nav a:hover {
+      color: #ff6600;
+  }
+
+  .menu {
+      margin-left: 400px;
+      margin-right: 53px;
+  }
+
+  .logo {
+      color: white;
+  }
+
+  /*end*/
+
+  .login {
+      background: linear-gradient(to bottom, #222, #000);
+      color: orange;
+      padding: 20px;
+      width: 300px;
+      height: 330px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 10px 30px 55px rgba(0, 0, 0, 50);
+      margin-top: -45px;
+      margin-bottom: -80px;
+  }
+
+  .remember {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+  }
+
+  input {
+      padding: 8PX;
+      border-radius: 4px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      outline: none;
+  }
+
+  h1 {
+      margin-bottom: 20px;
+      color: white;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  label {
+      text-align: left;
+      font-size: 14px;
+  }
+
+  button {
+      background: orange;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+  }
+
+  button:hover {
+      background: #e6b800;
+  }
+
+  a {
+      color: orange;
+
+  }
+
+  a:hover {
+      color: yellow;
+  }
+
+  
+ .animated-line {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .animated-line::before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(to left, gold 50%, transparent 0%);
+     background-size: 200% 100%;
+     animation: moveLine 20s linear infinite;
+ }
+ 
+@keyframes moveLine {
+  0% {
+    background-position: -100% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+  /* Responsive Nav for Login - Mobile View Only */
+  @media (max-width: 768px) {
+
+      nav {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px 20px;
+      }
+
+      .logo {
+          font-size: 20px;
+          margin-bottom: 10px;
+          color: white;
+      }
+
+      .menu {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          margin: 0;
+          padding-left: 0;
+      }
+
+      .menu a {
+          display: block;
+          margin: 6px 0;
+          font-size: 15px;
+          padding: 5px 0;
+          width: 100%;
+      }
+      .login{
+        margin-top: 100px;
+      }
+  }
+
+  /* Large screens: desktops and laptops */
+  @media (min-width: 1025px) and (max-width: 1366px) {
+      .menu {
+          margin-left: 250px;
+      }
+
+      .login {
+          width: 320px;
+          height: auto;
+      }
+  }
+
+  /* Extra large desktops */
+  @media (min-width: 1367px) {
+      .menu {
+          margin-left: 400px;
+      }
+
+      .login {
+          width: 340px;
+          height: auto;
+      }
+  }
+
+  /* Medium devices: tablets (portrait) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+      nav {
+          flex-direction: row;
+          align-items: center;
+          padding: 15px 25px;
+      }
+
+      .menu {
+          margin-left: 100px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+      }
+
+      .menu a {
+          margin: 5px 10px;
+          font-size: 15px;
+      }
+
+      .login {
+          width: 300px;
+          padding: 20px;
+      }
+  }
+
+  /* Small phones (landscape & portrait) */
+  @media (max-width: 480px) {
+      .login {
+          width: 95%;
+          margin-top: 100px;
+      }
+
+      .menu a {
+          font-size: 14px;
+          margin: 6px 0;
+      }
+
+      input,
+      button {
+          font-size: 14px;
+          padding: 8px;
+      }
+  }

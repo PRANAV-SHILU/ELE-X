@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | ASUS ROG Strix G15</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/asus-rog-strix-g15.jpg" alt="ASUS ROG Strix G15" />
+            <div class="thumbs">
+                <img src="../../images/rog-g15-front.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/rog-g15-keyboard.jpg" alt="Keyboard Close-up" onclick="switchImage(this)" />
+                <img src="../../images/rog-g15-side.jpg" alt="Side Ports" onclick="switchImage(this)" />
+                <img src="../../images/rog-g15-back.jpg" alt="Rear View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">ASUS ROG Strix G15</div>
+            <div class="rating">★ 4.6 | 781 Ratings & 204 Reviews</div>
+            <div class="price">₹92,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">🔥 46 units sold in the last 12 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>AMD Ryzen 7 6800H Processor</li>
+                    <li>NVIDIA GeForce RTX 3060 Graphics</li>
+                    <li>16GB DDR5 RAM, 1TB SSD</li>
+                    <li>RGB Backlit Keyboard, Wi-Fi 6</li>
+                    <li>15.6" FHD 144Hz Anti-Glare Display</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Display: 15.6-inch FHD, 144Hz Refresh Rate</li>
+                <li>Processor: AMD Ryzen 7 6800H</li>
+                <li>Graphics: NVIDIA RTX 3060 6GB GDDR6</li>
+                <li>Memory: 16GB DDR5 RAM</li>
+                <li>Storage: 1TB NVMe SSD</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Ports: 3x USB-A, 1x USB-C, HDMI 2.0, Ethernet, 3.5mm Combo Jack</li>
+                <li>Operating System: Windows 11 Home</li>
+                <li>Cooling: Dual-Fan Smart Cooling Technology</li>
+                <li>Battery: 90Wh, up to 10 hours usage</li>
+                <li>Weight: 2.3 kg</li>
+                <li>Warranty: 1 Year On-site Warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it support RAM upgrade?</summary>
+                <p>Yes, it supports up to 32GB DDR5 RAM.</p>
+            </details>
+            <details>
+                <summary>Is the display G-Sync compatible?</summary>
+                <p>No, this model does not support G-Sync.</p>
+            </details>
+            <details>
+                <summary>Can I connect an external monitor?</summary>
+                <p>Yes, via HDMI or USB-C DisplayPort support.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Aditya R.</h4><p>Beast performance for gaming. Worth every rupee!</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rhea S.</h4><p>Fast and powerful, but slightly bulky for travel.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Mohit K.</h4><p>Battery backup is decent, but performance is top-notch.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Prakash N.</h4><p>The RGB lighting and cooling are superb.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Harsha V.</h4><p>Got a heating issue while on high load but manageable.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha D.</h4><p>Display quality and refresh rate are very satisfying.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Vivek T.</h4><p>Runs all modern games at high settings. Impressive!</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

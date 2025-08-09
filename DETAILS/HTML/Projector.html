@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Projector</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Projector.png" alt="Projector" />
+            <div class="thumbs">
+                <img src="../../images/projector_1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/projector_2.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/projector_3.jpg" alt="Projection" onclick="switchImage(this)" />
+                <img src="../../images/projector_4.jpg" alt="In Use" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Projector</div>
+            <div class="rating">★ 4.5 | 450 Ratings & 110 Reviews</div>
+            <div class="price">₹15,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 20 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>High-definition 1080p projection</li>
+                    <li>Portable and lightweight design</li>
+                    <li>Multiple input options: HDMI, USB, VGA</li>
+                    <li>Built-in stereo speakers</li>
+                    <li>Compatible with laptops, smartphones, and gaming consoles</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Projection technology: LCD</li>
+                <li>Brightness: 3000 lumens</li>
+                <li>Throw distance: 1.2 - 4 meters</li>
+                <li>Resolution: 1920 x 1080 pixels</li>
+                <li>Speaker output: 2W x 2</li>
+                <li>Power consumption: 120W</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Weight: 1.8 kg</li>
+                <li>Dimensions: 20 x 15 x 7 cm</li>
+                <li>Connectivity: HDMI, USB, VGA, 3.5mm Audio Jack</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is this projector suitable for outdoor use?</summary>
+                <p>Yes, it can be used outdoors but should be shielded from direct sunlight for best viewing.</p>
+            </details>
+            <details>
+                <summary>Does it support wireless connectivity?</summary>
+                <p>No, this model does not have built-in wireless connectivity.</p>
+            </details>
+            <details>
+                <summary>What is the warranty period?</summary>
+                <p>It comes with a 1-year manufacturer warranty.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Arjun S.</h4><p>Excellent picture quality and easy to set up.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha M.</h4><p>Good brightness but the speakers could be louder.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Rishi K.</h4><p>Perfect for movie nights and presentations.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sneha L.</h4><p>Compact and lightweight, great for travel.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Vikram P.</h4><p>Works well but needs a dark room for best results.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Anjali T.</h4><p>Value for money and versatile connectivity options.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sameer R.</h4><p>Highly recommend for home entertainment setups.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

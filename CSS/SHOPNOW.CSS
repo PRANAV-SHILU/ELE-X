@@ -1,0 +1,178 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: white;
+    }
+
+    nav {
+        background-color: #0d0d0d;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        border-bottom: 1px solid #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav .menu a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        color: #ff6600;
+    }
+
+    .menu {
+        margin-right: 53px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 30px 0 10px;
+        font-size: 36px;
+    }
+
+    .filters {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .filters button {
+        background-color: #ff8000;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 50px 50px;
+    }
+
+    .product {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 235px;
+    }
+
+    .product img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        transition: transform 0.3s;
+    }
+
+    img:hover {
+        transform: translateY(-20px);
+    }
+
+    .product h3 {
+        margin: 10px 0 5px;
+        font-size: 18px;
+        color: #ffd700;
+    }
+
+    .product p {
+        margin: 5px 0 15px;
+        font-size: 16px;
+    }
+
+    .product button {
+        background-color: #ff8000;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .filters button:hover {
+        background-color: #ffd700;
+        color: black;
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    button:hover {
+        background-color: #ffd700;
+        color: black;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .content h1 {
+        color: #ff6600;
+        margin-bottom: 35px;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+        border: 1px solid orange;
+    }
+
+    p {
+        color: #00ffcc;
+    }
+    
+ .animated-line {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .animated-line::before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(to left, gold 50%, transparent 0%);
+     background-size: 200% 100%;
+     animation: moveLine 20s linear infinite;
+ }
+ 
+@keyframes moveLine {
+  0% {
+    background-position: -100% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}

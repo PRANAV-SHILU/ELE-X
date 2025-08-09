@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Ultra Thin Laptop</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/DETAILS.CSS">
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <!-- Gallery & Details -->
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Ultra Thin Laptop.jpg" alt="Ultra Thin Laptop Main Image" />
+            <div class="thumbs">
+                <!-- For simplicity, using the same image multiple times; you can customize as needed -->
+                <img src="../../images/Ultra Thin Laptop.jpg" alt="Ultra Thin Laptop" onclick="switchImage(this)" />
+                <img src="../../images/Ultra Thin Laptop.jpg" alt="Ultra Thin Laptop" onclick="switchImage(this)" />
+                <img src="../../images/Ultra Thin Laptop.jpg" alt="Ultra Thin Laptop" onclick="switchImage(this)" />
+                <img src="../../images/Ultra Thin Laptop.jpg" alt="Ultra Thin Laptop" onclick="switchImage(this)" />
+                <img src="../../images/Ultra Thin Laptop.jpg" alt="Ultra Thin Laptop" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Ultra Thin Laptop</div>
+            <div class="rating">★ 4.2 | 1,100 Ratings & 250 Reviews</div> <!-- placeholder -->
+            <div class="price">₹54,990</div>
+            <div class="original-price">₹69,990</div> <!-- placeholder -->
+            <div class="discount">You save ₹15,000 (21%)</div> <!-- placeholder -->
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Verified Seller</strong></div>
+            <div class="social-proof">👀 56 people viewed this product today</div> <!-- placeholder -->
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i7 11th Gen Processor</li>
+                    <li>16 GB RAM | 512 GB SSD</li>
+                    <li>15.6 inch Full HD Display</li>
+                    <li>Lightweight & Ultra Portable</li>
+                    <li>Windows 11 Pro</li>
+                </ul>
+
+                <!-- <button>
+                    Buy Now
+                </button> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Elegant design with aluminum chassis</li>
+                <li>Backlit keyboard with fingerprint sensor</li>
+                <li>Up to 12 hours battery life</li>
+                <li>Thunderbolt 4 and USB-C ports</li>
+            </ul>
+        </div>
+
+        <!-- Specs -->
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Operating System: Windows 11 Pro</li>
+                <li>Processor: Intel Core i7 1165G7</li>
+                <li>Display: 15.6" Full HD IPS</li>
+                <li>RAM: 16 GB DDR4</li>
+                <li>Storage: 512 GB SSD</li>
+                <li>Battery: Up to 12 hours</li>
+                <li>Connectivity: Wi-Fi 6, Bluetooth 5.1</li>
+                <li>Weight: 1.2 kg</li>
+            </ul>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it support fast charging?</summary>
+                <p>Yes, supports 65W fast charging.</p>
+            </details>
+            <details>
+                <summary>Is the RAM expandable?</summary>
+                <p>No, RAM is soldered and not expandable.</p>
+            </details>
+            <details>
+                <summary>Does it come with pre-installed software?</summary>
+                <p>Yes, Windows 11 Pro and MS Office trial.</p>
+            </details>
+        </div>
+    </div>
+
+    <!-- Sample Reviews -->
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Rahul S.</h4>
+            <p>Excellent performance and very portable. Battery life is impressive.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Anjali M.</h4>
+            <p>Beautiful design and fast. Great value for the price.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Suresh K.</h4>
+            <p>Good laptop but a bit pricey compared to competitors.</p>
+        </div>
+    </div>
+
+    <!-- Review Submission Form -->
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

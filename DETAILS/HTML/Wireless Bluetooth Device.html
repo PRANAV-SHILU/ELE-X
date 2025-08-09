@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Wireless Bluetooth Device</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Wireless Bluetooth Device.jpg" alt="Wireless Bluetooth Device" />
+            <div class="thumbs">
+                <img src="../../images/bluetooth device 1.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/bluetooth device 2.jpg" alt="Top View" onclick="switchImage(this)" />
+                <img src="../../images/bluetooth device 3.jpg" alt="With Packaging" onclick="switchImage(this)" />
+                <img src="../../images/bluetooth device 4.jpg" alt="In Use" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Wireless Bluetooth Device</div>
+            <div class="rating">★ 4.2 | 820 Ratings & 174 Reviews</div>
+            <div class="price">₹1,199</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 32 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Universal Bluetooth receiver with 3.5mm jack</li>
+                    <li>Plug and play, compatible with car stereos and speakers</li>
+                    <li>Built-in mic for hands-free calls</li>
+                    <li>Rechargeable battery with 8 hours of playtime</li>
+                    <li>Compact and lightweight design</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Bluetooth version: 5.0 with 10m range</li>
+                <li>Battery life: up to 8 hours on a full charge</li>
+                <li>Charging time: approx. 1.5 hours</li>
+                <li>Compatible with phones, tablets, laptops, and car stereos</li>
+                <li>USB charging cable included</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Audio Output: 3.5mm AUX</li>
+                <li>Charging Port: Micro USB</li>
+                <li>Bluetooth Range: Up to 10 meters</li>
+                <li>Battery: 110mAh Lithium-Ion</li>
+                <li>Weight: 15 grams</li>
+                <li>Warranty: 6 months from date of purchase</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Can I use it with a car stereo?</summary>
+                <p>Yes, it works perfectly with any AUX-supported car stereo system.</p>
+            </details>
+            <details>
+                <summary>Does it support voice assistants?</summary>
+                <p>Yes, it supports Google Assistant and Siri via long press on the button.</p>
+            </details>
+            <details>
+                <summary>Is it rechargeable?</summary>
+                <p>Yes, it has a built-in rechargeable battery with 8 hours of usage time.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Rahul T.</h4><p>Easy to use and great sound quality. Perfect for my old car stereo.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meena V.</h4><p>Battery lasts long and connects quickly every time.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ishaan R.</h4><p>Works well, but mic quality could be better during calls.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sneha K.</h4><p>Super useful and compact. Delivered on time too.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Tanmay D.</h4><p>Great buy for the price. Ideal for home speaker setup.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ritika B.</h4><p>Pairs easily, even with my laptop. Good clarity and range.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Vinay P.</h4><p>Overall good, though AUX wire could be of better quality.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

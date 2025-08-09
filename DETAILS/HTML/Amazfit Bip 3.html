@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Amazfit Bip 3</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Amazfit Bip 3.jpg" alt="Amazfit Bip 3" />
+            <div class="thumbs">
+                <img src="../../images/Amazfit Bip 3 side.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/Amazfit Bip 3 strap.jpg" alt="Strap View" onclick="switchImage(this)" />
+                <img src="../../images/Amazfit Bip 3 box.jpg" alt="Packaging" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Amazfit Bip 3</div>
+            <div class="rating">★ 4.1 | 520 Ratings & 110 Reviews</div>
+            <div class="price">₹2,799</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 25 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>1.69-inch HD display with customizable watch faces</li>
+                    <li>Up to 14 days battery life</li>
+                    <li>Heart rate monitoring and sleep tracking</li>
+                    <li>Water-resistant up to 5 ATM</li>
+                    <li>Bluetooth 5.0 connectivity</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Display: 1.69 inches TFT LCD</li>
+                <li>Battery: 280mAh, up to 14 days usage</li>
+                <li>Connectivity: Bluetooth 5.0</li>
+                <li>Water Resistance: 5 ATM</li>
+                <li>Compatibility: Android and iOS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Weight: 31 grams</li>
+                <li>Dimensions: 46 x 33 x 9.7 mm</li>
+                <li>Sensors: Optical heart rate sensor, accelerometer, geomagnetic sensor</li>
+                <li>Charging: Magnetic charging dock included</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is the Amazfit Bip 3 compatible with iPhones?</summary>
+                <p>Yes, it supports both Android and iOS devices.</p>
+            </details>
+            <details>
+                <summary>How long does the battery last on a full charge?</summary>
+                <p>Typically up to 14 days with normal usage.</p>
+            </details>
+            <details>
+                <summary>Is it water-resistant?</summary>
+                <p>Yes, it has a 5 ATM water resistance rating.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Rohan M.</h4><p>Excellent battery life and accurate tracking.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Anjali K.</h4><p>Very comfortable and lightweight.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Vishal T.</h4><p>Good value for money smartwatch.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Sneha L.</h4><p>Wish it had more sports modes.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Priya S.</h4><p>Reliable for daily fitness monitoring.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Arjun B.</h4><p>Sometimes the Bluetooth connection drops.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meena P.</h4><p>Great budget smartwatch with good features.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

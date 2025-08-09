@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Smart LED TV</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Smart LED TV.jpg" alt="Smart LED TV" />
+            <div class="thumbs">
+                <img src="../../images/smarttv1.jpg" alt="TV Front View" onclick="switchImage(this)" />
+                <img src="../../images/smarttv2.jpg" alt="TV Side View" onclick="switchImage(this)" />
+                <img src="../../images/smarttv3.jpg" alt="TV Back Panel" onclick="switchImage(this)" />
+                <img src="../../images/smarttv4.jpg" alt="TV Remote" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Smart LED TV</div>
+            <div class="rating">★ 4.6 | 1,720 Ratings & 340 Reviews</div>
+            <div class="price">₹34,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Installation</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📺 Over 70 people purchased this today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>43-inch Full HD Smart LED Display</li>
+                    <li>Built-in Wi-Fi, Netflix, Prime Video, and YouTube apps</li>
+                    <li>20W Dolby Audio for cinematic sound</li>
+                    <li>Screen Mirroring from phone to TV</li>
+                    <li>Multiple HDMI and USB ports</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Screen Size: 43 inches</li>
+                <li>Resolution: Full HD (1920x1080)</li>
+                <li>Operating System: Android TV</li>
+                <li>Refresh Rate: 60Hz</li>
+                <li>Power Consumption: 75W</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Display Type: LED</li>
+                <li>Audio Output: 20W (Dolby Audio)</li>
+                <li>Ports: 3 HDMI, 2 USB</li>
+                <li>Connectivity: Wi-Fi, Bluetooth, Ethernet</li>
+                <li>Warranty: 1 year on product + 1 year additional on panel</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does this TV support screen mirroring?</summary>
+                <p>Yes, via Miracast or Chromecast features.</p>
+            </details>
+            <details>
+                <summary>Can I install apps on this TV?</summary>
+                <p>Yes, it comes with Google Play Store access.</p>
+            </details>
+            <details>
+                <summary>Is wall mounting included?</summary>
+                <p>Yes, wall mount and installation are free with delivery.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Karan M.</h4><p>Excellent display quality and easy-to-use interface.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha S.</h4><p>Sound quality is amazing, but remote could be improved.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Prakash R.</h4><p>Very happy with this purchase. Fast delivery and setup.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Sneha D.</h4><p>App performance is good, but sometimes lags with Wi-Fi.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Abhishek V.</h4><p>Picture clarity is great for the price.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Jaya T.</h4><p>Worth buying. Feels premium in looks and performance.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Nikhil G.</h4><p>Basic remote, but the TV itself is great value.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

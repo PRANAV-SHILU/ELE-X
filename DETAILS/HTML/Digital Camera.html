@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Digital Camera</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Digital Camera.jpeg" alt="Digital Camera" />
+            <div class="thumbs">
+                <img src="../../images/digital_camera_1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/digital_camera_2.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/digital_camera_3.jpg" alt="Back View" onclick="switchImage(this)" />
+                <img src="../../images/digital_camera_4.jpg" alt="In Use" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Digital Camera</div>
+            <div class="rating">★ 4.7 | 780 Ratings & 210 Reviews</div>
+            <div class="price">₹27,499</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 45 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>24.2 MP CMOS sensor for high-resolution photos</li>
+                    <li>Full HD 1080p video recording</li>
+                    <li>3-inch LCD display with touch screen</li>
+                    <li>Wi-Fi and Bluetooth connectivity</li>
+                    <li>Lightweight and ergonomic design</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Image sensor: CMOS 24.2 megapixels</li>
+                <li>Video resolution: 1920 x 1080 pixels</li>
+                <li>ISO sensitivity: 100–25600</li>
+                <li>Storage media: SD/SDHC/SDXC cards</li>
+                <li>Battery life: Approx. 400 shots per charge</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Lens mount: EF-S</li>
+                <li>Screen size: 3 inches</li>
+                <li>Connectivity: Wi-Fi, Bluetooth</li>
+                <li>Weight: 450 grams</li>
+                <li>Dimensions: 12 x 9 x 7 cm</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it support 4K video recording?</summary>
+                <p>No, this model supports Full HD 1080p video recording only.</p>
+            </details>
+            <details>
+                <summary>Is Wi-Fi required for image transfer?</summary>
+                <p>Wi-Fi is optional; you can also use a USB cable to transfer images.</p>
+            </details>
+            <details>
+                <summary>What is the battery life?</summary>
+                <p>Approx. 400 shots per full charge.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Priya S.</h4><p>Fantastic image quality and easy to use interface.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Karan J.</h4><p>Good value for money but lacks 4K support.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ananya R.</h4><p>Lightweight and great for travel photography.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sneha P.</h4><p>Wi-Fi connectivity works flawlessly.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Rohit M.</h4><p>Battery life could be better.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meera T.</h4><p>Excellent customer support and warranty.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Vivek S.</h4><p>Highly recommend for beginners and pros alike.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

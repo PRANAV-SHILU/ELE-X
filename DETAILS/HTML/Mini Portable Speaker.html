@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ele-x | Mini Portable Speaker</title>
+  <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+  <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+
+  <button onclick="goBack()" class="goback">← Back</button>
+
+  <div class="gallery-section">
+    <div class="main-img">
+      <img id="mainImage" src="../../images/mini-portable-speaker.jpg" alt="Mini Portable Speaker" />
+    </div>
+
+    <div class="details-section">
+      <div class="product-title">Mini Portable Speaker</div>
+      <div class="rating">★ 4.3 | 420 Ratings & 110 Reviews</div>
+      <div class="price">₹699</div>
+      <div class="original-price">₹1,099</div>
+      <div class="discount">Save ₹400 (36%)</div>
+      <div class="availability" style="color: green;">In Stock</div>
+      <div class="delivery">Delivery in <strong>4–6 days</strong></div>
+      <div class="seller">Sold by: <strong>Ele-X Official</strong></div>
+      <div class="social-proof">👀 19 people viewed this product today</div>
+
+      <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Bluetooth 5.0 connectivity</li>
+          <li>Deep bass with 6-hour battery life</li>
+          <li>Compact, lightweight and travel-friendly</li>
+          <li>Built-in mic for hands-free calling</li>
+        </ul>
+        <!-- <button>Buy Now</button> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="add">
+    <div class="section">
+      <h2>Product Details</h2>
+      <ul>
+        <li>Supports all Bluetooth-enabled devices</li>
+        <li>USB-C charging support</li>
+        <li>Rugged build for portability</li>
+        <li>360° sound output</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Technical Specifications</h2>
+      <ul class="specs-list">
+        <li>Connectivity: Bluetooth 5.0</li>
+        <li>Battery Life: 6 hours</li>
+        <li>Range: 10 meters</li>
+        <li>Charging Port: USB-C</li>
+        <li>Weight: 210g</li>
+      </ul>
+    </div>
+
+    <div class="section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>Is AUX supported?</summary><p>No, only Bluetooth is supported.</p></details>
+      <details><summary>Does it have a microphone?</summary><p>Yes, built-in mic included for calls.</p></details>
+      <details><summary>Can I use it while charging?</summary><p>Yes, it works while charging.</p></details>
+    </div>
+  </div>
+
+  <div class="section reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review"><h4><span>★★★★★</span> Ravi M.</h4><p>Excellent bass and compact size.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Neha G.</h4><p>Perfect for travel. Loud enough.</p></div>
+    <div class="review"><h4><span>★★★☆☆</span> Arjun V.</h4><p>Sound is good but battery could be better.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Tanya P.</h4><p>Very easy to connect and use.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Faizan K.</h4><p>Build quality is impressive.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Zoya I.</h4><p>Best mini speaker in this price.</p></div>
+    <div class="review"><h4><span>★★☆☆☆</span> Sameer T.</h4><p>Not waterproof as claimed.</p></div>
+  </div>
+
+  <div class="section">
+    <h2>Submit Your Review</h2>
+    <form class="review-form" id="reviewForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select rating</option>
+        <option value="1">★ 1 Star</option>
+        <option value="2">★★ 2 Stars</option>
+        <option value="3">★★★ 3 Stars</option>
+        <option value="4">★★★★ 4 Stars</option>
+        <option value="5">★★★★★ 5 Stars</option>
+      </select>
+      <label for="comment">Review</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+      <button type="submit">Submit Review</button>
+      <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+    </form>
+  </div>
+
+</body>
+</html>

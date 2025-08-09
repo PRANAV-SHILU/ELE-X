@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | USB Hub 4‑Port</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/usb-hub-4-port.jpg" alt="USB Hub 4‑Port" />
+            <div class="thumbs">
+                <img src="../../images/usb-hub-4-port-1.jpg" alt="USB Hub Top View" onclick="switchImage(this)" />
+                <img src="../../images/usb-hub-4-port-2.jpg" alt="USB Hub Ports View" onclick="switchImage(this)" />
+                <img src="../../images/usb-hub-4-port-3.jpg" alt="USB Hub in Use" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">USB Hub 4‑Port</div>
+            <div class="rating">★ 4.2 | 540 Ratings & 120 Reviews</div>
+            <div class="price">₹399</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele‑X Electronics</strong></div>
+            <div class="social-proof">🔌 34 units sold today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>4 × USB 3.0 ports (5 Gbps)</li>
+                    <li>Compact & lightweight design</li>
+                    <li>Supports plug‑and‑play</li>
+                    <li>Built‑in over-current protection</li>
+                    <li>Durable aluminum casing</li>
+                </ul>
+            <!--    <button onclick="addToCart('USB Hub 4‑Port', 399)">Add to Cart</button>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>USB‑A connector to four USB‑A 3.0 ports.</li>
+                <li>Backward compatible with USB 2.0/1.1 devices.</li>
+                <li>No external power needed for basic peripherals.</li>
+                <li>Compact size: 8.5 × 3 × 1.5 cm.</li>
+                <li>LED activity indicator.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Interface: USB 3.0 (backward USB 2.0)</li>
+                <li>Data Rate: Up to 5 Gbps</li>
+                <li>Cable Length: 15 cm</li>
+                <li>Power: Bus-powered</li>
+                <li>Dimensions: 8.5 × 3 × 1.5 cm</li>
+                <li>Weight: 45 g</li>
+                <li>Warranty: 6 months</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it need external power?</summary>
+                <p>No, it is bus‑powered and works directly when plugged in.</p>
+            </details>
+            <details>
+                <summary>Will it charge my phone faster?</summary>
+                <p>No, it supports data only—charging speed depends on the phone/port.</p>
+            </details>
+            <details>
+                <summary>Can I connect external HDDs?</summary>
+                <p>Yes, though high‑power drives may need a powered hub instead.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Neha T.</h4><p>Super helpful—no more switching cables between devices!</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Karan M.</h4><p>Fast and compact. A little warm when multiple drives are connected.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Priya S.</h4><p>Works fine, but wish it had a longer cable.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Rishi D.</h4><p>Basic hub, does the job. Would have preferred USB‑C version too.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sneha R.</h4><p>Excellent transfer speeds—love the aluminum body.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Amit V.</h4><p>Great little gadget—never expected such quality at this price.</p></div>
+        <div class="review"><h4><span>★★☆☆☆</span> Meera P.</h4><p>One port stopped working after a month, but seller replaced it quickly.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you!</div>
+        </form>
+    </div>
+</body>
+
+</html>

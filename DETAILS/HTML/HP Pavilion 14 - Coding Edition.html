@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | HP Pavilion 14 - Coding Edition</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/hp-pavilion-14.jpg" alt="HP Pavilion 14" />
+            <div class="thumbs">
+                <img src="../../images/hp1.jpg" alt="Left View" onclick="switchImage(this)" />
+                <img src="../../images/hp2.jpg" alt="Right View" onclick="switchImage(this)" />
+                <img src="../../images/hp3.jpg" alt="Keyboard Closeup" onclick="switchImage(this)" />
+                <img src="../../images/hp4.jpg" alt="Screen Display" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">HP Pavilion 14 - Coding Edition</div>
+            <div class="rating">★ 4.4 | 892 Ratings & 217 Reviews</div>
+            <div class="price">₹58,499</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Technologies</strong></div>
+            <div class="social-proof">💻 41 developers purchased this in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i5 12th Gen Processor</li>
+                    <li>16GB DDR4 RAM and 512GB SSD</li>
+                    <li>14" Full HD Anti-glare Display</li>
+                    <li>Backlit Keyboard, Fingerprint Reader</li>
+                    <li>Pre-installed Windows 11 + MS Office</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Model: Pavilion 14 - cd2004TU</li>
+                <li>Graphics: Intel Iris Xe Graphics</li>
+                <li>Battery Life: Up to 8 hours</li>
+                <li>Body: Aluminum top cover, thin bezel</li>
+                <li>Webcam: HP Wide Vision HD Camera</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Processor: Intel Core i5-1235U (10-core)</li>
+                <li>Display: 14" FHD IPS (1920 x 1080)</li>
+                <li>RAM: 16GB DDR4-3200</li>
+                <li>Storage: 512GB PCIe NVMe M.2 SSD</li>
+                <li>Weight: 1.41 kg</li>
+                <li>Ports: USB-C, HDMI, USB 3.2 x2, Audio jack</li>
+                <li>Warranty: 1 Year Onsite HP Warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it support Linux OS?</summary>
+                <p>Yes, Linux can be installed and runs smoothly alongside Windows.</p>
+            </details>
+            <details>
+                <summary>Is the RAM expandable?</summary>
+                <p>No, 16GB RAM is soldered and not expandable.</p>
+            </details>
+            <details>
+                <summary>Is this good for long coding sessions?</summary>
+                <p>Yes, the backlit keyboard and performance make it ideal for developers.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Aman G.</h4><p>Perfect for coding! Fast boot, no lag with VS Code or IntelliJ.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Nisha T.</h4><p>Great laptop, but a Type-C charger would have been better.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ishan M.</h4><p>Excellent performance and display quality.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Rakesh B.</h4><p>Build quality is solid. Good for professional use too.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Tanuja S.</h4><p>Runs well, but battery backup could improve a bit.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Dev P.</h4><p>Great for developers. Good thermals, no heating issue.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Pooja D.</h4><p>Value for money. Lightweight and sleek design.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

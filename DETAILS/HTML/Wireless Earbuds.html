@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Wireless Earbuds</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+
+    <button onclick="goBack()" class="goback">
+        ← Back
+    </button>
+
+    <!-- Gallery & Details -->
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Wireless Earbuds.jpg" alt="Wireless Earbuds Main Image" />
+            <div class="thumbs">
+                <img src="../../images/Wireless Earbuds 1.jpg" alt="Wireless Earbuds" onclick="switchImage(this)" />
+                <img src="../../images/Wireless Earbuds 2.jpg" alt="Wireless Earbuds" onclick="switchImage(this)" />
+                <img src="../../images/Wireless Earbuds 3.jpg" alt="Wireless Earbuds" onclick="switchImage(this)" />
+                <img src="../../images/Wireless Earbuds 4.jpg" alt="Wireless Earbuds" onclick="switchImage(this)" />
+                <img src="../images/Wireless Earbuds 5.jpg" alt="Wireless Earbuds" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Wireless Earbuds</div>
+            <div class="rating">★ 4.4 | 1,120 Ratings & 210 Reviews</div>
+            <div class="price">₹2,999</div>
+            <div class="original-price">₹4,499</div>
+            <div class="discount">You save ₹1,500 (33%)</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Verified Seller</strong></div>
+            <div class="social-proof">👀 35 people viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Immersive Sound with Active Noise Cancellation</li>
+                    <li>24-Hour Battery Life with Quick Charge</li>
+                    <li>Ergonomic Design for Comfortable Fit</li>
+                    <li>Bluetooth 5.2 for Stable Connectivity</li>
+                    <li>Touch Controls and Voice Assistant Support</li>
+                </ul>
+
+                <!-- <button>
+                    Buy Now
+                </button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>High-fidelity audio with enhanced bass and clarity</li>
+                <li>IPX5 Water-resistant for sweat and rain protection</li>
+                <li>Compact charging case with LED battery indicator</li>
+                <li>Seamless pairing with multiple devices</li>
+            </ul>
+        </div>
+
+        <!-- Specs -->
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Driver Size: 10mm Dynamic Drivers</li>
+                <li>Bluetooth Version: 5.2</li>
+                <li>Battery Life: Up to 6 hours per charge; 24 hours with charging case</li>
+                <li>Charging Time: 1.5 hours</li>
+                <li>Water Resistance: IPX5</li>
+                <li>Weight: 45 grams</li>
+                <li>Microphone: Dual mic with noise reduction</li>
+            </ul>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Do these earbuds support fast charging?</summary>
+                <p>Yes, a 10-minute charge provides up to 2 hours of playback.</p>
+            </details>
+            <details>
+                <summary>Are these earbuds compatible with Android and iOS?</summary>
+                <p>Yes, they support all Bluetooth-enabled devices including Android and iOS.</p>
+            </details>
+            <details>
+                <summary>Can I use one earbud independently?</summary>
+                <p>Yes, each earbud can be used independently for calls or music.</p>
+            </details>
+        </div>
+    </div>
+
+    <!-- Sample Reviews -->
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Riya S.</h4>
+            <p>Excellent sound quality and comfortable fit. Battery lasts all day.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Karan M.</h4>
+            <p>Good value for money. Noise cancellation works well in busy environments.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Anika P.</h4>
+            <p>Nice design and touch controls are responsive.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★☆☆</span> Sameer T.</h4>
+            <p>Sound is great but Bluetooth connectivity drops occasionally.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★★</span> Priya R.</h4>
+            <p>Highly recommend these earbuds for daily use and workouts.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★★★☆</span> Amit D.</h4>
+            <p>Battery life exceeded my expectations.</p>
+        </div>
+
+        <div class="review">
+            <h4><span>★★☆☆☆</span> Neha K.</h4>
+            <p>Sometimes the touch controls are a bit sensitive.</p>
+        </div>
+    </div>
+
+    <!-- Review Submission Form -->
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+
+</body>
+
+</html>

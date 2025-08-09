@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | MacBook Pro</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/macbook-pro.jpg" alt="MacBook Pro" />
+            <div class="thumbs">
+                <img src="../../images/macbook-pro-1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/macbook-pro-2.jpg" alt="Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/macbook-pro-3.jpg" alt="Ports" onclick="switchImage(this)" />
+                <img src="../../images/macbook-pro-4.jpg" alt="Side View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">MacBook Pro</div>
+            <div class="rating">★ 4.8 | 2100 Ratings & 540 Reviews</div>
+            <div class="price">₹1,29,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 120 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Apple M1 Pro Chip with 8-Core CPU</li>
+                    <li>16GB Unified Memory</li>
+                    <li>512GB SSD Storage</li>
+                    <li>14-inch Liquid Retina XDR Display</li>
+                    <li>Battery life up to 17 hours</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: Apple M1 Pro Chip (8-core CPU, 14-core GPU)</li>
+                <li>RAM: 16GB Unified Memory</li>
+                <li>Storage: 512GB SSD</li>
+                <li>Display: 14-inch Liquid Retina XDR (3024x1964)</li>
+                <li>Battery Life: Up to 17 hours wireless web</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Operating System: macOS Monterey</li>
+                <li>Ports: Thunderbolt 4, HDMI, SDXC card slot, MagSafe 3</li>
+                <li>Weight: 1.6 kg</li>
+                <li>Wireless: Wi-Fi 6, Bluetooth 5.0</li>
+                <li>Security: Touch ID fingerprint sensor</li>
+                <li>Warranty: 1 year Apple Limited Warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it support external displays?</summary>
+                <p>Yes, supports up to two external 6K displays.</p>
+            </details>
+            <details>
+                <summary>Can I upgrade the RAM?</summary>
+                <p>The RAM is integrated and not user-upgradable.</p>
+            </details>
+            <details>
+                <summary>Is this model suitable for video editing?</summary>
+                <p>Absolutely, designed for professional video and photo editing.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★★</span> Nisha K.</h4>
+            <p>Exceptional performance and display quality. Worth every rupee.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Rohan M.</h4>
+            <p>Runs smoothly even on intensive apps. Battery lasts long.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Kavita S.</h4>
+            <p>Lightweight and powerful. Perfect for my design work.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Deepak T.</h4>
+            <p>Love the display but wish it had more ports.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Priya J.</h4>
+            <p>MacOS is fluid and efficient. Best laptop I’ve owned.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Anil R.</h4>
+            <p>Great for professional use, very reliable.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Meera L.</h4>
+            <p>Highly recommend for creatives and professionals.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

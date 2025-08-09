@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Power Bank 10000mAh</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/power-bank-10000mah.jpg" alt="Power Bank 10000mAh" />
+            <div class="thumbs">
+                <img src="../../images/powerbank_1.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/powerbank_2.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/powerbank_3.jpg" alt="Charging Ports" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Power Bank 10000mAh</div>
+            <div class="rating">★ 4.4 | 920 Ratings & 290 Reviews</div>
+            <div class="price">₹1,199</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Accessories</strong></div>
+            <div class="social-proof">⚡ 77 customers added this to cart today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>10000mAh high-density lithium-polymer battery</li>
+                    <li>Dual USB output for simultaneous charging</li>
+                    <li>Type-C and Micro USB input support</li>
+                    <li>LED battery level indicators</li>
+                    <li>Overcharge and short-circuit protection</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Compatible with all smartphones and tablets</li>
+                <li>Ultra-slim and lightweight design</li>
+                <li>Fast charging support (up to 18W)</li>
+                <li>Charging cable included</li>
+                <li>Built-in safety mechanisms</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Battery Capacity: 10000mAh</li>
+                <li>Input Ports: Micro USB / USB Type-C</li>
+                <li>Output Ports: 2 x USB-A</li>
+                <li>Dimensions: 138 x 65 x 15 mm</li>
+                <li>Weight: 240g</li>
+                <li>Warranty: 6 Months</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Can it charge two devices at once?</summary>
+                <p>Yes, it has dual USB output ports.</p>
+            </details>
+            <details>
+                <summary>Does it support fast charging?</summary>
+                <p>Yes, up to 18W fast charging is supported.</p>
+            </details>
+            <details>
+                <summary>Is the cable included?</summary>
+                <p>Yes, one charging cable is provided.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★★</span> Ashok V.</h4>
+            <p>Lasts for two full charges, works great!</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Meena P.</h4>
+            <p>Good product, compact and handy.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Kunal R.</h4>
+            <p>Charges quickly. Reliable for travel.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Rahul D.</h4>
+            <p>Bit heavy, but works as expected.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Sneha L.</h4>
+            <p>Stylish design and fast performance.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Pooja S.</h4>
+            <p>Charging slows down after 80%.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Dev M.</h4>
+            <p>Great value at this price point.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

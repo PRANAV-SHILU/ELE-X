@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ele-x | Desktop Computer - HP AIO</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/hp-aio-desktop.jpg" alt="HP AIO Desktop" />
+            <div class="thumbs">
+                <img src="../../images/hp-aio-desktop.jpg" alt="Front" onclick="switchImage(this)" />
+                <img src="../../images/hp-aio-desktop-2.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/hp-aio-desktop-3.jpg" alt="Back Panel" onclick="switchImage(this)" />
+                <img src="../../images/hp-aio-desktop-4.jpg" alt="Ports" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Desktop Computer - HP AIO</div>
+            <div class="rating">★ 4.3 | 421 Ratings & 97 Reviews</div>
+            <div class="price">₹52,000</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>4–6 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Systems</strong></div>
+            <div class="social-proof">📦 18 units purchased in the last 48 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i5 12th Gen with integrated graphics</li>
+                    <li>8GB DDR4 RAM, 512GB SSD</li>
+                    <li>23.8-inch FHD anti-glare display</li>
+                    <li>Wireless keyboard and mouse included</li>
+                    <li>Built-in webcam with privacy shutter</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: Intel Core i5-12400T</li>
+                <li>Memory: 8GB DDR4 (expandable)</li>
+                <li>Storage: 512GB SSD</li>
+                <li>Display: 23.8” FHD, 1920x1080 resolution</li>
+                <li>Graphics: Intel UHD Integrated</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Ports: USB 3.1, HDMI, RJ45, SD Card</li>
+                <li>OS: Windows 11 Home</li>
+                <li>Audio: Dual speakers with B&O tuning</li>
+                <li>Webcam: 720p HD with privacy shutter</li>
+                <li>Weight: 6.4 kg</li>
+                <li>Warranty: 1 year onsite</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details><summary>Does it include a keyboard and mouse?</summary><p>Yes, both wireless keyboard and mouse are bundled.</p></details>
+            <details><summary>Can RAM be upgraded?</summary><p>Yes, it supports up to 32GB RAM.</p></details>
+            <details><summary>Does it have touchscreen?</summary><p>No, this model has a non-touch FHD screen.</p></details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Pritam D.</h4><p>Perfect for WFH setup. Silent and responsive.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha S.</h4><p>Screen clarity is great. Performance is smooth.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Aman R.</h4><p>Super compact and clutter-free. Nice deal.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Divya G.</h4><p>Good for office use, but GPU is not for gaming.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Javed K.</h4><p>Instant boot and minimal lag. Very satisfied.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Tanvi B.</h4><p>Value for money and very stylish design.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Rohan S.</h4><p>No HDMI input, but everything else is good.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

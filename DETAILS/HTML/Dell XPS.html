@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Dell XPS</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/dell-xps.jpg" alt="Dell XPS" />
+            <div class="thumbs">
+                <img src="../../images/dell-xps-1.jpg" alt="Dell XPS Side View" onclick="switchImage(this)" />
+                <img src="../../images/dell-xps-2.jpg" alt="Dell XPS Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/dell-xps-3.jpg" alt="Dell XPS Screen" onclick="switchImage(this)" />
+                <img src="../../images/dell-xps-4.jpg" alt="Dell XPS Ports" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Dell XPS</div>
+            <div class="rating">★ 4.7 | 834 Ratings & 215 Reviews</div>
+            <div class="price">₹1,04,999</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 42 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>11th Gen Intel Core i7 Processor</li>
+                    <li>16GB DDR4 RAM | 512GB SSD</li>
+                    <li>15.6" 4K UHD Display with InfinityEdge</li>
+                    <li>Windows 11 Pro | Thunderbolt 4 Ports</li>
+                    <li>Fingerprint reader & backlit keyboard</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Processor: Intel Core i7-11800H</li>
+                <li>Graphics: NVIDIA GeForce RTX 3050 Ti</li>
+                <li>Display: 15.6 inch UHD+ (3840 x 2400)</li>
+                <li>Operating System: Windows 11 Pro</li>
+                <li>Battery Life: Up to 10 hours</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>RAM: 16GB DDR4 3200MHz</li>
+                <li>Storage: 512GB PCIe NVMe SSD</li>
+                <li>Weight: 1.8 kg</li>
+                <li>Dimensions: 13.57" x 9.06" x 0.58"</li>
+                <li>Ports: USB-C, Thunderbolt 4, headphone jack</li>
+                <li>Warranty: 1 year onsite service</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does this laptop support external monitors?</summary>
+                <p>Yes, it supports up to two external 4K monitors via Thunderbolt 4.</p>
+            </details>
+            <details>
+                <summary>Is the RAM upgradeable?</summary>
+                <p>No, RAM is soldered and not upgradeable.</p>
+            </details>
+            <details>
+                <summary>Does it come with pre-installed software?</summary>
+                <p>Yes, Windows 11 Pro and essential drivers are pre-installed.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h4><span>★★★★★</span> Rajesh P.</h4>
+            <p>Incredible performance and sleek design. Worth every rupee.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Sneha M.</h4>
+            <p>Battery life is great but could improve on heat management.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Ankit S.</h4>
+            <p>Perfect for gaming and work, lightweight and portable.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Priya D.</h4>
+            <p>Display quality is stunning, colors are vibrant.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★☆☆</span> Manoj K.</h4>
+            <p>Good laptop but price is a bit steep.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★☆</span> Deepa R.</h4>
+            <p>Build quality is excellent, fan noise is minimal.</p>
+        </div>
+        <div class="review">
+            <h4><span>★★★★★</span> Vikas T.</h4>
+            <p>Highly recommend for professionals and gamers alike.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

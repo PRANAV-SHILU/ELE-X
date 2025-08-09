@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ele-x | Samsung 24-inch Monitor</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/samsung-24-inch-monitor.jpg" alt="Samsung Monitor" />
+            <div class="thumbs">
+                <img src="../../images/samsung-24-inch-monitor.jpg" alt="Main" onclick="switchImage(this)" />
+                <img src="../../images/samsung-monitor-side.jpg" alt="Side" onclick="switchImage(this)" />
+                <img src="../../images/samsung-monitor-ports.jpg" alt="Ports" onclick="switchImage(this)" />
+                <img src="../../images/samsung-monitor-back.jpg" alt="Back" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Computer Monitor - Samsung 24"</div>
+            <div class="rating">★ 4.6 | 897 Ratings & 231 Reviews</div>
+            <div class="price">₹9,499</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 34 units bought in the last 12 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>24-inch Full HD IPS Display</li>
+                    <li>75Hz refresh rate, AMD FreeSync</li>
+                    <li>Ultra-slim bezel design</li>
+                    <li>HDMI and VGA connectivity</li>
+                    <li>Eye saver mode and flicker-free tech</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Screen Size: 24 inches</li>
+                <li>Resolution: 1920x1080 Full HD</li>
+                <li>Panel Type: IPS</li>
+                <li>Aspect Ratio: 16:9</li>
+                <li>Ports: HDMI, VGA</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Brightness: 250 nits</li>
+                <li>Contrast Ratio: 1000:1</li>
+                <li>Refresh Rate: 75 Hz</li>
+                <li>Response Time: 5ms</li>
+                <li>Weight: 3.2 kg</li>
+                <li>Warranty: 3 years</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details><summary>Does it support wall mounting?</summary><p>Yes, it supports VESA mounting (75x75).</p></details>
+            <details><summary>Can it be connected to a laptop?</summary><p>Yes, via HDMI or VGA port.</p></details>
+            <details><summary>Does it have built-in speakers?</summary><p>No, this model does not include speakers.</p></details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Rina M.</h4><p>Best monitor in this budget range. Looks sharp and clean.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Kunal V.</h4><p>Super display quality, colors pop out!</p></div>
+        <div class="review"><h4><span>★★★★★</span> Amit G.</h4><p>Perfect for coding and media. Love the slim design.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Reema P.</h4><p>No speakers is a downside. Everything else is good.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neeraj S.</h4><p>Very good build and finish. Worth buying.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sagar T.</h4><p>Fast refresh rate, works great with FreeSync GPU.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Meena K.</h4><p>Packaging could be better, but monitor is excellent.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

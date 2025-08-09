@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Pop-up Toaster</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/pop-up-toaster.jpg" alt="Pop-up Toaster" />
+            <div class="thumbs">
+                <img src="../../images/pop-up-toaster_1.jpg" alt="Toaster Side View" onclick="switchImage(this)" />
+                <img src="../../images/pop-up-toaster_2.jpg" alt="Toaster Controls" onclick="switchImage(this)" />
+                <img src="../../images/pop-up-toaster_3.jpg" alt="Toaster Slots" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Pop-up Toaster</div>
+            <div class="rating">★ 4.0 | 300 Ratings & 90 Reviews</div>
+            <div class="price">₹999</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Home</strong></div>
+            <div class="social-proof">🔥 30 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>2-slot pop-up design with adjustable browning control</li>
+                    <li>Removable crumb tray for easy cleaning</li>
+                    <li>Cool-touch exterior for safety</li>
+                    <li>Auto shut-off and cancel button</li>
+                    <li>Compact and lightweight</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Power: 800W</li>
+                <li>Voltage: 220V</li>
+                <li>Material: Stainless Steel and Plastic</li>
+                <li>Dimensions: 25 x 15 x 20 cm</li>
+                <li>Weight: 1.2 kg</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Toast Slots: 2</li>
+                <li>Browning Control: Adjustable (1-6)</li>
+                <li>Warranty: 1 Year</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is it easy to clean?</summary>
+                <p>Yes, the removable crumb tray makes cleaning simple.</p>
+            </details>
+            <details>
+                <summary>Does it have safety features?</summary>
+                <p>Yes, it has auto shut-off and cool-touch exterior.</p>
+            </details>
+            <details>
+                <summary>How many slots does the toaster have?</summary>
+                <p>It has 2 slots for toasting bread.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Neha S.</h4><p>Perfect for my morning routine.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ajay K.</h4><p>Works fine, but slots are a bit small.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Priya D.</h4><p>Good toaster with excellent features.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sunil R.</h4><p>Easy to use and clean.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Kavita L.</h4><p>Compact but powerful enough.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ramesh T.</h4><p>Good product but cord is short.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Manisha P.</h4><p>Value for money.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

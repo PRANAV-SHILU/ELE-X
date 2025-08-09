@@ -1,0 +1,277 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     margin-top: 200px;
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ /*fixed*/
+ nav {
+     background-color: #0d0d0d;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     padding-left: 30px;
+     border-bottom: 1px solid #333;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+ }
+
+ nav .logo {
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ nav .menu a {
+     color: white;
+     text-decoration: none;
+     margin: 0 15px;
+     font-size: 16px;
+ }
+
+ nav a:hover {
+     color: #ff6600;
+ }
+
+ .menu {
+     margin-left: 400px;
+     margin-right: 3px;
+ }
+
+ /*end*/
+
+ .about-container {
+     width: 90%;
+     max-width: 1000px;
+     background: linear-gradient(to bottom, #222, #000);
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.5);
+     text-align: center;
+     margin-top: 230px;
+ }
+
+ .about-title {
+     font-size: 28px;
+     font-weight: bold;
+     color: orange;
+     margin-bottom: 15px;
+ }
+
+ .about-subtitle {
+     font-size: 18px;
+     color: #bbb;
+     margin-bottom: 20px;
+ }
+
+ .about-section {
+     margin-bottom: 20px;
+     text-align: left;
+ }
+
+ .about-section h2 {
+     font-size: 20px;
+     color: orange;
+     margin-bottom: 10px;
+ }
+
+ .about-section p {
+     font-size: 14px;
+     line-height: 1.6;
+     color: #ddd;
+ }
+
+ .values {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-top: 20px;
+ }
+
+ .value-box {
+     background: #333;
+     padding: 15px;
+     width: 48%;
+     border-radius: 8px;
+     text-align: center;
+     margin-top: 10px;
+ }
+
+ .value-box h3 {
+     color: orange;
+     font-size: 18px;
+     margin-bottom: 5px;
+ }
+
+ .value-box p {
+     font-size: 13px;
+     color: #ddd;
+ }
+
+ .milestones {
+     margin-top: 30px;
+ }
+
+ .milestone-item {
+     background: #222;
+     padding: 15px;
+     border-radius: 8px;
+     margin-bottom: 10px;
+     text-align: left;
+     border-left: 4px solid orange;
+ }
+
+ .milestone-item h3 {
+     color: orange;
+     font-size: 18px;
+ }
+
+ .milestone-item p {
+     font-size: 13px;
+     color: #ccc;
+ }
+
+
+ .animated-line {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .animated-line::before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(to left, gold 50%, transparent 0%);
+     background-size: 200% 100%;
+     animation: moveLine 20s linear infinite;
+ }
+ 
+@keyframes moveLine {
+  0% {
+    background-position: -100% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+ @media (max-width: 768px) {
+     .values {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .value-box {
+         width: 100%;
+     }
+ }
+
+ @media (max-width: 1024px) {
+     nav {
+         padding: 15px;
+         flex-direction: row;
+     }
+
+     .menu {
+         flex-wrap: wrap;
+         justify-content: flex-end;
+         margin-left: 100px;
+     }
+
+     .about-container {
+         margin-top: 250px;
+         padding: 25px 20px;
+     }
+
+     .value-box {
+         width: 48%;
+     }
+ }
+
+ @media (max-width: 768px) {
+     body {
+         flex-direction: column;
+         padding: 0 15px;
+     }
+
+     nav {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 15px 20px;
+     }
+
+     .logo {
+         font-size: 20px;
+         margin-bottom: 10px;
+     }
+
+     .menu {
+         flex-direction: column;
+         align-items: flex-start;
+         width: 100%;
+         margin: 0;
+     }
+
+     .menu a {
+         display: block;
+         font-size: 15px;
+         margin: 6px 0;
+         padding: 5px 0;
+         width: 100%;
+     }
+
+     .about-container {
+         margin-top: 750px;
+         padding: 20px 15px;
+     }
+     
+
+     .value-box {
+         width: 100%;
+         margin-top: 15px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .about-title {
+         font-size: 22px;
+     }
+
+     .about-subtitle {
+         font-size: 16px;
+     }
+
+     .about-section h2 {
+         font-size: 18px;
+     }
+
+     .about-section p,
+     .value-box p,
+     .milestone-item p {
+         font-size: 12px;
+     }
+
+     .milestone-item h3 {
+         font-size: 16px;
+     }
+ }

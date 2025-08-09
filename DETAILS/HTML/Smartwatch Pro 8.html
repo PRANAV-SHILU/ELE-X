@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Smartwatch Pro 8</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/Smartwatch Pro 8.jpg" alt="Smartwatch Pro 8"/>
+            <div class="thumbs">
+                <img src="../../images/Smartwatch Pro 8 side.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/Smartwatch Pro 8 back.jpg" alt="Back View" onclick="switchImage(this)" />
+                <img src="../../images/Smartwatch Pro 8 box.jpg" alt="Packaging" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Smartwatch Pro 8</div>
+            <div class="rating">★ 4.2 | 410 Ratings & 90 Reviews</div>
+            <div class="price">₹3,499</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Electronics</strong></div>
+            <div class="social-proof">📦 18 units purchased in the last 24 hours</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>1.78-inch AMOLED display</li>
+                    <li>Heart rate and SpO2 monitoring</li>
+                    <li>Sleep tracking and multi-sport modes</li>
+                    <li>Water-resistant up to 50 meters</li>
+                    <li>14-day battery life</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Display: 1.78 inches AMOLED</li>
+                <li>Connectivity: Bluetooth 5.1</li>
+                <li>Compatibility: Android and iOS</li>
+                <li>Battery: 14 days typical usage</li>
+                <li>Water Resistance: 5 ATM</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Weight: 38 grams</li>
+                <li>Dimensions: 45.9 x 37.9 x 11.8 mm</li>
+                <li>Sensors: Accelerometer, Gyroscope, Heart rate monitor, SpO2</li>
+                <li>Charging: Magnetic charger included</li>
+                <li>Warranty: 1 year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Is the smartwatch compatible with iPhones?</summary>
+                <p>Yes, it supports both Android and iOS devices.</p>
+            </details>
+            <details>
+                <summary>How long does the battery last?</summary>
+                <p>Typically up to 14 days on a full charge.</p>
+            </details>
+            <details>
+                <summary>Is it water-resistant?</summary>
+                <p>Yes, rated at 5 ATM, suitable for swimming and showering.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Ananya R.</h4><p>Excellent fitness tracking and great display.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Karan V.</h4><p>Battery life is outstanding, lasts for days.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Meera S.</h4><p>Comfortable to wear and easy to use.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ajay P.</h4><p>Wish it had more watch faces.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Priyanka G.</h4><p>Good value for the price.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Rahul D.</h4><p>Occasional syncing issues.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sneha M.</h4><p>Great for daily fitness monitoring.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

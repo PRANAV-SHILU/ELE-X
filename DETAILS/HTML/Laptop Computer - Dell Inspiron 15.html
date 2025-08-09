@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Dell Inspiron 15</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">← Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/dell-inspiron-15.jpg" alt="Dell Inspiron 15" />
+            <div class="thumbs">
+                <img src="../../images/dell-inspiron-15.jpg" alt="Front View" onclick="switchImage(this)" />
+                <img src="../../images/dell-inspiron-15.jpg" alt="Keyboard" onclick="switchImage(this)" />
+                <img src="../../images/dell-inspiron-15.jpg" alt="Side View" onclick="switchImage(this)" />
+                <img src="../../images/dell-inspiron-15.jpg" alt="Open Display" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Laptop Computer - Dell Inspiron 15</div>
+            <div class="rating">★ 4.3 | 2,176 Ratings & 381 Reviews</div>
+            <div class="price">₹47,499</div>
+
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Retail</strong></div>
+            <div class="social-proof">📦 74 units sold this week</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Intel Core i5 12th Gen processor</li>
+                    <li>15.6" Full HD Anti-Glare display</li>
+                    <li>8 GB DDR4 RAM, 512 GB SSD</li>
+                    <li>Windows 11 Home + MS Office Home & Student</li>
+                    <li>Intel UHD Graphics</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Display: 15.6" Full HD (1920x1080), Anti-Glare</li>
+                <li>Processor: Intel Core i5-1235U, 10-core</li>
+                <li>RAM: 8 GB DDR4 (expandable)</li>
+                <li>Storage: 512 GB NVMe SSD</li>
+                <li>Graphics: Intel UHD Integrated</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Operating System: Windows 11 Home</li>
+                <li>Software: MS Office Home & Student 2021</li>
+                <li>Ports: 2x USB 3.2, 1x USB 2.0, HDMI, Audio Jack</li>
+                <li>Battery Life: Up to 6.5 hours</li>
+                <li>Weight: 1.85 kg</li>
+                <li>Warranty: 1 Year Onsite Warranty</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it come with MS Office pre-installed?</summary>
+                <p>Yes, it includes Microsoft Office Home & Student 2021 lifetime license.</p>
+            </details>
+            <details>
+                <summary>Is the RAM upgradeable?</summary>
+                <p>Yes, up to 16 GB RAM supported via dual slots.</p>
+            </details>
+            <details>
+                <summary>Can it handle light gaming?</summary>
+                <p>Yes, suitable for light gaming and casual use; not meant for high-end gaming.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Pratik M.</h4><p>Solid build and decent performance for daily tasks.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Rhea G.</h4><p>Loved the pre-installed Office and fast SSD. Boots up in seconds!</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Manish S.</h4><p>Battery life could be better, but overall it's worth the price.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Nilesh K.</h4><p>Perfect for work-from-home use. Keyboard is comfortable.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Disha A.</h4><p>Good screen and audio. Ideal for students and working professionals.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Ankit R.</h4><p>Runs smoothly with multitasking. Highly recommended.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Shalini V.</h4><p>Display is sharp but not very vibrant. Still, good for this price.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

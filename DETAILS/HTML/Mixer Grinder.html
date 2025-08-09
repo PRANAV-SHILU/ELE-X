@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Mixer Grinder</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/mixer-grinder.jpg" alt="Mixer Grinder" />
+            <div class="thumbs">
+                <img src="../../images/mixer-grinder-1.jpg" alt="Jars" onclick="switchImage(this)" />
+                <img src="../../images/mixer-grinder-2.jpg" alt="Motor Base" onclick="switchImage(this)" />
+                <img src="../../images/mixer-grinder-3.jpg" alt="Control Knob" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Mixer Grinder</div>
+            <div class="rating">★ 4.2 | 430 Ratings & 100 Reviews</div>
+            <div class="price">₹2,799</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">🔥 52 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Powerful 500W motor</li>
+                    <li>3 stainless steel jars for multi-purpose use</li>
+                    <li>Compact and easy to clean design</li>
+                    <li>Multiple speed settings</li>
+                    <li>Safety lock feature</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Voltage: 220V</li>
+                <li>Power Consumption: 500W</li>
+                <li>Jar Material: Stainless Steel</li>
+                <li>Noise Level: Low</li>
+                <li>Compact Size for Easy Storage</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Motor RPM: 15000</li>
+                <li>Number of Jars: 3</li>
+                <li>Safety Features: Overload Protection</li>
+                <li>Dimensions: 30 x 20 x 25 cm</li>
+                <li>Weight: 4.5 kg</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does it come with a warranty?</summary>
+                <p>Yes, it has a 2-year manufacturer warranty.</p>
+            </details>
+            <details>
+                <summary>Are the jars dishwasher safe?</summary>
+                <p>Yes, the jars can be cleaned in a dishwasher.</p>
+            </details>
+            <details>
+                <summary>Is the motor noisy?</summary>
+                <p>The motor runs quietly compared to similar models.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Neha K.</h4><p>Efficient and quiet mixer grinder.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Arjun S.</h4><p>Perfect for my daily kitchen needs.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Simran P.</h4><p>Good but jars are smaller than expected.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Vikram T.</h4><p>Sturdy build and great motor power.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Pooja M.</h4><p>Nice product but could be a bit faster.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Rohan J.</h4><p>Value for money, highly recommend.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Anjali D.</h4><p>Compact and easy to use.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

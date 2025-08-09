@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Coffee Maker</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/coffee-maker.jpg" alt="Coffee Maker" />
+            <div class="thumbs">
+                <img src="../../images/coffee-maker_1.jpg" alt="Coffee Maker Buttons" onclick="switchImage(this)" />
+                <img src="../../images/coffee-maker_2.jpg" alt="Coffee Maker Brewing" onclick="switchImage(this)" />
+                <img src="../../images/coffee-maker_3.jpg" alt="Coffee Maker Accessories" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Coffee Maker</div>
+            <div class="rating">★ 4.6 | 540 Ratings & 180 Reviews</div>
+            <div class="price">₹3,299</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Home</strong></div>
+            <div class="social-proof">🔥 40 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Programmable brewing settings</li>
+                    <li>Auto shut-off feature</li>
+                    <li>Large water reservoir (1.5 liters)</li>
+                    <li>Easy-to-clean removable parts</li>
+                    <li>Compact design fits any kitchen</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Power: 900W</li>
+                <li>Weight: 2.2 kg</li>
+                <li>Dimensions: 25 x 20 x 30 cm</li>
+                <li>Water Reservoir: 1.5 liters</li>
+                <li>Material: Stainless Steel</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Voltage: 220V</li>
+                <li>Frequency: 50Hz</li>
+                <li>Warranty: 1 Year</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Can it brew espresso?</summary>
+                <p>No, it is designed for drip coffee only.</p>
+            </details>
+            <details>
+                <summary>Is it easy to clean?</summary>
+                <p>Yes, the removable parts make cleaning easy.</p>
+            </details>
+            <details>
+                <summary>What is the water capacity?</summary>
+                <p>The water reservoir holds 1.5 liters.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Neeta V.</h4><p>Great coffee maker for daily use.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Rahul M.</h4><p>Easy to use and clean.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Ananya P.</h4><p>Good value for money.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Kiran T.</h4><p>Compact and efficient.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Raj S.</h4><p>Works well but a bit noisy.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Meera S.</h4><p>Highly recommend this product.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sunil K.</h4><p>Good coffee aroma and taste.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ele-x | Cart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+      <script src="../JS/CART.JS"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/CART.CSS">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Ele-x</div>
+        <div class="menu">
+            <a href="HOME.HTML">Home</a>
+            <a href="SHOPNOW.HTML">Shop Now</a>
+            <a href="MEGADEALS.HTML">Mega Deals</a>
+            <a href="VOUCHER.HTML">Vouchers</a>
+            <a href="CART.HTML">Cart</a>
+            <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
+            <a href="ABOUTUS.HTML">About Us</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="LOGIN.HTML">Login</a>
+        </div>
+         <div class="animated-line"></div>
+    </nav>
+
+    <div class="align">
+        <h1>Your Cart</h1>
+
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (₹)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Items inserted dynamically -->
+            </tbody>
+        </table>
+
+        <div id="cart-info-section" style="display: none;">
+            <p class="cart-info">🚚 Estimated Delivery: <strong>7–8 days</strong></p>
+            <p class="cart-info">📦 <span class="badge">Free Delivery</span></p>
+        </div>
+
+        <p class="total">Total: ₹<span id="total-price">0</span></p>
+
+        <div class="address-form">
+            <h3>Enter Shipping Details</h3>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            <textarea id="address" rows="4" placeholder="Enter your full address" required></textarea>
+            <button onclick="buyNow()">Buy Now</button>
+        </div>
+
+        <div class="modal" id="thankYouModal">
+            <div class="modal-content">
+                <p>🎉 Thank you for your purchase!</p>
+                <p>Your bill has been downloaded.</p>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+
+</html>

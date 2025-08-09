@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Gas & Electric Stove Combo</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/gas-electric-stove-combo.jpg" alt="Gas & Electric Stove Combo" />
+            <div class="thumbs">
+                <img src="../../images/gas-electric-stove-combo-1.jpg" alt="Gas Stove" onclick="switchImage(this)" />
+                <img src="../../images/gas-electric-stove-combo-2.jpg" alt="Electric Stove" onclick="switchImage(this)" />
+                <img src="../../images/gas-electric-stove-combo-3.jpg" alt="Stove Knobs" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Gas & Electric Stove Combo</div>
+            <div class="rating">★ 4.3 | 260 Ratings & 75 Reviews</div>
+            <div class="price">₹6,999</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>5–7 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">🔥 22 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>4 gas burners with auto-ignition</li>
+                    <li>Electric stove with 2 heating zones</li>
+                    <li>Stainless steel body with easy-clean surface</li>
+                    <li>Child safety lock for stove knobs</li>
+                    <li>Energy efficient with low gas consumption</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Gas Burners: 4 with auto-ignition</li>
+                <li>Electric Zones: 2 heating zones</li>
+                <li>Body Material: Stainless Steel</li>
+                <li>Safety: Child lock on knobs</li>
+                <li>Weight: 12.5 kg</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Gas Consumption: 0.25 kg/hr</li>
+                <li>Electric Power: 1500W</li>
+                <li>Dimensions: 70 x 50 x 15 cm</li>
+                <li>Weight: 12.5 kg</li>
+                <li>Warranty: 2 years</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Does the electric stove support induction cookware?</summary>
+                <p>No, it is not induction-compatible but supports all regular cookware.</p>
+            </details>
+            <details>
+                <summary>Is there a warranty on gas burners?</summary>
+                <p>Yes, 2 years warranty on gas burners and electric parts.</p>
+            </details>
+            <details>
+                <summary>How energy efficient is the stove?</summary>
+                <p>Designed to reduce gas consumption by 20% compared to standard models.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★☆</span> Deepak K.</h4><p>Very convenient combo for my kitchen.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Sunita P.</h4><p>Excellent heating performance.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ramesh S.</h4><p>Good but the electric zones heat unevenly.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Kavya M.</h4><p>Sturdy build and stylish design.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Manoj L.</h4><p>Gas consumption could be optimized better.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Anil T.</h4><p>Worth the price, highly recommend.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sneha R.</h4><p>Good combo for daily use.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+
+</html>

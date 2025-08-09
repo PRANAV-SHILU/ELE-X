@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ele-x | Laptop Bag</title>
+  <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+  <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+
+  <button onclick="goBack()" class="goback">← Back</button>
+
+  <div class="gallery-section">
+    <div class="main-img">
+      <img id="mainImage" src="../../images/laptop-bag.jpg" alt="Laptop Bag Main Image" />
+    </div>
+
+    <div class="details-section">
+      <div class="product-title">Laptop Bag</div>
+      <div class="rating">★ 4.5 | 980 Ratings & 180 Reviews</div>
+      <div class="price">₹899</div>
+      <div class="original-price">₹1,199</div>
+      <div class="discount">Save ₹300 (25%)</div>
+
+      <div class="availability" style="color: green;">In Stock</div>
+      <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+      <div class="seller">Sold by: <strong>Ele-X Official Partner</strong></div>
+      <div class="social-proof">🎒 50 people viewed this product today</div>
+
+      <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Durable waterproof exterior</li>
+          <li>Comfortable padded shoulder straps</li>
+          <li>Multiple compartments for storage</li>
+          <li>Fits laptops up to 15.6 inches</li>
+          <li>Sleek, professional design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="add">
+    <div class="section">
+      <h2>Product Details</h2>
+      <ul>
+        <li>Ideal for office, travel, and daily use</li>
+        <li>Scratch-resistant and lightweight</li>
+        <li>Strong zippers and secure stitching</li>
+        <li>Side pockets for water bottles/umbrella</li>
+        <li>Available in multiple colors</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Technical Specifications</h2>
+      <ul class="specs-list">
+        <li>Material: Polyester</li>
+        <li>Dimensions: 18 x 12 x 6 inches</li>
+        <li>Weight: 800g</li>
+        <li>Color: Black</li>
+        <li>Capacity: 25 liters</li>
+        <li>Closure: Zipper</li>
+      </ul>
+    </div>
+
+    <div class="section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>Can it hold a 16-inch laptop?</summary>
+        <p>It is best suited for laptops up to 15.6 inches.</p>
+      </details>
+      <details>
+        <summary>Is it waterproof?</summary>
+        <p>Yes, the material is water-resistant.</p>
+      </details>
+      <details>
+        <summary>Is there a warranty?</summary>
+        <p>Yes, it comes with a 6-month manufacturer warranty.</p>
+      </details>
+    </div>
+  </div>
+
+  <div class="section reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review"><h4><span>★★★★★</span> Rajeev S.</h4><p>Sturdy and spacious bag. Excellent build quality!</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Neha K.</h4><p>Stylish design. The straps are very comfortable.</p></div>
+    <div class="review"><h4><span>★★★★☆</span> Aditya P.</h4><p>Lightweight and professional-looking.</p></div>
+    <div class="review"><h4><span>★★★☆☆</span> Sushil R.</h4><p>Could use more padding at the bottom.</p></div>
+    <div class="review"><h4><span>★★★★★</span> Meera D.</h4><p>Perfect for daily commute. Great value!</p></div>
+    <div class="review"><h4><span>★★★★★</span> Vinay J.</h4><p>Highly recommended for office goers.</p></div>
+    <div class="review"><h4><span>★★★☆☆</span> Tanya B.</h4><p>Color faded slightly after 6 months.</p></div>
+  </div>
+
+  <div class="section">
+    <h2>Submit Your Review</h2>
+    <form class="review-form" id="reviewForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select rating</option>
+        <option value="1">★ 1 Star</option>
+        <option value="2">★★ 2 Stars</option>
+        <option value="3">★★★ 3 Stars</option>
+        <option value="4">★★★★ 4 Stars</option>
+        <option value="5">★★★★★ 5 Stars</option>
+      </select>
+
+      <label for="comment">Review</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+      <button type="submit">Submit Review</button>
+      <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+    </form>
+  </div>
+
+</body>
+</html>

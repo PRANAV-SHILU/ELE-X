@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Home</title>
+    <link rel="stylesheet" href="../CSS/HOME.CSS" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Ele-x</div>
+        <div class="menu">
+            <a href="HOME.HTML">Home</a>
+            <a href="SHOPNOW.HTML">Shop Now</a>
+            <a href="MEGADEALS.HTML">Mega Deals</a>
+            <a href="VOUCHER.HTML">Vouchers</a>
+            <a href="CART.HTML">Cart</a>
+            <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
+            <a href="ABOUTUS.HTML">About Us</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="LOGIN.HTML">Login</a>
+        </div>
+        <div class="animated-line"></div>
+    </nav>
+
+    <section class="hero-banner">
+        <h2>Best Deals, Best Prices, Be Ahead!</h2>
+    </section>
+
+
+    <!-- Hero Carousel -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Mega Deals Today!</div>
+            <div class="swiper-slide">Be Ahead</div>
+            <div class="swiper-slide">New Launches</div>
+        </div>
+    </div>
+
+    <!-- Flash Deals Strip -->
+    <div class="flash-deals">
+        “Be Ahead, Coose Ele-x. Choose Performance, Reliability, Excellence and Next-Gen Shopping — Where Technology
+        Meets Trust." Hurry up!
+    </div>
+
+    <!-- Category Highlights -->
+    <section class="categories">
+        <h2>Top Categories</h2>
+        <div class="card-grid">
+            <div class="card">Mobiles</div>
+            <div class="card">Laptops</div>
+            <div class="card">TVs</div>
+            <div class="card">Smart watch</div>
+            <div class="card">Speaker</div>
+        </div>
+    </section>
+
+
+    <!-- Featured Products -->
+    <div class="product-grid">
+        <div class="product">
+            <a href="../DETAILS/HTML/Samsung S20.HTML"><img src="../images/Samsung S20.jpg" alt="Samsung S20"></a>
+            <h3>Samsung S20</h3>
+            <p>Price: ₹29,999</p>
+        </div>
+
+        <div class="product">
+            <a href="../DETAILS/HTML/Laptop.html"><img src="../images/Ultra Thin Laptop.jpg" alt="Laptop"></a>
+            <h3>Laptop</h3>
+            <p>Price: ₹54,990</p>
+        </div>
+
+        <div class="product">
+            <a href="../DETAILS/HTML/Smart LED TV 50.HTML"><img src="../images/Smart LED TV 50.jpg"
+                    alt="Smart LED TV 50"></a>
+            <h3>Smart LED TV 50"</h3>
+            <p>Price: ₹32,499</p>
+        </div>
+
+        <div class="product">
+            <a href="../DETAILS/HTML/Smartwatch Pro Series 8.html"><img src="../images/Smartwatch Pro Series 8.webp"
+                    alt="Smartwatch Pro Series 8"></a>
+            <h3>Smartwatch Pro Series 8</h3>
+            <p>Price: ₹3,499</p>
+        </div>
+
+        <div class="product">
+            <a href="../DETAILS/HTML/Bluetooth Speaker.html"><img src="../images/Bluetooth Soundbar 2.1.webp"
+                    alt="Bluetooth Speaker"></a>
+            <h3>Bluetooth Speaker</h3>
+            <p>Price: ₹5,999</p>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonial-slider">
+        <h2>What Our Customers Say</h2>
+        <p class="testimonial">"Best e-commerce experience ever! - Priya S."</p>
+        <p class="testimonial">"Products arrived fast and in great condition. - Akash R."</p>
+        <p class="testimonial">"Great support team. Will buy again. - Reema T."</p>
+    </section>
+
+    <!-- Blog Teasers -->
+    <a href="BLOGFAQ.HTML" style="color: white; text-decoration: none;">
+        <section class="blog-preview">
+            <h2>From Our Blog</h2>
+            <div class="card-grid">
+                <div class="card">💼 Employment & Business Growth</div>
+                <div class="card">🌍 Ele-x Social Impact</div>
+                <div class="card">🏆 Achievements & Milestones</div>
+            </div>
+        </section>
+    </a>
+
+    <!-- Our Mission -->
+    <a href="ABOUTUS.HTML" style="color: white; text-decoration: none;">
+        <section class="mission-section">
+            <h2>Why Choose Ele-x?</h2>
+            <p>🚚 Fast Delivery | 💳 Secure Payments | 📞 24/7 Support | 🛡 Trusted by 10K+ Customers</p>
+        </section>
+    </a>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <form action="" mathod="post">
+            <h2>Subscribe for the Latest Deals</h2>
+            <input type="email" placeholder="Enter your email">
+            <button class="btn" type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ele-x. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>

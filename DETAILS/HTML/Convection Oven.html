@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Convection Oven</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/convection-oven.jpg" alt="Convection Oven" />
+            <div class="thumbs">
+                <img src="../../images/convection_oven_1.jpg" alt="Inside View" onclick="switchImage(this)" />
+                <img src="../../images/convection_oven_2.jpg" alt="Accessories" onclick="switchImage(this)" />
+                <img src="../../images/convection_oven_3.jpg" alt="Front Panel" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Convection Oven</div>
+            <div class="rating">★ 4.6 | 745 Ratings & 212 Reviews</div>
+            <div class="price">₹8,299</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>2–4 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">🔥 62 people viewed this today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>24L capacity – ideal for baking, grilling, and roasting</li>
+                    <li>Convection heating with timer and temperature control</li>
+                    <li>Preheat, defrost, and rotisserie functions</li>
+                    <li>Glass door with cool-touch handle</li>
+                    <li>Included accessories: baking tray, grill rack, rotisserie rod</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Multi-purpose oven for grilling, baking, toasting</li>
+                <li>Stainless steel body for durability</li>
+                <li>Automatic shut-off with ready bell</li>
+                <li>Transparent door for easy monitoring</li>
+                <li>2-year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Capacity: 24 Litres</li>
+                <li>Power: 1500W</li>
+                <li>Voltage: 230V, 50Hz</li>
+                <li>Temperature Range: 100–250°C</li>
+                <li>Timer: 60 minutes</li>
+                <li>Dimensions: 320 x 510 x 345 mm</li>
+                <li>Weight: 15 kg</li>
+                <li>Warranty: 2 Years</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Can I bake a cake in this?</summary>
+                <p>Yes, it is perfect for baking cakes and cookies.</p>
+            </details>
+            <details>
+                <summary>Does it have rotisserie?</summary>
+                <p>Yes, a motorized rotisserie rod is included.</p>
+            </details>
+            <details>
+                <summary>What is the power consumption?</summary>
+                <p>It consumes 1500 watts at full power.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Arvind N.</h4><p>Excellent performance. Rotisserie works great.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Neha M.</h4><p>Good size and fast heating. Very useful in my kitchen.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Faisal R.</h4><p>Perfect for baking. Worth every rupee.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Tara J.</h4><p>It takes some time to cool down after use.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Deepak S.</h4><p>Durable and sleek design. Loved the features.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sanya G.</h4><p>Great for daily baking. Easy to operate.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ravi B.</h4><p>Controls could be more modern but works well.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>

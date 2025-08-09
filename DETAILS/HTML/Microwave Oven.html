@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ele-x | Microwave Oven</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+</head>
+<body>
+    <button onclick="goBack()" class="goback">&#8592; Back</button>
+
+    <div class="gallery-section">
+        <div class="main-img">
+            <img id="mainImage" src="../../images/microwave-oven.jpg" alt="Microwave Oven" />
+            <div class="thumbs">
+                <img src="../../images/microwave_oven_1.jpg" alt="Interior View" onclick="switchImage(this)" />
+                <img src="../../images/microwave_oven_2.jpg" alt="Control Panel" onclick="switchImage(this)" />
+                <img src="../../images/microwave_oven_3.jpg" alt="Side View" onclick="switchImage(this)" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <div class="product-title">Microwave Oven</div>
+            <div class="rating">★ 4.4 | 620 Ratings & 145 Reviews</div>
+            <div class="price">₹6,999</div>
+            <div class="availability" style="color: green;">In Stock</div>
+            <div class="delivery">Delivery in <strong>3–5 days</strong> | Free Shipping</div>
+            <div class="seller">Sold by: <strong>Ele-X Appliances</strong></div>
+            <div class="social-proof">🔥 48 customers viewed this product today</div>
+
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>20L capacity suitable for small families</li>
+                    <li>Auto cook menu with 25 pre-set recipes</li>
+                    <li>Child safety lock and easy-clean interior</li>
+                    <li>Defrost and reheat options</li>
+                    <li>Push button and dial control panel</li>
+                </ul>
+                <!-- <button>Buy Now</button> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="add">
+        <div class="section">
+            <h2>Product Details</h2>
+            <ul>
+                <li>Energy efficient microwave technology</li>
+                <li>Rotating glass turntable included</li>
+                <li>Beep sound alerts when done</li>
+                <li>LED display for easy viewing</li>
+                <li>1-year manufacturer warranty</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Specifications</h2>
+            <ul class="specs-list">
+                <li>Capacity: 20 Litres</li>
+                <li>Power Consumption: 700W</li>
+                <li>Voltage: 230V</li>
+                <li>Control Type: Mechanical</li>
+                <li>Dimensions: 262 x 452 x 330 mm</li>
+                <li>Weight: 12.5 kg</li>
+                <li>Warranty: 1 Year</li>
+            </ul>
+        </div>
+
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Can I use metal utensils?</summary>
+                <p>No, avoid using metal utensils inside the microwave.</p>
+            </details>
+            <details>
+                <summary>Does it have auto cook options?</summary>
+                <p>Yes, it has 25 auto cook recipes built-in.</p>
+            </details>
+            <details>
+                <summary>Can it defrost frozen food?</summary>
+                <p>Yes, defrosting mode is available.</p>
+            </details>
+        </div>
+    </div>
+
+    <div class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review"><h4><span>★★★★★</span> Rina M.</h4><p>Very convenient and easy to use. Great for daily reheating.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Sunil P.</h4><p>Affordable and does the job well. Auto cook is a big plus.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Mitali S.</h4><p>Good product for small households. Compact design.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Ashok R.</h4><p>Works well but heats up slightly slow.</p></div>
+        <div class="review"><h4><span>★★★★★</span> Shruti V.</h4><p>Highly satisfied. Delivery was prompt too.</p></div>
+        <div class="review"><h4><span>★★★★☆</span> Dev K.</h4><p>Good value for money. Installation was easy.</p></div>
+        <div class="review"><h4><span>★★★☆☆</span> Lata D.</h4><p>Nice look, but control buttons feel a bit old-fashioned.</p></div>
+    </div>
+
+    <div class="section">
+        <h2>Submit Your Review</h2>
+        <form class="review-form" id="reviewForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">★ 1 Star</option>
+                <option value="2">★★ 2 Stars</option>
+                <option value="3">★★★ 3 Stars</option>
+                <option value="4">★★★★ 4 Stars</option>
+                <option value="5">★★★★★ 5 Stars</option>
+            </select>
+
+            <label for="comment">Review</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
+        </form>
+    </div>
+</body>
+</html>
