@@ -1,5 +1,5 @@
-# ELE-X
- 
+# ELE-X (front-end)
+
 **Theme:** Gold & Black  
 **Type:** E-commerce Website  
 **Status:** In Development
