@@ -117,12 +117,8 @@ For Ele-x, the **assets** are organized across specific folders:
 
 ---
 
-## 🚀 Installation
-Steps to run the project locally:  
-1. Clone the repository.  
-2. Navigate to the `/HTML` folder inside the project directory.  
-3. Open `home.html` in your browser.  
-4. Ensure `/CSS`, `/JS`, `/DETAILS`, and `/IMAGES` folders are intact for styling and functionality.
+## 📸 Live Demo
+🔗 Live Demo: Go to About section of this repository and click on link
 
 ---
 
