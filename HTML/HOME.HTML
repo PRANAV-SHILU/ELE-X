@@ -12,7 +12,12 @@
 <body>
     <nav>
         <div class="logo">Ele-x</div>
-        <div class="menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu" id="menu">
             <a href="HOME.HTML">Home</a>
             <a href="SHOPNOW.HTML">Shop Now</a>
             <a href="MEGADEALS.HTML">Mega Deals</a>
@@ -150,6 +155,15 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+        });
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
         });
     </script>
 </body>

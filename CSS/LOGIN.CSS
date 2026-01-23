@@ -49,6 +49,34 @@
       color: white;
   }
 
+  /* Hamburger Menu */
+  .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+  }
+
+  .hamburger span {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+  }
+
+  .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+  }
+
   /*end*/
 
   .login {
@@ -118,38 +146,40 @@
       color: yellow;
   }
 
-  
- .animated-line {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     height: 1px;
-     width: 100%;
-     overflow: hidden;
- }
 
- .animated-line::before {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 1px;
-     background: linear-gradient(to left, gold 50%, transparent 0%);
-     background-size: 200% 100%;
-     animation: moveLine 20s linear infinite;
- }
- 
-@keyframes moveLine {
-  0% {
-    background-position: -100% 0%;
+  .animated-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      overflow: hidden;
   }
-  100% {
-    background-position: 200% 0%;
+
+  .animated-line::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to left, gold 50%, transparent 0%);
+      background-size: 200% 100%;
+      animation: moveLine 20s linear infinite;
   }
-}
+
+  @keyframes moveLine {
+      0% {
+          background-position: -100% 0%;
+      }
+
+      100% {
+          background-position: 200% 0%;
+      }
+  }
+
   /* Responsive Nav for Login - Mobile View Only */
-  @media (max-width: 768px) {
+  @media (max-width: 940px) {
 
       nav {
           flex-direction: column;
@@ -163,13 +193,26 @@
           color: white;
       }
 
-      .menu {
+      .hamburger {
           display: flex;
+      }
+
+      .menu {
+          display: none;
           flex-direction: column;
           align-items: flex-start;
           width: 100%;
           margin: 0;
           padding-left: 0;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #0d0d0d;
+          border-top: 1px solid #333;
+      }
+
+      .menu.active {
+          display: flex;
       }
 
       .menu a {
@@ -179,8 +222,9 @@
           padding: 5px 0;
           width: 100%;
       }
-      .login{
-        margin-top: 100px;
+
+      .login {
+          margin-top: 100px;
       }
   }
 
@@ -209,7 +253,7 @@
   }
 
   /* Medium devices: tablets (portrait) */
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 941px) and (max-width: 1024px) {
       nav {
           flex-direction: row;
           align-items: center;

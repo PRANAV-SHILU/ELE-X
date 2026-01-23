@@ -52,6 +52,34 @@
      margin-right: 3px;
  }
 
+ /* Hamburger Menu */
+ .hamburger {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+     gap: 5px;
+ }
+
+ .hamburger span {
+     width: 30px;
+     height: 3px;
+     background-color: white;
+     transition: all 0.3s ease;
+     border-radius: 2px;
+ }
+
+ .hamburger.active span:nth-child(1) {
+     transform: rotate(45deg) translate(8px, 8px);
+ }
+
+ .hamburger.active span:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active span:nth-child(3) {
+     transform: rotate(-45deg) translate(8px, -8px);
+ }
+
  /*end*/
 
  .about-container {
@@ -62,7 +90,7 @@
      border-radius: 10px;
      box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.5);
      text-align: center;
-     margin-top: 230px;
+     margin: 230px auto 0;
  }
 
  .about-title {
@@ -166,15 +194,17 @@
      background-size: 200% 100%;
      animation: moveLine 20s linear infinite;
  }
- 
-@keyframes moveLine {
-  0% {
-    background-position: -100% 0%;
-  }
-  100% {
-    background-position: 200% 0%;
-  }
-}
+
+ @keyframes moveLine {
+     0% {
+         background-position: -100% 0%;
+     }
+
+     100% {
+         background-position: 200% 0%;
+     }
+ }
+
  @media (max-width: 768px) {
      .values {
          flex-direction: column;
@@ -189,62 +219,63 @@
  @media (max-width: 1024px) {
      nav {
          padding: 15px;
-         flex-direction: row;
      }
 
      .menu {
-         flex-wrap: wrap;
-         justify-content: flex-end;
-         margin-left: 100px;
-     }
-
-     .about-container {
-         margin-top: 250px;
-         padding: 25px 20px;
-     }
-
-     .value-box {
-         width: 48%;
+         margin-left: 50px;
      }
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 940px) {
      body {
-         flex-direction: column;
-         padding: 0 15px;
+         margin-top: 0;
+         height: auto;
+         display: block;
+         padding-top: 20px;
      }
 
      nav {
-         flex-direction: column;
-         align-items: flex-start;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
          padding: 15px 20px;
      }
 
-     .logo {
-         font-size: 20px;
-         margin-bottom: 10px;
+     .hamburger {
+         display: flex;
      }
 
      .menu {
+         display: none;
          flex-direction: column;
          align-items: flex-start;
+         margin-left: 0;
+         margin-right: 0;
          width: 100%;
-         margin: 0;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         background-color: #0d0d0d;
+         border-top: 1px solid #333;
+     }
+
+     .menu.active {
+         display: flex;
      }
 
      .menu a {
          display: block;
-         font-size: 15px;
-         margin: 6px 0;
-         padding: 5px 0;
          width: 100%;
+         padding: 15px 20px;
+         border-bottom: 1px solid #222;
+         font-size: 16px;
+         margin: 0;
      }
 
      .about-container {
-         margin-top: 750px;
-         padding: 20px 15px;
+         margin-top: 80px;
+         padding: 25px 20px;
      }
-     
 
      .value-box {
          width: 100%;
@@ -252,7 +283,20 @@
      }
  }
 
+ @media (max-width: 768px) {
+
+     /* Cleaned up as 940px covers most navigation needs, specific tweaks here */
+     .about-container {
+         /* margin-top managed by 940px media query or adjust if needed */
+     }
+ }
+
  @media (max-width: 480px) {
+     .about-container {
+         padding: 15px;
+         margin-top: 70px;
+     }
+
      .about-title {
          font-size: 22px;
      }

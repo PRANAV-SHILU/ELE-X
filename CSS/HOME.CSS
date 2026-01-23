@@ -1,8 +1,18 @@
  /* General Styles */
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
  body {
-     font-family: Arial, sans-serif;
      margin: 0;
      padding: 0;
+     overflow-x: hidden;
+     width: 100%;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
      background-color: #111;
      color: white;
      text-align: center;
@@ -36,19 +46,47 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 20px;
-     padding-left: 30px;
+     padding: 20px 30px;
      border-bottom: 1px solid #333;
      position: fixed;
      top: 0;
      left: 0;
      width: 100%;
      z-index: 1000;
+     box-sizing: border-box;
  }
 
  nav .logo {
      font-size: 24px;
      font-weight: bold;
+ }
+
+ /* Hamburger Menu */
+ .hamburger {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+     gap: 5px;
+ }
+
+ .hamburger span {
+     width: 30px;
+     height: 3px;
+     background-color: white;
+     transition: all 0.3s ease;
+     border-radius: 2px;
+ }
+
+ .hamburger.active span:nth-child(1) {
+     transform: rotate(45deg) translate(8px, 8px);
+ }
+
+ .hamburger.active span:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active span:nth-child(3) {
+     transform: rotate(-45deg) translate(8px, -8px);
  }
 
  nav .menu a {
@@ -63,8 +101,9 @@
  }
 
  .menu {
-     margin-left: 400px;
-     margin-right: 53px;
+     display: flex;
+     align-items: center;
+     gap: 15px;
  }
 
  /*end*/
@@ -284,15 +323,16 @@
      background-size: 200% 100%;
      animation: moveLine 20s linear infinite;
  }
- 
-@keyframes moveLine {
-  0% {
-    background-position: -100% 0%;
-  }
-  100% {
-    background-position: 200% 0%;
-  }
-}
+
+ @keyframes moveLine {
+     0% {
+         background-position: -100% 0%;
+     }
+
+     100% {
+         background-position: 200% 0%;
+     }
+ }
 
 
  /* ------------------------------
@@ -300,13 +340,14 @@
 -------------------------------*/
 
  @media (max-width: 1200px) {
-     .menu {
-         margin-left: 200px;
-         margin-right: 20px;
+     nav .menu a {
+         margin: 0 10px;
+         font-size: 15px;
      }
 
      .product-grid {
          justify-content: center;
+         padding: 20px 10px;
      }
 
      .categories .card-grid,
@@ -316,13 +357,14 @@
  }
 
  @media (max-width: 992px) {
-     .menu {
-         margin-left: 100px;
-         margin-right: 10px;
+     nav .menu a {
+         margin: 0 8px;
+         font-size: 14px;
      }
 
      .product {
          width: 45%;
+         max-width: 300px;
      }
 
      .card {
@@ -335,44 +377,64 @@
 
      .hero-banner {
          font-size: 1.8em;
+         padding: 0 15px;
      }
 
      .testimonial-slider,
      .mission-section {
-         padding: 20px;
+         padding: 20px 15px;
+     }
+
+     .categories,
+     .flash-deals,
+     .testimonial-slider,
+     .blog-preview,
+     .mission-section {
+         width: 95%;
+         padding: 20px 10px;
      }
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 940px) {
      nav {
-         flex-direction: column;
-         align-items: flex-start;
-         justify-content: flex-start;
-         text-align: start;
-         padding: 15px;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+         padding: 15px 20px;
      }
 
      .logo {
          font-size: 22px;
-         margin-bottom: 10px;
+     }
+
+     .hamburger {
+         display: flex;
      }
 
      .menu {
-         display: flex;
+         display: none;
          flex-direction: column;
          align-items: flex-start;
          margin-left: 0;
          margin-right: 0;
          width: 100%;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         background-color: #0d0d0d;
+         border-top: 1px solid #333;
+     }
+
+     .menu.active {
+         display: flex;
      }
 
      .menu a {
          display: block;
          width: 100%;
-         padding: 10px 0;
-         border-top: 1px solid #222;
+         padding: 15px 20px;
+         border-bottom: 1px solid #222;
          font-size: 16px;
-         padding-left: 10px;
      }
 
      .bottom-nav {
@@ -401,11 +463,13 @@
 
      .hero-banner {
          font-size: 1.5em;
-         margin-top: 450px;
+         padding: 0 10px;
+         word-wrap: break-word;
      }
 
      .product {
          width: 90%;
+         max-width: 400px;
      }
 
      .card {
@@ -428,14 +492,21 @@
 
      .flash-deals {
          font-size: 16px;
+         padding: 10px 5px;
+         overflow: hidden;
      }
  }
 
  @media (max-width: 480px) {
+     nav {
+         padding: 15px;
+     }
+
      .hero-banner {
-         font-size: 1.3em;
+         font-size: 1.2em;
          height: 140px;
          margin-bottom: -140px;
+         padding: 0 10px;
      }
 
      .swiper {
@@ -466,8 +537,21 @@
      }
 
      .flash-deals {
-         padding: 8px 0;
-         font-size: 14px;
+         padding: 8px 5px;
+         font-size: 13px;
+         overflow: hidden;
+     }
+
+     .categories,
+     .testimonial-slider,
+     .blog-preview,
+     .mission-section {
+         width: 95%;
+         padding: 15px 10px;
+     }
+
+     .newsletter {
+         padding: 0 10px;
      }
 
      .bottom-nav {

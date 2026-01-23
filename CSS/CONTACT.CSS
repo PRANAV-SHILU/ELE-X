@@ -11,43 +11,83 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       height: 100vh;
+       min-height: 100vh;
+       /* Removed fixed height to allow scrolling on mobile */
    }
 
    /* Header */
    .fix {
        background: black;
-       padding: 22px;
+       padding: 0;
        position: fixed;
        top: 0;
        left: 0;
        width: 100%;
-       text-align: center;
        z-index: 1000;
    }
 
-   .fix h1 {
-       padding-bottom: 23px;
+   nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px 30px;
+       /* Matched MEGADEALS padding */
+       position: relative;
    }
 
-   nav ul {
+   .logo h1 {
+       padding-bottom: 0;
+       margin: 0;
+   }
+
+   /* Hamburger Menu */
+   .hamburger {
+       display: none;
+       flex-direction: column;
+       cursor: pointer;
+       gap: 5px;
+   }
+
+   .hamburger span {
+       width: 30px;
+       height: 3px;
+       background-color: white;
+       transition: all 0.3s ease;
+       border-radius: 2px;
+   }
+
+   .hamburger.active span:nth-child(1) {
+       transform: rotate(45deg) translate(8px, 8px);
+   }
+
+   .hamburger.active span:nth-child(2) {
+       opacity: 0;
+   }
+
+   .hamburger.active span:nth-child(3) {
+       transform: rotate(-45deg) translate(8px, -8px);
+   }
+
+   .menu ul {
        list-style: none;
        padding: 0;
+       margin: 0;
+       display: flex;
    }
 
-   nav ul li {
+   .menu ul li {
        display: inline-block;
        margin: 0 18px;
        position: relative;
    }
 
-   nav a {
+   .menu a {
        color: white;
        text-decoration: none;
        font-size: 16px;
    }
 
-   nav a:hover {
+   .menu a:hover {
        color: #ff6600;
    }
 
@@ -61,7 +101,8 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
-       margin-top: 230px;
+       margin-top: 100px;
+       margin-bottom: 50px;
    }
 
    .contact-title {
@@ -138,7 +179,12 @@
    .social-icons {
        text-align: center;
        margin-top: 20px;
-
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       /* Ensure wrapping on small screens */
+       gap: 10px;
    }
 
    .social-icons a {
@@ -153,44 +199,102 @@
    .social-icons a:hover {
        color: white;
    }
-   
 
- .animated-line {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     height: 1px;
-     width: 100%;
-     overflow: hidden;
- }
+   .animated-line {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       height: 1px;
+       width: 100%;
+       overflow: hidden;
+   }
 
- .animated-line::before {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 1px;
-     background: linear-gradient(to left, gold 50%, transparent 0%);
-     background-size: 200% 100%;
-     animation: moveLine 20s linear infinite;
- }
- 
-@keyframes moveLine {
-  0% {
-    background-position: -100% 0%;
-  }
-  100% {
-    background-position: 200% 0%;
-  }
-}
+   .animated-line::before {
+       content: "";
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 1px;
+       background: linear-gradient(to left, gold 50%, transparent 0%);
+       background-size: 200% 100%;
+       animation: moveLine 20s linear infinite;
+   }
+
+   @keyframes moveLine {
+       0% {
+           background-position: -100% 0%;
+       }
+
+       100% {
+           background-position: 200% 0%;
+       }
+   }
 
    /* Responsive */
+   @media (max-width: 940px) {
+       body {
+           display: block;
+           /* Disable flex centering on mobile */
+           height: auto;
+           padding-top: 20px;
+       }
+
+       nav {
+           padding: 15px 20px;
+       }
+
+       .hamburger {
+           display: flex;
+       }
+
+       .menu {
+           display: none;
+           position: absolute;
+           top: 100%;
+           left: 0;
+           width: 100%;
+           background-color: black;
+           border-top: 1px solid #333;
+           flex-direction: column;
+           align-items: flex-start;
+           padding: 0;
+       }
+
+       .menu.active {
+           display: flex;
+       }
+
+       .menu ul {
+           flex-direction: column;
+           width: 100%;
+       }
+
+       .menu ul li {
+           display: block;
+           margin: 0;
+           width: 100%;
+           text-align: left;
+       }
+
+       .menu a {
+           display: block;
+           width: 100%;
+           padding: 15px 20px;
+           border-bottom: 1px solid #222;
+           padding-left: 20px;
+       }
+
+       .contact-container {
+           margin: 120px auto 50px;
+       }
+   }
+
    @media (max-width: 768px) {
        .contact-container {
            flex-direction: column;
            align-items: center;
-           margin-top: 500px;
+           margin-top: 120px;
        }
 
        .contact-form,
@@ -204,36 +308,4 @@
            width: auto;
            padding: 8px 20px;
        }
-       
-     nav {
-         flex-direction: column;
-         align-items: flex-start;
-         justify-content: flex-start;
-         text-align: start;
-         padding: 15px;
-     }
-
-     .logo {
-         font-size: 22px;
-         margin-bottom: 10px;
-     }
-
-     .menu {
-         display: flex;
-         flex-direction: column;
-         align-items: flex-start;
-         margin-left: 0;
-         margin-right: 0;
-         width: 100%;
-     }
-
-     .menu a {
-         display: block;
-         width: 100%;
-         padding: 10px 0;
-         border-top: 1px solid #222;
-         font-size: 16px;
-         padding-left: 10px;
-     }
-
    }

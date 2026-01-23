@@ -212,12 +212,117 @@
  .align {
      margin-top: 100px;
  }
-@media (max-width: 768px){
-    .align {
-        margin-top: 120px;
-    }
-    
-}
+
+ /* Hamburger Menu Styles */
+ .hamburger {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+     gap: 5px;
+ }
+
+ .hamburger span {
+     width: 30px;
+     height: 3px;
+     background-color: white;
+     transition: all 0.3s ease;
+     border-radius: 2px;
+ }
+
+ .hamburger.active span:nth-child(1) {
+     transform: rotate(45deg) translate(8px, 8px);
+ }
+
+ .hamburger.active span:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active span:nth-child(3) {
+     transform: rotate(-45deg) translate(8px, -8px);
+ }
+
+ @media (max-width: 768px) {
+     .align {
+         margin-top: 120px;
+     }
+ }
+
+ /* Responsive Styles */
+ @media (max-width: 940px) {
+     nav {
+         padding: 15px 20px;
+         justify-content: space-between;
+     }
+
+     .hamburger {
+         display: flex;
+     }
+
+     .menu {
+         display: none;
+         flex-direction: column;
+         align-items: flex-start;
+         margin-right: 0;
+         width: 100%;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         background-color: #0d0d0d;
+         border-top: 1px solid #333;
+     }
+
+     .menu.active {
+         display: flex;
+     }
+
+     .menu a {
+         display: block;
+         width: 100%;
+         padding: 15px 20px;
+         border-bottom: 1px solid #222;
+         margin: 0;
+         /* Remove default margin */
+         box-sizing: border-box;
+     }
+
+     /* Cart Specific Responsive Styles */
+     table {
+         width: 95%;
+         font-size: 14px;
+         display: block;
+         overflow-x: auto;
+         white-space: nowrap;
+     }
+
+     .total,
+     .cart-info,
+     .address-form {
+         width: 95%;
+     }
+
+     h1 {
+         font-size: 28px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .address-form {
+         padding: 15px;
+     }
+
+     .address-form h3 {
+         font-size: 18px;
+     }
+
+     h1 {
+         font-size: 24px;
+     }
+
+     th,
+     td {
+         padding: 10px;
+     }
+ }
 
  .animated-line {
      position: absolute;

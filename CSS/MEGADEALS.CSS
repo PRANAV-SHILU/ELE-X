@@ -16,39 +16,39 @@ body {
 }
 
 /* Navigation Bar */
-    nav {
-        background-color: #0d0d0d;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 30px;
-        border-bottom: 1px solid #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-    }
+nav {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-    nav .logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-    nav .menu a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-        font-size: 16px;
-    }
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
 
-    nav a:hover {
-        color: #ff6600;
-    }
+nav a:hover {
+    color: #ff6600;
+}
 
-    .menu {
-        margin-right: -7px;
-    }
+.menu {
+    margin-right: -7px;
+}
 
 .deals-container {
     width: 90%;
@@ -132,35 +132,65 @@ body {
 }
 
 
- .animated-line {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     height: 1px;
-     width: 100%;
-     overflow: hidden;
- }
-
- .animated-line::before {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 1px;
-     background: linear-gradient(to left, gold 50%, transparent 0%);
-     background-size: 200% 100%;
-     animation: moveLine 20s linear infinite;
- }
- 
-@keyframes moveLine {
-  0% {
-    background-position: -100% 0%;
-  }
-  100% {
-    background-position: 200% 0%;
-  }
+.animated-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
 }
+
+.animated-line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, gold 50%, transparent 0%);
+    background-size: 200% 100%;
+    animation: moveLine 20s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        background-position: -100% 0%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .deal-grid {
@@ -173,23 +203,55 @@ body {
 }
 
 @media (max-width: 1024px) {
+    .deal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .deal-card img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 940px) {
     nav {
-        padding: 15px;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
     .menu {
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        width: auto;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0d0d0d;
+        border-top: 1px solid #333;
+        margin-right: 0;
+    }
+
+    .menu.active {
+        display: flex;
     }
 
     .menu a {
-        display: inline-block;
-        margin: 5px 10px;
-        font-size: 15px;
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid #222;
+        font-size: 16px;
+        margin: 0;
     }
 
     .deal-grid {
@@ -203,36 +265,11 @@ body {
 
 @media (max-width: 768px) {
     .deals-container {
-        margin-top: 200px;
         padding: 20px 10px;
     }
 
-     nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
-    }
-    .logo {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-     .menu {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-      .menu a {
-        display: block;
-        font-size: 15px;
-        margin: 6px 0;
-        padding: 5px 0;
-        width: 100%;
-    }
-
     .deal-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .deal-card img {
@@ -254,5 +291,11 @@ body {
     .deal-card .btn {
         font-size: 12px;
         padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .deal-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
