@@ -242,9 +242,10 @@ img:hover {
 
 .card {
   background: #222;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 8px;
-  width: 180px;
+  max-width: 324px;
+  width: 96%;
   box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
   transition: 0.3s;
 }
@@ -365,10 +366,6 @@ img:hover {
     max-width: 300px;
   }
 
-  .card {
-    width: 150px;
-  }
-
   .swiper {
     height: 240px;
   }
@@ -470,13 +467,8 @@ img:hover {
     max-width: 400px;
   }
 
-  .card {
-    width: 100%;
-  }
-
   .categories .card-grid,
   .blog-preview .card-grid {
-    flex-direction: column;
     gap: 15px;
   }
 
