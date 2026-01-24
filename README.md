@@ -2,14 +2,13 @@
 # ELE-X (front-end)
  
 **Theme:** Gold & Black  
-**Type:** E-commerce Website  
-**Status:** In Development
+**Type:** E-commerce Static Frontend Website  
 
 ---
 
 ## 📌 Project Overview
 Ele-x is a premium e-commerce platform designed to offer a high-quality shopping experience.  
-It combines a visually striking gold-and-black theme with interactive features and a structured layout to deliver both style and performance.
+It combines a visually striking gold-and-black theme with interactive features and a structured layout to deliver both style and performance with fully responsive design.
 
 ---
 
@@ -59,13 +58,12 @@ It combines a visually striking gold-and-black theme with interactive features a
 ---
 
 ## 🔍 Planned Features
-- More enhanced responsiveness for mobile devices  
 - Advanced product search  
 - Category-based filtering  
 - Voucher system implementation  
-- Improved cart functionality  
-- SEO optimization  
+- Improved cart functionality
 - Accessibility enhancements
+- Dynamic content loading
 
 ---
 
