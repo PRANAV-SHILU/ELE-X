@@ -1,298 +1,329 @@
-  body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-  }
+* {
+    box-sizing: border-box;
+}
 
-  /*fixed*/
-  nav {
-      background-color: #0d0d0d;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 30px;
-      border-bottom: 1px solid #333;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      box-sizing: border-box;
-  }
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
 
-  nav .logo {
-      font-size: 24px;
-      font-weight: bold;
-  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
 
-  /* Hamburger Menu */
-  .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-  }
+/* --- Base Header Styles --- */
+nav {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
 
-  .hamburger span {
-      width: 30px;
-      height: 3px;
-      background-color: white;
-      transition: all 0.3s ease;
-      border-radius: 2px;
-  }
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-  .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(8px, 8px);
-  }
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
 
-  .hamburger.active span:nth-child(2) {
-      opacity: 0;
-  }
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
 
-  .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(8px, -8px);
-  }
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
 
-  nav .menu a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 16px;
-  }
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
 
-  nav a:hover {
-      color: #ff6600;
-  }
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
 
-  .menu {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-  }
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-  /*end*/
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Animated Line under Header */
+.animated-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.animated-line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, gold 50%, transparent 0%);
+    background-size: 200% 100%;
+    animation: moveLine 20s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        background-position: -100% 0%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
+/* --- Responsive Header Styles --- */
+
+@media (max-width: 1200px) {
+    nav .menu a {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav .menu a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 940px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0d0d0d;
+        border-top: 1px solid #333;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid #222;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+}
+
+.bottom-nav {
+    display: none;
+}
 
 
-  .coupon-container {
-      background: #1e1e1e;
-      padding: 20px;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.3);
-      margin-top: 100px;
-  }
+.coupon-container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.3);
+    margin-top: 100px;
+}
 
-  h2 {
-      color: #ff9800;
-  }
+h2 {
+    color: #ff9800;
+}
 
-  .input-container {
-      display: flex;
-      justify-content: space-between;
-      background: #333;
-      padding: 10px;
-      border-radius: 5px;
-  }
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-  input {
-      flex: 1;
-      background: transparent;
-      border: none;
-      outline: none;
-      color: white;
-      font-size: 16px;
-      padding: 5px;
-  }
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
 
-  .apply-btn {
-      background: #ff9800;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      color: #000;
-      font-weight: bold;
-      border-radius: 5px;
-  }
+.apply-btn {
+    background: #ff9800;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-  .apply-btn:hover {
-      background: #ffa726;
-  }
+.apply-btn:hover {
+    background: #ffa726;
+}
 
-  .coupon-list {
-      margin-top: 15px;
-      text-align: left;
-  }
+.coupon-list {
+    margin-top: 15px;
+    text-align: left;
+}
 
-  .coupon-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #222;
-      padding: 10px;
-      border-radius: 5px;
-      margin: 5px 0;
-  }
+.coupon-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
 
-  .coupon-code {
-      font-weight: bold;
-      color: #ffcc00;
-  }
+.coupon-code {
+    font-weight: bold;
+    color: #ffcc00;
+}
 
-  .copy-btn {
-      background: black;
-      border: 1px solid #ffd700;
-      padding: 5px 10px;
-      color: goldenrod;
-      cursor: pointer;
-      border-radius: 5px;
-  }
+.copy-btn {
+    background: black;
+    border: 1px solid #ffd700;
+    padding: 5px 10px;
+    color: goldenrod;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-  .copy-btn:hover {
-      background: #5f5f5f;
-  }
+.copy-btn:hover {
+    background: #5f5f5f;
+}
 
-  .message {
-      margin-top: 10px;
-      font-weight: bold;
-  }
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
 
-  /* ---------- Responsive Design ---------- */
+/* ---------- Responsive Design ---------- */
 
-  /* Tablet / Smaller Laptops */
-  @media (max-width: 1024px) {
-      .coupon-container {
-          margin-top: 120px;
-          padding: 20px;
-      }
-  }
+/* Tablet / Smaller Laptops */
+@media (max-width: 1024px) {
+    .coupon-container {
+        margin-top: 120px;
+        padding: 20px;
+    }
+}
 
-  /* Header Breakpoint at 940px (Matches Home Page) */
-  @media (max-width: 940px) {
-      nav {
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          padding: 15px 20px;
-      }
+/* Header Breakpoint at 940px (Matches Home Page) */
+@media (max-width: 940px) {
 
-      .logo {
-          font-size: 22px;
-      }
+    .coupon-container {
+        width: 95%;
+        margin-top: 100px;
+        /* Adjust for fixed header */
+    }
+}
 
-      .hamburger {
-          display: flex;
-      }
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .coupon-container {
+        margin-top: 100px;
+        padding: 15px;
+    }
 
-      .menu {
-          display: none;
-          flex-direction: column;
-          align-items: flex-start;
-          margin-left: 0;
-          margin-right: 0;
-          width: 100%;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          background-color: #0d0d0d;
-          border-top: 1px solid #333;
-          gap: 0;
-          /* Reset gap for vertical list */
-      }
+    .input-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-      .menu.active {
-          display: flex;
-      }
+    .apply-btn {
+        width: 100%;
+        padding: 10px;
+    }
 
-      .menu a {
-          display: block;
-          width: 100%;
-          padding: 15px 20px;
-          border-bottom: 1px solid #222;
-          font-size: 16px;
-          margin: 0;
-          /* Reset margin */
-          box-sizing: border-box;
-          /* Ensure padding doesn't overflow width */
-      }
+    .coupon-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
 
-      .coupon-container {
-          width: 95%;
-          margin-top: 100px;
-          /* Adjust for fixed header */
-      }
-  }
+    .coupon-item span {
+        font-size: 14px;
+    }
 
-  /* Mobile Devices */
-  @media (max-width: 768px) {
-      .coupon-container {
-          margin-top: 100px;
-          padding: 15px;
-      }
+    .copy-btn {
+        align-self: flex-start;
+        /* Changed from flex-end for better mobile flow */
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
 
-      .input-container {
-          flex-direction: column;
-          gap: 10px;
-      }
-
-      .apply-btn {
-          width: 100%;
-          padding: 10px;
-      }
-
-      .coupon-item {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 5px;
-      }
-
-      .coupon-item span {
-          font-size: 14px;
-      }
-
-      .copy-btn {
-          align-self: flex-start;
-          /* Changed from flex-end for better mobile flow */
-          margin-top: 5px;
-          width: 100%;
-          text-align: center;
-      }
-
-      h2 {
-          font-size: 20px;
-      }
-  }
-
-  .animated-line {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 1px;
-      width: 100%;
-      overflow: hidden;
-  }
-
-  .animated-line::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(to left, gold 50%, transparent 0%);
-      background-size: 200% 100%;
-      animation: moveLine 20s linear infinite;
-  }
-
-  @keyframes moveLine {
-      0% {
-          background-position: -100% 0%;
-      }
-
-      100% {
-          background-position: 200% 0%;
-      }
-  }
+    h2 {
+        font-size: 20px;
+    }
+}

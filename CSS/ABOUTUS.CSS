@@ -1,321 +1,329 @@
- * {
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
-     font-family: Arial, sans-serif;
- }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
- body {
-     margin-top: 200px;
-     background-color: black;
-     color: white;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
- }
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
- /*fixed*/
- nav {
-     background-color: #0d0d0d;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 20px;
-     padding-left: 30px;
-     border-bottom: 1px solid #333;
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     z-index: 1000;
- }
+/* --- Base Header Styles --- */
+nav {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
 
- nav .logo {
-     font-size: 24px;
-     font-weight: bold;
- }
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
- nav .menu a {
-     color: white;
-     text-decoration: none;
-     margin: 0 15px;
-     font-size: 16px;
- }
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
 
- nav a:hover {
-     color: #ff6600;
- }
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
 
- .menu {
-     margin-left: 400px;
-     margin-right: 3px;
- }
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
 
- /* Hamburger Menu */
- .hamburger {
-     display: none;
-     flex-direction: column;
-     cursor: pointer;
-     gap: 5px;
- }
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
 
- .hamburger span {
-     width: 30px;
-     height: 3px;
-     background-color: white;
-     transition: all 0.3s ease;
-     border-radius: 2px;
- }
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
 
- .hamburger.active span:nth-child(1) {
-     transform: rotate(45deg) translate(8px, 8px);
- }
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
- .hamburger.active span:nth-child(2) {
-     opacity: 0;
- }
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
 
- .hamburger.active span:nth-child(3) {
-     transform: rotate(-45deg) translate(8px, -8px);
- }
+nav a:hover {
+    color: #ff6600;
+}
 
- /*end*/
+/* Animated Line under Header */
+.animated-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+}
 
- .about-container {
-     width: 90%;
-     max-width: 1000px;
-     background: linear-gradient(to bottom, #222, #000);
-     padding: 30px;
-     border-radius: 10px;
-     box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.5);
-     text-align: center;
-     margin: 230px auto 0;
- }
+.animated-line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, gold 50%, transparent 0%);
+    background-size: 200% 100%;
+    animation: moveLine 20s linear infinite;
+}
 
- .about-title {
-     font-size: 28px;
-     font-weight: bold;
-     color: orange;
-     margin-bottom: 15px;
- }
+@keyframes moveLine {
+    0% {
+        background-position: -100% 0%;
+    }
 
- .about-subtitle {
-     font-size: 18px;
-     color: #bbb;
-     margin-bottom: 20px;
- }
+    100% {
+        background-position: 200% 0%;
+    }
+}
 
- .about-section {
-     margin-bottom: 20px;
-     text-align: left;
- }
+/* --- Responsive Header Styles --- */
 
- .about-section h2 {
-     font-size: 20px;
-     color: orange;
-     margin-bottom: 10px;
- }
+@media (max-width: 1200px) {
+    nav .menu a {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+}
 
- .about-section p {
-     font-size: 14px;
-     line-height: 1.6;
-     color: #ddd;
- }
+@media (max-width: 992px) {
+    nav .menu a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+}
 
- .values {
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     margin-top: 20px;
- }
+@media (max-width: 940px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
 
- .value-box {
-     background: #333;
-     padding: 15px;
-     width: 48%;
-     border-radius: 8px;
-     text-align: center;
-     margin-top: 10px;
- }
+    .logo {
+        font-size: 22px;
+    }
 
- .value-box h3 {
-     color: orange;
-     font-size: 18px;
-     margin-bottom: 5px;
- }
+    .hamburger {
+        display: flex;
+    }
 
- .value-box p {
-     font-size: 13px;
-     color: #ddd;
- }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0d0d0d;
+        border-top: 1px solid #333;
+    }
 
- .milestones {
-     margin-top: 30px;
- }
+    .menu.active {
+        display: flex;
+    }
 
- .milestone-item {
-     background: #222;
-     padding: 15px;
-     border-radius: 8px;
-     margin-bottom: 10px;
-     text-align: left;
-     border-left: 4px solid orange;
- }
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid #222;
+        font-size: 16px;
+    }
+}
 
- .milestone-item h3 {
-     color: orange;
-     font-size: 18px;
- }
+@media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+}
 
- .milestone-item p {
-     font-size: 13px;
-     color: #ccc;
- }
+/* --- About Us Page Content Styles --- */
+.about-container {
+    width: 90%;
+    max-width: 1000px;
+    background: linear-gradient(to bottom, #222, #000);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 120px auto 40px;
+    /* Adjusted margin for fixed header */
+}
 
+.about-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 15px;
+}
 
- .animated-line {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     height: 1px;
-     width: 100%;
-     overflow: hidden;
- }
+.about-subtitle {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
 
- .animated-line::before {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 1px;
-     background: linear-gradient(to left, gold 50%, transparent 0%);
-     background-size: 200% 100%;
-     animation: moveLine 20s linear infinite;
- }
+.about-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
 
- @keyframes moveLine {
-     0% {
-         background-position: -100% 0%;
-     }
+.about-section h2 {
+    font-size: 20px;
+    color: orange;
+    margin-bottom: 10px;
+}
 
-     100% {
-         background-position: 200% 0%;
-     }
- }
+.about-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
 
- @media (max-width: 768px) {
-     .values {
-         flex-direction: column;
-         align-items: center;
-     }
+.values {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
-     .value-box {
-         width: 100%;
-     }
- }
+.value-box {
+    background: #333;
+    padding: 15px;
+    width: 48%;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
 
- @media (max-width: 1024px) {
-     nav {
-         padding: 15px;
-     }
+.value-box h3 {
+    color: orange;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
 
-     .menu {
-         margin-left: 50px;
-     }
- }
+.value-box p {
+    font-size: 13px;
+    color: #ddd;
+}
 
- @media (max-width: 940px) {
-     body {
-         margin-top: 0;
-         height: auto;
-         display: block;
-         padding-top: 20px;
-     }
+.milestones {
+    margin-top: 30px;
+}
 
-     nav {
-         flex-direction: row;
-         align-items: center;
-         justify-content: space-between;
-         padding: 15px 20px;
-     }
+.milestone-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-left: 4px solid orange;
+}
 
-     .hamburger {
-         display: flex;
-     }
+.milestone-item h3 {
+    color: orange;
+    font-size: 18px;
+}
 
-     .menu {
-         display: none;
-         flex-direction: column;
-         align-items: flex-start;
-         margin-left: 0;
-         margin-right: 0;
-         width: 100%;
-         position: absolute;
-         top: 100%;
-         left: 0;
-         background-color: #0d0d0d;
-         border-top: 1px solid #333;
-     }
+.milestone-item p {
+    font-size: 13px;
+    color: #ccc;
+}
 
-     .menu.active {
-         display: flex;
-     }
+/* --- About Us Responsive Adjustments --- */
+@media (max-width: 940px) {
+    body {
+        height: auto;
+        display: block;
+        padding-top: 20px;
+    }
 
-     .menu a {
-         display: block;
-         width: 100%;
-         padding: 15px 20px;
-         border-bottom: 1px solid #222;
-         font-size: 16px;
-         margin: 0;
-     }
+    .about-container {
+        margin-top: 100px;
+        padding: 25px 20px;
+    }
 
-     .about-container {
-         margin-top: 80px;
-         padding: 25px 20px;
-     }
+    .value-box {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
 
-     .value-box {
-         width: 100%;
-         margin-top: 15px;
-     }
- }
+@media (max-width: 768px) {
+    .values {
+        flex-direction: column;
+        align-items: center;
+    }
 
- @media (max-width: 768px) {
+    .value-box {
+        width: 100%;
+    }
+}
 
-     /* Cleaned up as 940px covers most navigation needs, specific tweaks here */
-     .about-container {
-         /* margin-top managed by 940px media query or adjust if needed */
-     }
- }
+@media (max-width: 480px) {
+    .about-container {
+        padding: 15px;
+        margin-top: 90px;
+    }
 
- @media (max-width: 480px) {
-     .about-container {
-         padding: 15px;
-         margin-top: 70px;
-     }
+    .about-title {
+        font-size: 22px;
+    }
 
-     .about-title {
-         font-size: 22px;
-     }
+    .about-subtitle {
+        font-size: 16px;
+    }
 
-     .about-subtitle {
-         font-size: 16px;
-     }
+    .about-section h2 {
+        font-size: 18px;
+    }
 
-     .about-section h2 {
-         font-size: 18px;
-     }
+    .about-section p,
+    .value-box p,
+    .milestone-item p {
+        font-size: 12px;
+    }
 
-     .about-section p,
-     .value-box p,
-     .milestone-item p {
-         font-size: 12px;
-     }
-
-     .milestone-item h3 {
-         font-size: 16px;
-     }
- }
+    .milestone-item h3 {
+        font-size: 16px;
+    }
+}

@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* Navigation Bar */
+/* --- Base Header Styles --- */
 nav {
     background-color: #0d0d0d;
     display: flex;
@@ -28,11 +28,40 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 nav .logo {
     font-size: 24px;
     font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
 }
 
 nav .menu a {
@@ -47,8 +76,43 @@ nav a:hover {
 }
 
 .menu {
-    margin-right: -7px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
+
+/* Animated Line under Header */
+.animated-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.animated-line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, gold 50%, transparent 0%);
+    background-size: 200% 100%;
+    animation: moveLine 20s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        background-position: -100% 0%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
 
 .deals-container {
     width: 90%;
@@ -132,67 +196,18 @@ nav a:hover {
 }
 
 
-.animated-line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.animated-line::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to left, gold 50%, transparent 0%);
-    background-size: 200% 100%;
-    animation: moveLine 20s linear infinite;
-}
-
-@keyframes moveLine {
-    0% {
-        background-position: -100% 0%;
-    }
-
-    100% {
-        background-position: 200% 0%;
-    }
-}
-
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
-}
-
 /* Responsive Design */
+
+/* ------------------------------
+   Responsive Design Media Queries
+-------------------------------*/
+
 @media (max-width: 1200px) {
+    nav .menu a {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+
     .deal-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -209,6 +224,13 @@ nav a:hover {
 
     .deal-card img {
         height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav .menu a {
+        margin: 0 8px;
+        font-size: 14px;
     }
 }
 
@@ -232,13 +254,14 @@ nav a:hover {
         display: none;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
         width: 100%;
         position: absolute;
         top: 100%;
         left: 0;
         background-color: #0d0d0d;
         border-top: 1px solid #333;
-        margin-right: 0;
     }
 
     .menu.active {
@@ -251,7 +274,6 @@ nav a:hover {
         padding: 15px 20px;
         border-bottom: 1px solid #222;
         font-size: 16px;
-        margin: 0;
     }
 
     .deal-grid {
@@ -295,6 +317,10 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+    nav {
+        padding: 15px;
+    }
+
     .deal-grid {
         grid-template-columns: repeat(1, 1fr);
     }

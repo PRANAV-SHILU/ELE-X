@@ -1,30 +1,74 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     width: 100%;
+ }
+
  body {
      font-family: 'Arial', sans-serif;
      background-color: #121212;
      color: #ffffff;
-     margin: 0;
-     padding: 0;
  }
 
- /*fixed*/
+ /* --- Base Header Styles --- */
  nav {
      background-color: #0d0d0d;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 20px;
-     padding-left: 30px;
+     padding: 20px 30px;
      border-bottom: 1px solid #333;
      position: fixed;
      top: 0;
      left: 0;
      width: 100%;
      z-index: 1000;
+     box-sizing: border-box;
  }
 
  nav .logo {
      font-size: 24px;
      font-weight: bold;
+ }
+
+ /* Hamburger Menu */
+ .hamburger {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+     gap: 5px;
+ }
+
+ .hamburger span {
+     width: 30px;
+     height: 3px;
+     background-color: white;
+     transition: all 0.3s ease;
+     border-radius: 2px;
+ }
+
+ .hamburger.active span:nth-child(1) {
+     transform: rotate(45deg) translate(8px, 8px);
+ }
+
+ .hamburger.active span:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active span:nth-child(3) {
+     transform: rotate(-45deg) translate(8px, -8px);
+ }
+
+ .menu {
+     display: flex;
+     align-items: center;
+     gap: 15px;
  }
 
  nav .menu a {
@@ -38,12 +82,38 @@
      color: #ff6600;
  }
 
- .menu {
-     /* margin-left: 400px; */
-     margin-right: 53px;
+ /* Animated Line under Header */
+ .animated-line {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 100%;
+     overflow: hidden;
  }
 
- /*end*/
+ .animated-line::before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(to left, gold 50%, transparent 0%);
+     background-size: 200% 100%;
+     animation: moveLine 20s linear infinite;
+ }
+
+ @keyframes moveLine {
+     0% {
+         background-position: -100% 0%;
+     }
+
+     100% {
+         background-position: 200% 0%;
+     }
+ }
+
 
  h1 {
      text-align: center;
@@ -54,13 +124,18 @@
      text-shadow: 1px 1px 2px #000;
  }
 
- table {
+ .table-container {
      width: 80%;
      margin: 20px auto;
+     overflow-x: auto;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
+ }
+
+ table {
+     width: 100%;
      border-collapse: collapse;
      background-color: #1e1e1e;
-     box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
-     border-radius: 10px;
      overflow: hidden;
  }
 
@@ -213,33 +288,6 @@
      margin-top: 100px;
  }
 
- /* Hamburger Menu Styles */
- .hamburger {
-     display: none;
-     flex-direction: column;
-     cursor: pointer;
-     gap: 5px;
- }
-
- .hamburger span {
-     width: 30px;
-     height: 3px;
-     background-color: white;
-     transition: all 0.3s ease;
-     border-radius: 2px;
- }
-
- .hamburger.active span:nth-child(1) {
-     transform: rotate(45deg) translate(8px, 8px);
- }
-
- .hamburger.active span:nth-child(2) {
-     opacity: 0;
- }
-
- .hamburger.active span:nth-child(3) {
-     transform: rotate(-45deg) translate(8px, -8px);
- }
 
  @media (max-width: 768px) {
      .align {
@@ -249,48 +297,15 @@
 
  /* Responsive Styles */
  @media (max-width: 940px) {
-     nav {
-         padding: 15px 20px;
-         justify-content: space-between;
-     }
-
-     .hamburger {
-         display: flex;
-     }
-
-     .menu {
-         display: none;
-         flex-direction: column;
-         align-items: flex-start;
-         margin-right: 0;
-         width: 100%;
-         position: absolute;
-         top: 100%;
-         left: 0;
-         background-color: #0d0d0d;
-         border-top: 1px solid #333;
-     }
-
-     .menu.active {
-         display: flex;
-     }
-
-     .menu a {
-         display: block;
-         width: 100%;
-         padding: 15px 20px;
-         border-bottom: 1px solid #222;
-         margin: 0;
-         /* Remove default margin */
-         box-sizing: border-box;
-     }
 
      /* Cart Specific Responsive Styles */
-     table {
+     .table-container {
          width: 95%;
+     }
+
+     table {
+         width: 100%;
          font-size: 14px;
-         display: block;
-         overflow-x: auto;
          white-space: nowrap;
      }
 
@@ -320,37 +335,70 @@
 
      th,
      td {
-         padding: 10px;
+         padding: 9px;
+         text-wrap: auto;
      }
  }
 
- .animated-line {
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     height: 1px;
-     width: 100%;
-     overflow: hidden;
+ /* --- Responsive Header Styles --- */
+
+ @media (max-width: 1200px) {
+     nav .menu a {
+         margin: 0 10px;
+         font-size: 15px;
+     }
  }
 
- .animated-line::before {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     height: 1px;
-     background: linear-gradient(to left, gold 50%, transparent 0%);
-     background-size: 200% 100%;
-     animation: moveLine 20s linear infinite;
+ @media (max-width: 992px) {
+     nav .menu a {
+         margin: 0 8px;
+         font-size: 14px;
+     }
  }
 
- @keyframes moveLine {
-     0% {
-         background-position: -100% 0%;
+ @media (max-width: 940px) {
+     nav {
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+         padding: 15px 20px;
      }
 
-     100% {
-         background-position: 200% 0%;
+     .logo {
+         font-size: 22px;
+     }
+
+     .hamburger {
+         display: flex;
+     }
+
+     .menu {
+         display: none;
+         flex-direction: column;
+         align-items: flex-start;
+         width: 100%;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         background-color: #0d0d0d;
+         border-top: 1px solid #333;
+     }
+
+     .menu.active {
+         display: flex;
+     }
+
+     .menu a {
+         display: block;
+         width: 100%;
+         padding: 15px 20px;
+         border-bottom: 1px solid #222;
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     nav {
+         padding: 15px;
      }
  }
