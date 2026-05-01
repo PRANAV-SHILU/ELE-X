@@ -1,4 +1,3 @@
-
 // function goBack() {
 //     history.back();
 // }
@@ -17,39 +16,32 @@
 //     this.reset();
 //     document.getElementById('successMessage').style.display = 'block';
 
-
 // });
 
-document.addEventListener('DOMContentLoaded', function () 
-{
-    var form = document.getElementById('reviewForm');
-    var successMessage = document.getElementById('successMessage');
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("reviewForm");
+  var successMessage = document.getElementById("successMessage");
 
-    if (form && successMessage) 
-    {
-        form.addEventListener('submit', function (e) 
-        {
-            e.preventDefault();
+  if (form && successMessage) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-            form.reset();
-            successMessage.style.display = 'block';
+      form.reset();
+      successMessage.style.display = "block";
 
-            setTimeout(function () 
-            {
-                successMessage.style.display = 'none';
-            }, 3000);
-        });
-    }
+      setTimeout(function () {
+        successMessage.style.display = "none";
+      }, 3000);
+    });
+  }
 });
 
-function goBack() 
-{
-    history.back();
+function goBack() {
+  history.back();
 }
 
-function switchImage(element) 
-{
-    var mainImage = document.getElementById('mainImage');
-    mainImage.src = element.src;
-    mainImage.alt = element.alt;
+function switchImage(element) {
+  var mainImage = document.getElementById("mainImage");
+  mainImage.src = element.src;
+  mainImage.alt = element.alt;
 }

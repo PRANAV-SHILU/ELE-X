@@ -1,107 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ele-x | Wireless Mouse</title>
-  <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
-  <script src="../JS/DETAILS.JS"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ele-x | Wireless Mouse</title>
+    <link rel="stylesheet" href="../CSS/DETAILS.CSS" />
+    <script src="../JS/DETAILS.JS"></script>
+  </head>
+  <body>
+    <button onclick="goBack()" class="goback">← Back</button>
 
-  <button onclick="goBack()" class="goback">← Back</button>
+    <div class="gallery-section">
+      <div class="main-img">
+        <img
+          id="mainImage"
+          src="../../images/wireless-mouse.jpg"
+          alt="Wireless Mouse"
+        />
+      </div>
 
-  <div class="gallery-section">
-    <div class="main-img">
-      <img id="mainImage" src="../../images/wireless-mouse.jpg" alt="Wireless Mouse" />
-    </div>
+      <div class="details-section">
+        <div class="product-title">Wireless Mouse</div>
+        <div class="rating">★ 4.3 | 920 Ratings & 190 Reviews</div>
+        <div class="price">₹599</div>
+        <div class="original-price">₹999</div>
+        <div class="discount">Save ₹400 (40%)</div>
+        <div class="availability" style="color: green">In Stock</div>
+        <div class="delivery">Delivery in <strong>2–5 days</strong></div>
+        <div class="seller">Sold by: <strong>Ele-X Direct</strong></div>
+        <div class="social-proof">👀 21 people viewed this today</div>
 
-    <div class="details-section">
-      <div class="product-title">Wireless Mouse</div>
-      <div class="rating">★ 4.3 | 920 Ratings & 190 Reviews</div>
-      <div class="price">₹599</div>
-      <div class="original-price">₹999</div>
-      <div class="discount">Save ₹400 (40%)</div>
-      <div class="availability" style="color: green;">In Stock</div>
-      <div class="delivery">Delivery in <strong>2–5 days</strong></div>
-      <div class="seller">Sold by: <strong>Ele-X Direct</strong></div>
-      <div class="social-proof">👀 21 people viewed this today</div>
-
-      <div class="section">
-        <h2>Key Features</h2>
-        <ul>
-          <li>Ergonomic and lightweight design</li>
-          <li>2.4GHz USB wireless connectivity</li>
-          <li>Silent click buttons</li>
-          <li>Plug and Play operation</li>
-        </ul>
+        <div class="section">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Ergonomic and lightweight design</li>
+            <li>2.4GHz USB wireless connectivity</li>
+            <li>Silent click buttons</li>
+            <li>Plug and Play operation</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-  <div class="add">
-    <div class="section">
-      <h2>Product Details</h2>
-      <ul>
-        <li>Works on most surfaces</li>
-        <li>Power-saving mode for battery life</li>
-        <li>Ideal for office and travel</li>
-        <li>Precision tracking up to 1600 DPI</li>
-      </ul>
+    <div class="add">
+      <div class="section">
+        <h2>Product Details</h2>
+        <ul>
+          <li>Works on most surfaces</li>
+          <li>Power-saving mode for battery life</li>
+          <li>Ideal for office and travel</li>
+          <li>Precision tracking up to 1600 DPI</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Technical Specifications</h2>
+        <ul class="specs-list">
+          <li>Wireless Range: 10 meters</li>
+          <li>Battery: AA x1 (not included)</li>
+          <li>DPI Settings: 800/1200/1600</li>
+          <li>Weight: 85g</li>
+          <li>Compatibility: Windows/macOS/Linux</li>
+        </ul>
+      </div>
+
+      <div class="section faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Is it Bluetooth?</summary>
+          <p>No, it uses 2.4GHz USB receiver.</p>
+        </details>
+        <details>
+          <summary>Does it work with tablets?</summary>
+          <p>Yes, if the tablet supports USB input.</p>
+        </details>
+        <details>
+          <summary>Is it suitable for gaming?</summary>
+          <p>It’s ideal for casual use, not high-end gaming.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="section reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <h4><span>★★★★★</span> Kiran T.</h4>
+        <p>Perfect grip and smooth tracking.</p>
+      </div>
+      <div class="review">
+        <h4><span>★★★★☆</span> Arjun M.</h4>
+        <p>Click sound is almost silent. Great for office.</p>
+      </div>
+      <div class="review">
+        <h4><span>★★★☆☆</span> Meera S.</h4>
+        <p>Battery drains fast if not turned off.</p>
+      </div>
+      <div class="review">
+        <h4><span>★★★★★</span> Aman P.</h4>
+        <p>Reliable and value for money.</p>
+      </div>
+      <div class="review">
+        <h4><span>★★★★☆</span> Shweta D.</h4>
+        <p>Fast delivery. Easy installation.</p>
+      </div>
+      <div class="review">
+        <h4><span>★★★★★</span> Deepa V.</h4>
+        <p>Light and comfortable.</p>
+      </div>
+      <div class="review">
+        <h4><span>★★☆☆☆</span> Ravi K.</h4>
+        <p>Sometimes disconnects for a second.</p>
+      </div>
     </div>
 
     <div class="section">
-      <h2>Technical Specifications</h2>
-      <ul class="specs-list">
-        <li>Wireless Range: 10 meters</li>
-        <li>Battery: AA x1 (not included)</li>
-        <li>DPI Settings: 800/1200/1600</li>
-        <li>Weight: 85g</li>
-        <li>Compatibility: Windows/macOS/Linux</li>
-      </ul>
+      <h2>Submit Your Review</h2>
+      <form class="review-form" id="reviewForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating" required>
+          <option value="" disabled selected>Select rating</option>
+          <option value="1">★ 1 Star</option>
+          <option value="2">★★ 2 Stars</option>
+          <option value="3">★★★ 3 Stars</option>
+          <option value="4">★★★★ 4 Stars</option>
+          <option value="5">★★★★★ 5 Stars</option>
+        </select>
+        <label for="comment">Review</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        <button type="submit">Submit Review</button>
+        <div id="successMessage" class="success-message" style="display: none">
+          Thank you for your review!
+        </div>
+      </form>
     </div>
-
-    <div class="section faq">
-      <h2>Frequently Asked Questions</h2>
-      <details><summary>Is it Bluetooth?</summary><p>No, it uses 2.4GHz USB receiver.</p></details>
-      <details><summary>Does it work with tablets?</summary><p>Yes, if the tablet supports USB input.</p></details>
-      <details><summary>Is it suitable for gaming?</summary><p>It’s ideal for casual use, not high-end gaming.</p></details>
-    </div>
-  </div>
-
-  <div class="section reviews">
-    <h2>Customer Reviews</h2>
-    <div class="review"><h4><span>★★★★★</span> Kiran T.</h4><p>Perfect grip and smooth tracking.</p></div>
-    <div class="review"><h4><span>★★★★☆</span> Arjun M.</h4><p>Click sound is almost silent. Great for office.</p></div>
-    <div class="review"><h4><span>★★★☆☆</span> Meera S.</h4><p>Battery drains fast if not turned off.</p></div>
-    <div class="review"><h4><span>★★★★★</span> Aman P.</h4><p>Reliable and value for money.</p></div>
-    <div class="review"><h4><span>★★★★☆</span> Shweta D.</h4><p>Fast delivery. Easy installation.</p></div>
-    <div class="review"><h4><span>★★★★★</span> Deepa V.</h4><p>Light and comfortable.</p></div>
-    <div class="review"><h4><span>★★☆☆☆</span> Ravi K.</h4><p>Sometimes disconnects for a second.</p></div>
-  </div>
-
-  <div class="section">
-    <h2>Submit Your Review</h2>
-    <form class="review-form" id="reviewForm">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required />
-      <label for="rating">Rating</label>
-      <select id="rating" name="rating" required>
-        <option value="" disabled selected>Select rating</option>
-        <option value="1">★ 1 Star</option>
-        <option value="2">★★ 2 Stars</option>
-        <option value="3">★★★ 3 Stars</option>
-        <option value="4">★★★★ 4 Stars</option>
-        <option value="5">★★★★★ 5 Stars</option>
-      </select>
-      <label for="comment">Review</label>
-      <textarea id="comment" name="comment" rows="4" required></textarea>
-      <button type="submit">Submit Review</button>
-      <div id="successMessage" class="success-message" style="display:none;">Thank you for your review!</div>
-    </form>
-  </div>
-
-</body>
+  </body>
 </html>

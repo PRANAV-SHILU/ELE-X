@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ele-x | Register</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/REGISTER.CSS">
-</head>
+    <link rel="stylesheet" type="text/css" href="../CSS/REGISTER.CSS" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">Ele-x</div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu" id="menu">
-            <a href="HOME.HTML">Home</a>
-            <a href="SHOPNOW.HTML">Shop Now</a>
-            <a href="MEGADEALS.HTML">Mega Deals</a>
-            <a href="VOUCHER.HTML">Vouchers</a>
-            <a href="CART.HTML">Cart</a>
-            <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
-            <a href="ABOUTUS.HTML">About Us</a>
-            <a href="CONTACT.HTML">Contact</a>
-            <a href="LOGIN.HTML">Login</a>
-        </div>
-        <div class="animated-line"></div>
+      <div class="logo">Ele-x</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="menu">
+        <a href="HOME.HTML">Home</a>
+        <a href="SHOPNOW.HTML">Shop Now</a>
+        <a href="MEGADEALS.HTML">Mega Deals</a>
+        <a href="VOUCHER.HTML">Vouchers</a>
+        <a href="CART.HTML">Cart</a>
+        <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
+        <a href="ABOUTUS.HTML">About Us</a>
+        <a href="CONTACT.HTML">Contact</a>
+        <a href="LOGIN.HTML">Login</a>
+      </div>
+      <div class="animated-line"></div>
     </nav>
     <div class="container">
-        <h2>Register</h2>
-        <form action="LOGIN.HTML" method="POST" onsubmit="alert('Registered successfully !')">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
+      <h2>Register</h2>
+      <form
+        action="LOGIN.HTML"
+        method="POST"
+        onsubmit="alert('Registered successfully !')"
+      >
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-            <label for="mobile">Mobile Number</label>
-            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          pattern="[0-9]{10}"
+          required
+        />
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
 
-            <button type="submit">Register</button>
-        </form>
-        <p>Already have an account? <a href="LOGIN.HTML">Login here</a></p>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="LOGIN.HTML">Login here</a></p>
     </div>
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu");
 
-        if (hamburger && menu) {
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                menu.classList.toggle('active');
-            });
-        }
+      if (hamburger && menu) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          menu.classList.toggle("active");
+        });
+      }
     </script>
-</body>
-
+  </body>
 </html>
